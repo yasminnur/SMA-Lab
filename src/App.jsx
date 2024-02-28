@@ -5,6 +5,7 @@
 // import './App.css'
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
+import Carousel from "./components/carousel"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         {/* <Route path="/hero" element={<Hero />} /> */}
       {/* </Routes> */}
       <Hero />
+      {/* <Carousel/> */}
     </>
   )
 }

@@ -1,5 +1,6 @@
 import "./css/hero.css";
 import React from "react";
+import Carousel from "./carousel"
 
 const Hero = () => {
   return (
@@ -22,9 +23,9 @@ const Hero = () => {
             Pendidikan Bermutu SMA Laboratorium UM Profesional
           </h1>
 
-          {/* <div className="carouselContainer"> */}
-            
-          {/* </div> */}
+          <div className="carouselContainer">
+          <Carousel />
+          </div>
         </div>
       </section>
     </>

@@ -1,0 +1,59 @@
+.carouselContent {
+  padding: 20px;
+  display: flex;
+  width: fit-content;
+  /* background: rgba(249, 249, 249, 0.2); */
+  /* backdrop-filter: blur(12px); */
+  background: yellow;
+  border-radius: 10px;
+
+  img {
+    /* min-width: 300px; */
+    max-width: 300px;
+    border-radius: 10px;
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    /* min-width: 300px; */
+    min-width: 300px;
+    max-width: 300px;
+
+    span {
+      display: block;
+      font-size: 12px;
+      color: white;
+      margin-bottom: 8px;
+      text-align: start;
+    }
+
+    h2 {
+      display: block;
+      font-size: 28px;
+      line-height: 120%;
+      color: white;
+      font-weight: bold;
+      margin-bottom: 24px;
+      text-align: start;
+    }
+
+    button {
+      padding: 8px 16px;
+      border: none;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: #9730d1;
+      color: white;
+      border-radius: 10px;
+
+      img {
+        width: 24px;
+      }
+    }
+  }
+}
