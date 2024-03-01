@@ -1,5 +1,5 @@
 import "./css/hero.css";
-import React from "react";
+// import React from "react";
 import Carousel from "./carousel"
 
 const Hero = () => {

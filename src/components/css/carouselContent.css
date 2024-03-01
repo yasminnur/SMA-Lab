@@ -1,10 +1,11 @@
 .carouselContent {
   padding: 20px;
   display: flex;
-  width: fit-content;
-  /* background: rgba(249, 249, 249, 0.2); */
-  /* backdrop-filter: blur(12px); */
-  background: yellow;
+  /* width: fit-content; */
+  width: 600px;
+  background: rgba(249, 249, 249, 0.2);
+  backdrop-filter: blur(12px);
+  /* background: yellow; */
   border-radius: 10px;
 
   img {

@@ -3,9 +3,8 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import Carousel from "./components/carousel"
+import Navbar from "./components/Navbar";
+import Index from "./pages/index"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -14,11 +13,11 @@ function App() {
   return (
     <>
       <Navbar />
+      <Index />
       {/* <Routes> */}
         {/* <Route path="/hero" element={<Hero />} /> */}
       {/* </Routes> */}
-      <Hero />
-      {/* <Carousel/> */}
+      
     </>
   )
 }
