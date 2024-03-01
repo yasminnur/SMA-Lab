@@ -4,30 +4,26 @@ import React, { useState, useEffect } from "react";
 import data from "../data/agenda.json";
 
 const Agenda = () => {
-  const [jsonData, setJsonData] = useState([]);
-
-  useEffect(() => {
-    setJsonData(data);
-  }, []);
+    const [jsonData, setJsonData] = useState([]);
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [timer, setTimer] = useState(null);
+  
+    useEffect(() => {
+      setJsonData(data);
+    }, []);
+  
+    useEffect(() => {
+      const timeoutId = setTimeout(() => {
+        const nextIndex = (activeIndex + 1) % jsonData.length;
+        setActiveIndex(nextIndex);
+      }, 5000);
     
-    // =========================================
-  useEffect(() => {
-    const initSlider = () => {
-      const imageList = document.querySelector(".slider-wrapper .image-list");
-      const slideButtons = document.querySelectorAll(".slide-button");
-
-      slideButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const direction = button.id === "prev-slide" ? -1 : 1;
-          const scrollAmount = imageList.clientWidth * direction;
-          imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
-        });
-      });
+      return () => clearTimeout(timeoutId);
+    }, [activeIndex, jsonData]);
+  
+    const handleNavClick = (index) => {
+      setActiveIndex(index);
     };
-
-    initSlider(); 
-  }, []);
-    
   return (
     <>
       <div className="agenda">
@@ -37,50 +33,67 @@ const Agenda = () => {
               <p>Agenda SMA Lab UM</p>
               <h3>Berbagai acara sekolah di SMA Lab UM</h3>
             </div>
-            <div className="bawah">
-              <p>Agenda lainnya</p>
+            <div className="bawah d-flex gap-3">
+              <p className="p-0 m-0">Agenda lainnya</p>
+              <img src="./assets/agenda/more.svg" alt=""  className="bg-warning p-1 rounded-circle"/>
             </div>
           </Col>
 
-          {jsonData.map((item, index) => (
-            <Col className="kanan" key={index}>
+          <Col className="kanan">
+            <div className="slider-desc-wrapper">
               <div className="desc">
-                <div className="head">
-                  <div className="baris1">
-                    <h5 className="text-capitalize fw-bold">
-                      {item.program}
-                      <span className="ms-0 me-1">:</span>
-                      <span className="text-uppercase">{item.title}</span>
-                    </h5>
-                  </div>
-                  <div className="baris2 d-flex gap-2">
-                    <p>{item.date} </p>
-                   <div className="circle rounded-circle"></div>
-                    <p>{item.time}</p>
-                  </div>
-                </div>
-                <p>
-                  <img src="" alt="" />
-                  {item.place}
-                </p>
-                  </div>
-                  <div className="slider-wrapper">
-                      <div className="slider">
-                          <img id="img-1" src="./assets/agenda/event1.svg" alt="" />
-                          <img id="img-2" src="./assets/agenda/event1.svg" alt="" />
-                          <img id="img-3" src="./assets/agenda/event1.svg" alt="" />
-                          <img id="img-4" src="./assets/agenda/event1.svg" alt="" />
+                {jsonData.map((item, index) => (
+                  <div
+                    className={`desc-content ${
+                      index === activeIndex ? "active" : "visually-hidden"
+                    }`}
+                    key={index}
+                  >
+                    <div className="head">
+                      <div className={`baris1 ${index === activeIndex ? "active" : ""}`}>
+                        <h5 className="text-capitalize fw-bold">
+                          {item.program}
+                          <span className="ms-0 me-1">:</span>
+                          <span className="">{item.title}</span>
+                        </h5>
                       </div>
+                      <div className="baris2 d-flex gap-2">
+                        <p>{item.date}</p>
+                        <div className="circle rounded-circle"></div>
+                        <p>{item.time}</p>
+                      </div>
+                    </div>
+                    <p>{item.place}</p>
                   </div>
-                  <div className="slider-nav">
-                      <a href="#img-1"></a>
-                      <a href="#img-2"></a>
-                      <a href="#img-3"></a>
-                      <a href="#img-4"></a>
-                  </div>
-                  
-            </Col>
-          ))}
+                ))}
+              </div>
+            </div>
+            <div className="slider-image-wrapper">
+              <div className="slider">
+                {jsonData.map((item, index) => (
+                  <img
+                    key={index}
+                    id={`img-${index + 1}`}
+                    className={
+                      index === activeIndex ? "active" : "visually-hidden"
+                    }
+                    src={item.image}
+                    alt={`Image ${index + 1}`}
+                  />
+                ))}
+              </div>
+              <div className="slider-nav">
+                {jsonData.map((_, index) => (
+                  <a
+                        key={index}
+                        className={index === activeIndex ? "nav-active" : "nav-non"}
+                    href={`#img-${index + 1}`}
+                    onClick={() => handleNavClick(index)}
+                  ></a>
+                ))}
+              </div>
+            </div>
+          </Col>
         </Row>
       </div>
     </>

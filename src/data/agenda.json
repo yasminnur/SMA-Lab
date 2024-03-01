@@ -5,6 +5,15 @@
         "date": "20 Februari",
         "time": "09:00 WIB",
         "place": "Aula Sekolah",
-        "thumbnail": "./assets/agenda/event1.svg"
+        "image": "./assets/agenda/event1.svg"
+    }
+    ,
+    {
+        "program": "Festival Pemilu",
+        "title": "Kepoin Parpol, Adu Ide, Main Bareng ",
+        "date": "20 Februari",
+        "time": "09:00 WIB",
+        "place": "Aula Sekolah",
+        "image": "./assets/agenda/event2.svg"
     }
 ]
