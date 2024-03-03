@@ -8,26 +8,61 @@
     justify-content: space-between;
 
     .menu {
-        ul {
-            padding: 0;
-            display:flex;
-            list-style: none;
-            gap: 20px;
+      ul {
+        padding: 0;
+        display: flex;
+        list-style: none;
+        gap: 20px;
 
-            li {
-                margin: 0;
-                padding: 0;
-            }
+        li {
+          margin: 0;
+          padding: 0;
         }
-
+      }
     }
 
     .lainnya {
-        align-items: center;
-        img {
+      align-items: center;
+      img {
+      }
+    }
+  }
 
-        }
+  .content {
+    .img-container {
+      overflow: hidden;
+      display: inline-block;
+
+      img {
+        background-size: cover;
+        transition: all 1.1s;
+      }
+      &:hover img {
+        transform: scale(1.2);
+      }
+    }
+  }
+  .card-kabar {
+    .image {
+      position: relative;
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.6
+        );
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      &:hover .overlay {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
     }
   }
 }
-

@@ -96,6 +96,7 @@
         padding: 20px;
 
         .slider {
+          position: relative;
           display: flex;
           aspect-ratio: 16/9;
           overflow-x: auto;
@@ -103,10 +104,28 @@
           scroll-snap-type: x mandatory;
           scroll-behavior: smooth;
 
+          &:hover .overlay {
+            opacity: 1;
+          }
+
           img {
             margin-right: 20px;
             border-radius: 10px;
             width: 100%;
+          }
+
+          .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(
+              0,
+              0,
+              0,
+              0.6
+            ); /* Ubah warna sesuai kebutuhan Anda */
+            opacity: 0; /* Awalnya tidak terlihat */
+            transition: opacity 0.3s ease; /* Efek transisi saat berubah opasitas */
           }
         }
       }

@@ -1,5 +1,5 @@
 import "./css/agenda.css";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import React, { useState, useEffect } from "react";
 import data from "../data/agenda.json";
 
@@ -69,6 +69,12 @@ const Agenda = () => {
             </div>
             <div className="slider-image-wrapper">
               <div className="slider">
+                <div className="overlay w-100 h-100 d-flex align-items-center">
+                  <Button className="d-flex rounded-2 text-nowrap mx-auto gap-3 fw-semibold border-0" style={{ padding: '12px 15px',height: 'fit-content', background: '#ECE9EA', color: '#2E2E2E', lineHeight: '140%'}}>
+                    <img className="m-0 p-0" src="./assets/agenda/eye.svg" alt="" />
+                   Lihat detail
+                 </Button>
+              </div>
                 {jsonData.map((item, index) => (
                   <img
                     key={index}
