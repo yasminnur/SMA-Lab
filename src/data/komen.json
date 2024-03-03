@@ -1,0 +1,20 @@
+[
+    {
+        "comment": "Menjadi pribadi dan generasi penerus yang cerdas, berprestasi dan berwawasan luas, tidak cukup tanpa pondasi moral dan akhlak yg baik. Dengan memilih SMA Lab UM, akan menjadi pribadi yang tidak hanya mengem... ",
+        "sender" :
+            {
+                "photo": "./assets/komen/person1.svg",
+                "name": "Supriyanto S.Kom",
+                "profesi": "Teacher"
+            }
+    },
+    {
+        "comment": "Senang rasanya bisa berbagi ilmu dan mengembangkan potensi di civitas ini, susah senang duka lara semua dilewati setiap masa, banyak hal yang sudah dilalui oleh sekolah ini untuk menjadi sebesar ini, bergabung tahun...",
+        "sender" :
+            {
+                "photo": "./assets/komen/person2.svg",
+                "name": "Fasril Vaud Hi, S.Pd.",
+                "profesi": "Teacher"
+            }
+    }
+]

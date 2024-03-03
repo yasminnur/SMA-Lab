@@ -1,0 +1,25 @@
+.komen {
+    .arrow-nav {
+        margin-top: 20px;
+        display: flex;
+        column-gap: 1rem;
+
+        .nav-non {
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 50%;
+          background: #fff;
+          opacity: 0.75;
+          transition: opacity ease 250ms;
+          cursor: pointer;
+          transition: width 0.3s ease, background 0.3s ease;
+        }
+
+        .nav-active {
+          width: 30px;
+          background: #feb700;
+          border-radius: 10px;
+          transition: width 0.3s ease, background 0.3s ease;
+        }
+      } 
+}

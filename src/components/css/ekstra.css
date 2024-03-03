@@ -1,0 +1,138 @@
+:root {
+  --t1: 20s; /* Variabel pertama */
+  /* --t2: 30s; */
+}
+
+  .ekstra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+
+    .scroll {
+      position: relative;
+      display: flex;
+      width: 700px;
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+
+      div {
+        white-space: nowrap;
+        animation: animate var(--t) linear infinite;
+        animate-delay: calc(var(--t)* -1);
+
+        span {
+          display: inline-flex;
+          margin: 10px;
+          background: #333;
+          color: white;
+          padding: 5px 10px;
+          border-radius: 5px;
+          transition: 0.5s;
+          letter-spacing: 0.2em;
+
+          &:hover {
+            background: #4caf50;
+            cursor: pointer;
+          }
+        }
+
+        &:nth-child(2) {
+          animation: animate2 var(--t) linear infinite;
+          animate-delay: calc(var(--t) / -2);
+        }
+      }
+    }
+  }
+
+  @keyframes animate 
+  {
+    0%
+    {
+      transform: translateX(100%)
+    }
+    100%
+    {
+      transform: translateX(-100%)
+    }
+  }
+  @keyframes animate2 
+  {
+    0%
+    {
+      transform: translateX(100%)
+    }
+    100%
+    {
+      transform: translateX(-200%)
+    }
+  }
+  /* .ekstra {
+    .card-wrapper {
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 60px 0;
+        background: white;
+        display: flex;
+        margin: 0;
+    
+        &:hover .card-ekstra {
+          animation-play-state: paused;
+        }
+    
+        .card-ekstra {
+          animation: 7s  scroll infinite linear;
+          display: inline-block;
+          width: 100vw;
+    
+          img {
+            height: 80px;
+            margin: 0 20px;
+          }
+        }
+
+        &:nth-child(1) .card-ekstra {
+            margin-left: 10%;
+          }
+      }
+  } */
+
+  /* @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  } */
+
+ /* Animasi untuk baris pertama (geser ke kiri)
+.ekstra:nth-child(1) .card-ekstra {
+    animation: scrollLeft 5s infinite linear;
+  }
+  
+  Animasi untuk baris kedua (geser ke kanan)
+  .ekstra:nth-child(2) .card-ekstra {
+    animation: scrollRight 5s infinite linear;
+  } */
+  
+  /* @keyframes scrollLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes scrollRight {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  } */
+  

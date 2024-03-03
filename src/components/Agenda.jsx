@@ -6,7 +6,6 @@ import data from "../data/agenda.json";
 const Agenda = () => {
     const [jsonData, setJsonData] = useState([]);
     const [activeIndex, setActiveIndex] = useState(0);
-    const [timer, setTimer] = useState(null);
   
     useEffect(() => {
       setJsonData(data);
@@ -26,7 +25,7 @@ const Agenda = () => {
     };
   return (
     <>
-      <div className="agenda">
+      <div className="agenda" style={{padding: "30px 40px 50px 40px"}}>
         <Row>
           <Col className="kiri" xs={5}>
             <div className="atas ">
