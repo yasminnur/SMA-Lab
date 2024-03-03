@@ -10,6 +10,7 @@ const Navbar = () => {
   const [navbarStyle, setNavbarStyle] = useState({
     backgroundColor: "rgba(0, 0, 0, 0.15)",
     backdropFilter: "blur(25px)",
+    // width: '100%'
   });
 
   const profilClick = () => {
@@ -28,12 +29,14 @@ const Navbar = () => {
       setNavbarStyle({
         backgroundColor: "rgba(0, 0, 0, 0.15)",
         backdropFilter: "blur(25px)",
+        // width: '100%'
       });
     } else {
       setLogoSrc("./assets/navbar/logoWhite.svg");
       setNavbarStyle({
         backgroundColor: "rgba(0, 0, 0, 0.6)",
         backdropFilter: "blur(25px)",
+        // width: '100%'
       });
     }
 
@@ -49,11 +52,11 @@ const Navbar = () => {
       <div className="navbar w-100" style={navbarStyle}>
         <div className="navbarContent w-100 d-flex align-items-center justify-content-between">
           <div className="d-flex me-auto gap-3">
-            <img src={logoSrc} alt="" />
-            <img src="./assets/navbar/logoText.svg" alt="" />
+            <img className="logoSMA" src={logoSrc} alt="" />
+            <img className="text-logo" src="./assets/navbar/logoText.svg" alt="" />
           </div>
           <div className="buttonMenu d-flex">
-            <img src="./assets/navbar/search.svg" alt="" />
+            <img className="search" src="./assets/navbar/search.svg" alt="" />
             <button className="PPDB fw-bold">PPDB</button>
             <button
               className={`Menu ${isActive ? "bg-light text-dark" : ""}`}
