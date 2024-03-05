@@ -6,11 +6,11 @@ const tentangKami = () => {
     <>
       <div className="tentang">
         <div className="atas ">
-          <Row className="about">
-            <Col className="col kiri" xs={4}>
-              <p>Tentang kami</p>
+          <Row className="about p-0">
+            <Col className="col kiri p-0" xs={4}>
+              <p className="text-nowrap">Tentang kami</p>
             </Col>
-            <Col className="col kanan">
+            <Col className="col kanan p-0">
               <p>
                 <span className="fw-bold">SMA Laboratorium</span> merupakan
                 salah satu sekolah laboratorium yang berada dalam naungan
@@ -20,39 +20,39 @@ const tentangKami = () => {
           </Row>
 
           <div className="visi">
-            <p>
+            <p className="">
               Visi kami menjadi lembaga pendidikan pencetak lulusan unggul yang;
             </p>
-            <Row className="">
-              <div class="col">
+            <Row className="p-0 m-0 w-100">
+              <div class="col col-12 col-md-auto">
                 <div className="overlay">
                   <h1 className="">Beriman & Bertaqwa</h1>
                 </div>
                 <img
-                  className="bg-danger"
-                  src="https://plus.unsplash.com/premium_photo-1677619622407-1e9195e82374?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  className="bg-danger w-100"
+                  src="./assets/tentang/beriman.svg"
                   alt=""
                 />
               </div>
-              <div class="col col-lg-3">
+              <div class="col col-12 col-md-3">
                 <div className="overlay">
                   <h1 className="">Berakhlak Mulia</h1>
                 </div>
-                <img src="./assets/tentang/akhlak.svg" alt="" />
+                <img className="w-100" src="./assets/tentang/akhlak.svg" alt="" />
               </div>
-              <div class="col col-lg-3">
+              <div class="col col-12 col-md-3">
                 <div className="overlay">
                   <h1 className="">Berprestasi</h1>
                 </div>
-                <img src="./assets/tentang/prestasi.svg" alt="" />
+                <img className="w-100" src="./assets/tentang/prestasi.svg" alt="" />
               </div>
             </Row>
           </div>
         </div>
 
         <div className="bawah">
-          <p>Kerjasama Lembaga :</p>
-          <div className="logos">
+          <p className="m-0 mb-3">Kerjasama Lembaga :</p>
+          <div className="logos w-100">
             <div className="logos-slide">
               <img src="./assets/tentang/sponsor1.svg" alt="" />
               <img src="./assets/tentang/sponsor2.svg" alt="" />

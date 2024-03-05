@@ -7,6 +7,8 @@ overflow-x: hidden;
 
 * {
     font-family: "Plus Jakarta Sans";
+    max-width: 1440px;
+    /* overflow-x: hidden; */
 }
 
 /* :root {

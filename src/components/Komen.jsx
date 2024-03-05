@@ -26,90 +26,92 @@ const Komen = () => {
 
   return (
     <>
-      <div className="komen w-100" style={{ padding: "30px 40px 50px 40px" }}>
-        <div className="nav d-flex justify-content-between mb-4">
+      <div className="komen w-100 p-0">
+        {/* <div className="nav d-flex justify-content-start justify-content-md-between  mb-4"> */}
+        <div className="nav d-flex justify-content-between align-items-center mb-4 w-100">
           <p className="p-0 m-0">Cerita mereka tentang SMA Lab UM</p>
-          <div className="d-flex gap-3">
+          <div className="nav-slider gap-3 d-none d-md-flex">
             <div
-              className="p-2 d-flex rounded-circle"
+              className="arrow p-2 d-flex rounded-circle"
               onClick={() =>
                 handleNavClick(
                   (activeIndex - 1 + jsonData.length) % jsonData.length
                 )
               }
-              style={{ background: "#D8D8D8" }}
             >
-              <img
-                style={{ width: "15px", height: "15px" }}
-                src="./assets/komen/white-arrow.svg"
-                alt=""
-              />
+              <i class="bi bi-chevron-left m-auto"></i>
             </div>
             <div
-              className="p-2 d-flex rounded-circle"
+              className="arrow p-2 d-flex rounded-circle"
               onClick={() =>
                 handleNavClick((activeIndex + 1) % jsonData.length)
               }
-              style={{ background: "#FEB700" }}
             >
-              <img
-                style={{ width: "15px", height: "15px" }}
-                src="./assets/komen/black-arrow.svg"
-                alt=""
-              />
+               <i class="bi bi-chevron-right m-auto"></i>
             </div>
           </div>
         </div>
 
         <div
-          className="slider-desc-wrapper h-100"
+          className="slider-comment-wrapper h-100"
           style={{ height: "fit-content" }}
         >
-          <div className="desc">
+          {/* <div className=""> */}
             {jsonData.map((item, index) => (
               <div
-                className={`desc-content ${
-                  index === activeIndex ? "active" : "visually-hidden"
+                className={`comment ${
+                  index === activeIndex ? "" : "visually-hidden"
                 }`}
                 key={index}
               >
-                <div className="head">
-                  <div
-                    className={`baris1 ${
-                      index === activeIndex ? "active" : ""
-                    }`}
-                  >
                     <div className="komenContainer">
                       <h3
-                        className="p-0 m-0 mb-3 fw-semibold"
-                        style={{ maxHeight: "150px", minHeight: "150px" }}
+                        className="p-0 m-0 mb-2 mb-md-3 fw-semibold"
                       >
                         {item.comment}
                       </h3>
                       <a href="" className="text-dark p-0 m-0">
                         Lihat selengkapnya
                       </a>
-                      <div className="sender d-flex align-items-center gap-3 mt-5">
+                  <div className="sender d-flex align-items-center gap-3 mt-4 mt-md-5">
                         <img
                           className="rounded-circle"
-                          style={{ width: "50px", height: "50px" }}
                           src={item.sender.photo}
-                          alt=""
+                      alt=""
                         />
-                        <div className="name">
-                          <p className="w-100 m-0 p-0 fw-semibold">
+                        <div className="nameContainer">
+                          <p className="name w-100 m-0 p-0 fw-semibold">
                             {item.sender.name}
                           </p>
-                          <p className="w-100 m-0 p-0">{item.sender.profesi}</p>
+                          <p className="prof w-100 m-0 p-0">{item.sender.profesi}</p>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
               </div>
             ))}
-          </div>
+          {/* </div> */}
         </div>
+
+        <div className="nav-slider-phone mt-5 d-flex d-md-none">
+            <div
+              className="arrow p-2 d-flex rounded-circle"
+              onClick={() =>
+                handleNavClick(
+                  (activeIndex - 1 + jsonData.length) % jsonData.length
+                )
+              }
+            >
+              <i class="bi bi-chevron-left m-auto"></i>
+            </div>
+            <div
+              className=" arrow p-2 d-flex rounded-circle"
+              onClick={() =>
+                handleNavClick((activeIndex + 1) % jsonData.length)
+              }
+            >
+               <i class="bi bi-chevron-right m-auto"></i>
+            </div>
+          </div>
       </div>
     </>
   );

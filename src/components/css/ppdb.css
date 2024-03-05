@@ -1,0 +1,128 @@
+/* PHONE  */
+@media (max-width: 425px) {
+    .ppdb {
+        padding: 30px 20px 0 20px;
+    
+        .containernya {
+            /* padding: 0 10px; */
+    
+        .content {
+            flex-direction: column;
+            justify-content: center;
+            
+            .kiri {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            p {
+                font-size: 10px; 
+            }
+            h3 {
+                line-height: 120%;
+                letter-spacing: -0.24px;
+                font-size: 30px;
+            }
+            button {
+                width: fit-content;
+                border: none;
+                outline: none;
+                letter-spacing: 140%;
+                font-size: 15px;
+                background: #FEB700;
+                font-weight: semibold;
+                padding: 10px 15px;  
+                cursor: pointer;
+            }
+        }
+            img {
+                display: flex;
+                max-width: 250px;
+            }
+            }
+        }
+    }
+}
+
+/* TABLET  */
+@media (min-width: 426px) {
+    .ppdb {
+        padding: 30px 20px 0 20px;
+    
+        .containernya {
+            /* padding: 0 10px; */
+    
+        .content {
+            flex-direction: column;
+            justify-content: center;
+            
+            .kiri {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            p {
+                font-size: 10px; 
+            }
+            h3 {
+                line-height: 120%;
+                letter-spacing: -0.24px;
+                font-size: 30px;
+            }
+            button {
+                width: fit-content;
+                border: none;
+                outline: none;
+                letter-spacing: 140%;
+                font-size: 15px;
+                background: #FEB700;
+                font-weight: semibold;
+                padding: 10px 15px;  
+                cursor: pointer;
+            }
+        }
+            img {
+                display: flex;
+                max-width: 250px;
+            }
+            }
+        }
+    }
+}
+
+/* LAPTOP  */
+@media (min-width: 769px) {
+    .ppdb {
+        padding: 30px 40px 50px 40px;
+    
+        .containernya {
+            padding: 0 50px;
+    
+        .content {
+            p {
+                fontSize: 10px;  
+            }
+            h3 {
+                lineHeight: 120%;
+                letterSpacing: -0.24px;
+                fontSize: 30px;
+            }
+            button {
+                order: none;
+                outline: none;
+                letterSpacing: 140%;
+                fontSize: 15px;
+                background: #FEB700;
+                fontWeight: semibold;
+                padding: 10px 15px;  
+            }
+            img {
+    
+            }
+        }
+    }
+    }
+}
+
+/* LAPTOP L  */
+@media (min-width: 1025px) {
+}
+

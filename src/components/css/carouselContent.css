@@ -1,60 +1,191 @@
-.carouselContent {
-  padding: 20px;
-  display: flex;
-  /* width: fit-content; */
-  width: 600px;
-  background: rgba(249, 249, 249, 0.2);
-  backdrop-filter: blur(12px);
-  /* background: yellow; */
-  border-radius: 10px;
-
-  img {
-    /* min-width: 300px; */
-    max-width: 300px;
-    border-radius: 10px;
-  }
-
-  .desc {
+/* PHONE  */
+@media (max-width: 425px) {
+  .carouselContent {
+    padding: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 30px;
-    /* min-width: 300px; */
-    min-width: 300px;
-    max-width: 300px;
-
-    span {
-      display: block;
-      font-size: 12px;
-      color: white;
-      margin-bottom: 8px;
-      text-align: start;
-    }
-
-    h2 {
-      display: block;
-      font-size: 28px;
-      line-height: 120%;
-      color: white;
-      font-weight: bold;
-      margin-bottom: 24px;
-      text-align: start;
-    }
-
-    button {
-      padding: 8px 16px;
-      border: none;
-      width: fit-content;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      background: #9730d1;
-      color: white;
+    width: fit-content;
+    background: rgba(249, 249, 249, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+  
+    img {
+      max-width: 120px;
       border-radius: 10px;
-
-      img {
-        width: 24px;
+      object-fit: cover;
+    }
+  
+    .desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10px;
+      width: 100%;
+  
+      span {
+        display: block;
+        font-size: 12px;
+        color: white;
+        margin-bottom: 8px;
+        text-align: start;
+      }
+  
+      h2 {
+        display: block;
+        font-size: 18px;
+        line-height: 120%;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 24px;
+        text-align: start;
+      }
+  
+      button {
+        font-size: 10px;
+        padding: 8px 10px;
+        border: none;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: #9730d1;
+        color: white;
+        border-radius: 10px;
+        white-space: nowrap;
+  
+        img {
+          width: 15px;
+        }
       }
     }
   }
 }
+
+/* TABLET  */
+@media (min-width: 426px) {
+  .carouselContent {
+    padding: 20px;
+    display: flex;
+    width: 500px;
+    background: rgba(249, 249, 249, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    gap: 15px;
+  
+    img {
+      max-width: 220px;
+      border-radius: 10px;
+    }
+  
+    .desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+
+      span {
+        display: block;
+        font-size: 12px;
+        color: white;
+        margin-bottom: 8px;
+        text-align: start;
+      }
+  
+      h2 {
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        line-height: 120%;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 24px;
+        text-align: start;
+      }
+  
+      button {
+        padding: 8px 16px;
+        border: none;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: #9730d1;
+        color: white;
+        border-radius: 10px;
+        font-size: 14px;
+  
+        img {
+          width: 24px;
+        }
+      }
+    }
+  }
+}
+
+/* LAPTOP  */
+@media (min-width: 769px) {
+  .carouselContent {
+    padding: 20px;
+    display: flex;
+    /* width: fit-content; */
+    width: 600px;
+    background: rgba(249, 249, 249, 0.2);
+    backdrop-filter: blur(12px);
+    /* background: yellow; */
+    border-radius: 10px;
+  
+    img {
+      /* min-width: 300px; */
+      max-width: 300px;
+      border-radius: 10px;
+    }
+  
+    .desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 30px;
+      /* min-width: 300px; */
+      min-width: 300px;
+      max-width: 300px;
+  
+      span {
+        display: block;
+        font-size: 12px;
+        color: white;
+        margin-bottom: 8px;
+        text-align: start;
+      }
+  
+      h2 {
+        display: block;
+        font-size: 28px;
+        line-height: 120%;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 24px;
+        text-align: start;
+      }
+  
+      button {
+        padding: 8px 16px;
+        border: none;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background: #9730d1;
+        color: white;
+        border-radius: 10px;
+  
+        img {
+          width: 24px;
+        }
+      }
+    }
+  }
+}
+
+/* LAPTOP L  */
+@media (min-width: 1025px) {
+}
+

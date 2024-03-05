@@ -1,3 +1,4 @@
+import "./css/ppdb.css"
 const PPDB = () => {
   return (
     <>
@@ -6,41 +7,38 @@ const PPDB = () => {
         style={{
           height: "fit-content",
           background: "#861FC1",
-          padding: "0 50px",
+          
         }}
       >
-        <div className="d-flex justify-content-between">
-          <div className=" my-auto">
-          <p className="text-light p-0 m-0 mb-3" style={{ fontSize: "10px" }}>
+        <div className="containernya">
+        <div className="content d-flex justify-content-md-between">
+          <div className="kiri my-auto w-100 mb-5">
+            <p className="text-light p-0 m-0 mb-3 text-center text-md-start"
+              // style={{ fontSize: "10px" }}
+            >
             PPDB SMA LAB UM
           </p>
           <h3
-            className="fw-bold text-light m-0 p-0 mb-3"
+            className="fw-bold text-light m-0 p-0 mb-3 text-center text-md-start"
             style={{
               lineHeight: "120%",
               letterSpacing: "-0.24px",
-              fontSize: "30px",
+              // fontSize: "30px",
             }}
           >
             Yuk masuk SMA <br /> Lab UM Lur 
           </h3>
           <button
-            className="rounded-3 m-0"
-            style={{
-              border: "none",
-              outline: "none",
-              letterSpacing: "140%",
-              fontSize: "15px",
-              background: "#FEB700",
-              fontWeight: "semibold",
-              padding: "10px 15px",
-            }}
+            className="rounded-3 mx-auto"
           >
             Daftar Sekarang!
           </button>
                   </div>
-                  <img src="./assets/ekstra/ppdb.svg" alt="" style={{maxWidth: '600px', maxHeight: '250px'}}/>
-        </div>
+            <img className="mx-auto" src="./assets/ekstra/ppdb.svg" alt=""
+              // style={{ maxWidth: '600px', maxHeight: '250px' }}
+            />
+          </div>
+          </div>
       </div>
     </>
   );

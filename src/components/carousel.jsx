@@ -38,13 +38,14 @@ const Carousel = () => {
             id="prev-slide"
             className="slide-button material-symbols-rounded"
           >
-             <i class="bi bi-chevron-left"></i>
+             <i className="mx-auto bi bi-chevron-left"></i>
           </button>
           <button
             id="next-slide"
             className="slide-button material-symbols-rounded"
-          >
-            <i class="bi bi-chevron-right"></i>
+          > 
+              <i className="mx-auto bi bi-chevron-right"></i>
+           
           </button>
           </div>
 

@@ -13,7 +13,7 @@ import "../index.css";
 const index = () => {
   return (
     <>
-      <section className="">
+      <section className=" ">
         <Hero />
       </section>
       <section className="tentang-kami">
@@ -24,26 +24,26 @@ const index = () => {
       </section>
       <section className="kabar-terbaru" style={{ background: "#FAFAFA" }}>
         <Kabar />
-        <Jurnalistik />
+        {/* <Jurnalistik /> */}
       </section>
-      <section className="ekstra">
+      <section className="ekstra overflow-hidden">
         <Ekstra />
       </section>
-      <section className="komen w-100 h-100">
+      <section className="komen mb-5">
         <Komen />
       </section>
       <section
-        className="ppdb"
-        style={{ padding: "30px 40px 50px 40px", height: "fit-content" }}
+        className="ppdb mb-5"
+        // style={{ padding: "30px 40px 50px 40px", height: "fit-content" }}
       >
         <PPDB />
       </section>
-      <section className="social-media">
+      {/* <section className="social-media">
         <Sosmed />
-      </section>
-      <section className="footer">
+      </section> */}
+      {/* <section className="footer">
         <Footer />
-      </section>
+      </section> */}
     </>
   );
 };
