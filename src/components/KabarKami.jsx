@@ -2,9 +2,11 @@ import "./css/kabar.css";
 import { Row, Col } from "react-bootstrap";
 import data from "../data/kabar.json";
 import React, { useState, useEffect, useRef } from "react";
+// import { useMediaQuery } from 'react-responsive';
 
 const KabarKami = () => {
   const [jsonData, setJsonData] = useState([]);
+  // const isMediumScreen = useMediaQuery({ query: '(min-width: 768px)' });
 
   useEffect(() => {
     setJsonData(data);
@@ -76,8 +78,10 @@ const KabarKami = () => {
           </Col>
 
           <Col
-            className="p-0"
-            style={{ maxHeight: maxHeight, overflowY: "auto" }}
+            className="card-kabar-container p-0"
+      //  style={isMediumScreen ? { maxHeight: maxHeight, overflowY: "auto" } : {}}
+            style={{ overflowY: "auto" }}
+          //  style={{ maxHeight: maxHeight, overflowY: "auto" }} */}
           >
             {jsonData.map((item, index) => (
               <Row key={index} className="card-kabar p-0 m-0 mb-3 mb-md-3 gap-3 gap-md-2">

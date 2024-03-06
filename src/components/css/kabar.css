@@ -2,7 +2,7 @@
 @media (max-width: 425px) {
   .kabar {
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 30px 20px 50px 20px;
 
     .nav-container {
@@ -66,6 +66,9 @@
       }
     }
   }
+  .card-kabar-container {
+    height: 300px;
+  }
   .card-kabar {
     overflow: auto;
     .image {
@@ -102,8 +105,8 @@
 @media (min-width: 426px) {
   .kabar {
     width: 100vw;
-    height: 100vh;
-    padding: 30px 30px 50px 30px;
+    /* height: 100vh; */
+    padding: 30px 30px 0px 30px;
 
     .nav-container {
       display: flex;
@@ -163,7 +166,9 @@
         font-size: 20px;
       }
     }
-
+    .card-kabar-container {
+      height: 350px;
+    }
     .card-kabar {
       .image {
         position: relative;
@@ -207,8 +212,8 @@
 @media (min-width: 769px) {
   .kabar {
     width: 100vw;
-    height: 100vh;
-    padding: 30px 60px 50px 60px;
+    /* height: 100vh; */
+    padding: 30px 60px 0px 60px;
 
     .nav-container {
       display: flex;

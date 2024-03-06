@@ -48,7 +48,7 @@
 /* TABLET  */
 @media (min-width: 426px) {
   .jurnalistik {
-    padding: 30px 40px 50px 40px;
+    padding: 30px 40px 0px 40px;
 
     h5 {
       lineheight: 36px;
@@ -91,7 +91,7 @@
 /* LAPTOP  */
 @media (min-width: 769px) {
     .jurnalistik {
-        padding: 30px 40px 50px 40px;
+        padding: 30px 40px 0px 40px;
     
         h5 {
           lineheight: 36px;
