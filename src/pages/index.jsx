@@ -24,7 +24,7 @@ const index = () => {
       </section>
       <section className="kabar-terbaru" style={{ background: "#FAFAFA" }}>
         <Kabar />
-        {/* <Jurnalistik /> */}
+        <Jurnalistik />
       </section>
       <section className="ekstra overflow-hidden">
         <Ekstra />
@@ -38,12 +38,12 @@ const index = () => {
       >
         <PPDB />
       </section>
-      {/* <section className="social-media">
+      <section className="social-media">
         <Sosmed />
-      </section> */}
-      {/* <section className="footer">
+      </section>
+      <section className="footer">
         <Footer />
-      </section> */}
+      </section>
     </>
   );
 };

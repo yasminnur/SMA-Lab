@@ -29,7 +29,7 @@ const PPDB = () => {
             Yuk masuk SMA <br /> Lab UM Lur 
           </h3>
           <button
-            className="rounded-3 mx-auto"
+            className="rounded-3 mx-auto mx-md-0"
           >
             Daftar Sekarang!
           </button>

@@ -1,0 +1,354 @@
+/* PHONE  */
+@media (max-width: 425px) {
+  .sosmed {
+    padding: 30px 20px 50px 20px;
+
+    .atas {
+      flex-direction: column;
+
+      .col-mode-phone {
+        display: flex;
+      }
+
+      .card-post {
+        /* padding: 5px; */
+        overflow: hidden;
+        min-height: 290px;
+        max-height: 290px;
+
+        .desc-instagram {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          min-height: 150px;
+          max-height: 150px;
+        }
+        .instagram-post {
+          /* object-fit: cover;
+          max-height: 150px;
+          min-height: 150px;
+          min-width: 150px; */
+        }
+
+        p {
+          line-height: 14px;
+          font-size: 11px;
+        }
+      }
+
+      .wa-container {
+        /* padding: 20px; */
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .card-wa {
+          padding: 10px 15px;
+          background: #fafafa;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          p {
+            line-height: 20px;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    .bawah {
+      .youtube-container {
+        .youtube-post {
+          object-fit: cover;
+          max-height: 200px;
+          min-height: 200px;
+        }
+
+        h4 {
+          font-size: 18px;
+        }
+      }
+
+      .facebook-container {
+        .facebook-post {
+          object-fit: cover;
+          max-height: 200px;
+          min-height: 200px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .account {
+      img {
+        width: 13px;
+        height: 13px;
+      }
+      a {
+        font-size: 10px;
+        cursor: pointer;
+      }
+    }
+
+    .desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h4 {
+        font-size: 20px;
+      }
+    }
+
+    .panah {
+      font-size: 15px;
+      cursor: pointer;
+
+      img {
+        width: 15px;
+      }
+    }
+  }
+}
+
+/* TABLET  */
+@media (min-width: 426px) {
+  .sosmed {
+    padding: 30px 30px 50px 30px;
+
+    .atas {
+      /* flex-direction: column; */
+
+      .col-mode-phone {
+        display: flex;
+      }
+
+      .card-post {
+        /* padding: 5px; */
+        overflow: hidden;
+        /* min-height: 290px;
+            max-height: 290px; */
+
+        .desc-instagram {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          /* min-height: 150px;
+              max-height: 150px; */
+        }
+        .instagram-post {
+          object-fit: cover;
+          max-height: 200px;
+          min-height: 200px;
+          min-width: 200px;
+        }
+
+        p {
+          line-height: 14px;
+          font-size: 11px;
+        }
+      }
+
+      .wa-container {
+        /* padding: 20px; */
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .card-wa {
+          padding: 10px 15px;
+          background: #fafafa;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          p {
+            line-height: 20px;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    .bawah {
+      .youtube-container {
+        .youtube-post {
+          object-fit: cover;
+          max-height: 200px;
+          min-height: 200px;
+        }
+
+        h4 {
+          font-size: 18px;
+        }
+      }
+
+      .facebook-container {
+        .facebook-post {
+          object-fit: cover;
+          max-height: 200px;
+          min-height: 200px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .account {
+      img {
+        width: 13px;
+        height: 13px;
+      }
+      a {
+        font-size: 10px;
+        cursor: pointer;
+      }
+    }
+
+    .desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h4 {
+        font-size: 20px;
+      }
+    }
+
+    .panah {
+      font-size: 15px;
+      cursor: pointer;
+
+      img {
+        width: 15px;
+      }
+    }
+  }
+}
+
+/* LAPTOP  */
+@media (min-width: 769px) {
+    .sosmed {
+        padding: 30px 40px 50px 40px;
+    
+        .atas {
+          /* flex-direction: column; */
+    
+          .col-mode-phone {
+            display: flex;
+          }
+    
+          .card-post {
+            /* padding: 5px; */
+            overflow: hidden;
+            /* min-height: 290px;
+                max-height: 290px; */
+    
+            .desc-instagram {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              /* min-height: 150px;
+                  max-height: 150px; */
+            }
+            .instagram-post {
+              object-fit: cover;
+              max-height: 230px;
+              min-height: 230px;
+              min-width: 203px;
+            }
+    
+            p {
+              line-height: 25px;
+              font-size: 15px;
+            }
+          }
+    
+          .wa-container {
+            /* padding: 20px; */
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+    
+            .card-wa {
+              padding: 10px 15px;
+              background: #fafafa;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+    
+              p {
+                line-height: 20px;
+                font-size: 13px;
+              }
+            }
+          }
+        }
+    
+        .bawah {
+          .youtube-container {
+            .youtube-post {
+              object-fit: cover;
+              max-height: 250px;
+              min-height: 250px;
+            }
+    
+            h4 {
+              font-size: 20px;
+            }
+          }
+    
+          .facebook-container {
+            .facebook-post {
+              object-fit: cover;
+              max-height: 250px;
+              min-height: 250px;
+            }
+    
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+    
+        .account {
+          img {
+            width: 13px;
+            height: 13px;
+          }
+          a {
+            font-size: 13px;
+            cursor: pointer;
+          }
+        }
+    
+        .desc {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+    
+          h4 {
+            font-size: 20px;
+          }
+        }
+    
+        .panah {
+          font-size: 15px;
+          cursor: pointer;
+    
+          img {
+            width: 15px;
+          }
+        }
+      }
+}
+
+/* LAPTOP L  */
+@media (min-width: 1025px) {
+}

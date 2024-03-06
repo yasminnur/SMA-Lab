@@ -1,216 +1,96 @@
 import { Row, Col } from "react-bootstrap";
+import "./css/footer.css";
 
 const Footer = () => {
   return (
     <>
       <div className="footer w-100">
-        <div
-          className="footer-atas"
-          style={{
-            padding: "70px 40px 50px 40px",
-            height: "fit-content",
-            background: "#F8F8F8",
-          }}
-        >
-          <Row className="d-flex" style={{ gap: "80px" }}>
-            <Col xs={4} className="">
+        <div className="footer-atas ">
+          <Row className="d-flex">
+            <Col xs={12} md={4} className="kiri p-0">
               <div className="logo d-flex align-items-center gap-3">
-                <img src="./assets/footer/logo.svg" alt="logo" />
-                <img src="./assets/footer/logo-text.svg" alt="logo" />
+                <img className="kiri" src="./assets/footer/logo.svg" alt="logo" />
+                <img className="kanan" src="./assets/footer/logo-text.svg" alt="logo" />
               </div>
-              <p
-                className="m-0 p-0 mt-4"
-                style={{
-                  lineHeight: "140%",
-                  letterSpacing: "-0.24px",
-                  fontSize: "15px",
-                }}
-              >
+              <p className="jalan m-0 p-0 mt-4">
                 Jl. Bromo No.16, Klojen, Kota Malang, Jawa Timur 65119 Indonesia
               </p>
-              <h5
-                className="m-0 p-0 mt-4"
-                style={{
-                  lineHeight: "140%",
-                  letterSpacing: "-0.24px",
-                  fontSize: "15px",
-                  fontWeight: "bold",
-                }}
-              >
-                Informasi Kontak
-              </h5>
-              <p
-                className="m-0 p-0 mt-4"
-                style={{
-                  lineHeight: "18px",
-                  letterSpacing: "-0.24px",
-                  fontSize: "15px",
-                  fontWeight: "normal",
-                }}
-              >
-                T: (0341) 368639
-              </p>
-              <p
-                className="m-0 p-0 mt-1"
-                style={{
-                  lineHeight: "18px",
-                  letterSpacing: "-0.24px",
-                  fontSize: "15px",
-                  fontWeight: "normal",
-                }}
-              >
-                E: smalabum@yahoo.com
-              </p>
+              <h5 className="m-0 p-0 mt-4">Informasi Kontak</h5>
+              <p className="infor m-0 p-0 mt-4">T: (0341) 368639</p>
+              <p className="infor m-0 p-0 mt-1">E: smalabum@yahoo.com</p>
             </Col>
-            <Col className="d-flex p-0">
-              <Col
-                className="kiri atas w-100"
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div className="d-flex">
+            <Col className="tengah d-flex p-0">
+              <Col className="kiri w-100">
+                <div className="atas d-flex">
                   <Col>
-                    <p
-                      className="m-0 p-0"
-                      style={{
-                        lineHeight: "160%",
-                        letterSpacing: "-0.24px",
-                        fontSize: "15px",
-                        fontWeight: "bold",
-                        whiteSpace: "nowrap",
-                      }}
-                    >
-                      Profil Sekolah
-                    </p>
-                    <p
-                      className="m-0 p-0"
-                      style={{
-                        lineHeight: "160%",
-                        letterSpacing: "-0.24px",
-                        fontSize: "15px",
-                        fontWeight: "bold",
-                        whiteSpace: "nowrap",
-                      }}
-                    >
-                      Informasi
-                    </p>
+                    <p className="m-0 p-0">Profil Sekolah</p>
+                    <p className="m-0 p-0">Informasi</p>
                   </Col>
                   <Col>
-                    <p
-                      className="m-0 p-0"
-                      style={{
-                        lineHeight: "160%",
-                        letterSpacing: "-0.24px",
-                        fontSize: "15px",
-                        fontWeight: "bold",
-                        whiteSpace: "nowrap",
-                      }}
-                    >
-                      PPDB 2024
-                    </p>
-                    <p
-                      className="m-0 p-0"
-                      style={{
-                        lineHeight: "160%",
-                        letterSpacing: "-0.24px",
-                        fontSize: "15px",
-                        fontWeight: "bold",
-                        whiteSpace: "nowrap",
-                      }}
-                    >
-                      Link Terkait
-                    </p>
+                    <p className="m-0 p-0">PPDB 2024</p>
+                    <p className="m-0 p-0">Link Terkait</p>
                   </Col>
                 </div>
-                <div className="">
+                <div className="bawah mt-5 mt-md-0 text-center text-md-start">
                   <p>OFFICIAL SOCIAL MEDIA</p>
-                  <div className="d-flex gap-3">
-                    <div
-                      className="p-2 m-0 rounded-circle d-flex"
-                      style={{
-                        border: "1px solid black",
-                        width: "fit-content",
-                        height: "fit-content",
-                      }}
-                    >
+                  <div className="d-flex gap-3 justify-content-center justify-content-md-start">
+                    <a href="https://www.facebook.com/smalabum?mibextid=ZbWKwL"
+                    target="blank">
+                    <div className="sosmed-akun mx-auto p-2 m-md-0 rounded-circle d-flex">
                       <img
                         className="m-0 p-0"
-                        style={{ minWidth: "15px", minHeight: "15px" }}
                         src="./assets/footer/facebook.svg"
                         alt=""
                       />
-                    </div>
-                    <div
-                      className="p-2 m-0 rounded-circle d-flex"
-                      style={{
-                        border: "1px solid black",
-                        width: "fit-content",
-                        height: "fit-content",
-                      }}
-                    >
+                      </div>
+                    </a>
+                    <a href="https://www.instagram.com/smalabum/"
+                      target="blank">
+                    <div className="sosmed-akun mx-auto p-2 m-md-0 rounded-circle d-flex">
                       <img
                         className="m-0 p-0"
-                        style={{ minWidth: "15px", minHeight: "15px" }}
                         src="./assets/footer/instagram.svg"
                         alt=""
                       />
-                    </div>
-                    <div
-                      className="p-2 m-0 rounded-circle d-flex"
-                      style={{
-                        border: "1px solid black",
-                        width: "fit-content",
-                        height: "fit-content",
-                      }}
-                    >
+                      </div>
+                      </a>
+                    <a href="">
+                    <div className="sosmed-akun mx-auto p-2 m-md-0 rounded-circle d-flex">
                       <img
                         className="m-0 p-0"
-                        style={{ minWidth: "15px", minHeight: "15px" }}
                         alt=""
                         src="./assets/footer/x.svg"
                       />
-                    </div>
-                    <div
-                      className="p-2 m-0 rounded-circle d-flex"
-                      style={{
-                        border: "1px solid black",
-                        width: "fit-content",
-                        height: "fit-content",
-                      }}
-                    >
+                      </div>
+                      </a>
+                    <a href="https://www.youtube.com/@smalabum7934" target="blank">
+                    <div className="sosmed-akun mx-auto p-2 m-md-0 rounded-circle d-flex">
                       <img
                         className="m-0 p-0"
-                        style={{ minWidth: "15px", minHeight: "15px" }}
                         alt=""
                         src="./assets/footer/youtube.svg"
                       />
-                    </div>
+                      </div>
+                      </a>
                   </div>
                 </div>
               </Col>
 
-              <Col className="kanan w-100 p-0 m-0">
+              <Col className="kanan p-0">
+                <a href="https://youtu.be/AsnN3t7JPHU?si=Q1pYgUwhXAv0xLWY" target="blank">
                 <img
                   className="rounded-4"
                   src="./assets/footer/thumbnail.svg"
-                  style={{ maxWidth: "500px", objectFit: "cover" }}
                   alt=""
-                />
+                  />
+                  </a>
               </Col>
             </Col>
           </Row>
         </div>
-        <div
-          className="footer-bawah w-100 p-4 bg-dark"
-          style={{ height: "fit-content" }}
-        >
-          <p
-            className="text-center text-light m-0"
-            style={{ color: "#808080", fontSize: "13px" }}
-          >
+
+        <div className="footer-bawah w-100 p-4 bg-dark">
+          <p className="text-center text-light m-0">
             Copyright © 2024 | SMA Laboratorium UM
           </p>
         </div>

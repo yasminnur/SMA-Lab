@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className="app w-100">
+      <div className="app w-100vw">
       <Navbar />
         <Index />
         </div>
