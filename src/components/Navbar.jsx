@@ -5,7 +5,6 @@ const Navbar = () => {
   const [menuText, setMenuText] = useState("Menu");
   const [isActive, setIsActive] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-  const [profilMenu, setProfilMenu] = useState(false);
   const [logoSrc, setLogoSrc] = useState("./assets/navbar/logoColor.svg");
   const [navbarStyle, setNavbarStyle] = useState({
     backgroundColor: "rgba(0, 0, 0, 0.15)",
@@ -13,8 +12,20 @@ const Navbar = () => {
     // width: '100%'
   });
 
-  const profilClick = () => {
-    setProfilMenu(!profilMenu);
+  const [activeMenu, setActiveMenu] = useState({
+    profil: false,
+    informasi: false,
+    organisasi: false,
+    galeri: false,
+    ekstrakurikuler: false,
+    inovasi: false
+  });
+
+  const handleClickList = (menu) => {
+    setActiveMenu({
+      ...activeMenu,
+      [menu]: !activeMenu[menu]
+    });
   };
 
   const handleMenuClick = () => {
@@ -103,16 +114,16 @@ const Navbar = () => {
 
         {showMenu && (
           <div className="navbarActive">
-            <ul>
-              <li onClick={profilClick}>Profil Sekolah</li>
-              <li>Informasi</li>
-              <li>Organisasi</li>
-              <li>Galeri</li>
-              <li>Ekstrakurikuller</li>
-              <li>Inovasi Menagajar</li>
+            <ul className="mainMenu">
+                 <li onClick={() => handleClickList('profil')} className={activeMenu.profil ? 'listActive' : 'listNotActive'}>Profil Sekolah</li>
+            <li onClick={() => handleClickList('informasi')} className={activeMenu.informasi ? 'listActive' : 'listNotActive'}>Informasi</li>
+            <li onClick={() => handleClickList('organisasi')} className={activeMenu.organisasi ? 'listActive' : 'listNotActive'}>Organisasi</li>
+              <li onClick={() => handleClickList('galeri')} className={activeMenu.galeri ? 'listActive' : 'listNotActive'}>Galeri</li>
+              <li onClick={() => handleClickList('ekstrakurikuler')} className={activeMenu.ekstrakurikuler ? 'listActive' : 'listNotActive'}>Ekstrakurikuler</li>
+              <li onClick={() => handleClickList('inovasi')} className={activeMenu.inovasi ? 'listActive' : 'listNotActive'}>Inovasi Menagajar</li>
             </ul>
 
-            {profilMenu && (
+            {activeMenu.profil && (
               <div className="profilMenu">
                 <ul>
                   <li>
