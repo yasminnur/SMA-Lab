@@ -23,7 +23,7 @@ const Carousel = () => {
 
   return (
     <>
-      <div className="carousel">
+      <div className="carouselPrestasi d-flex w-100 justify-content-between">
         <div className="slider-wrapper">
           <div className="image-list">
             <Content className="image-item" />
@@ -32,6 +32,7 @@ const Carousel = () => {
             <Content className="image-item" />
           </div>
         </div>
+
         <div className="kanan">
         <div className="buttonSet">
           <button

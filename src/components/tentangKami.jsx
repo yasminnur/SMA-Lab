@@ -1,7 +1,21 @@
 import "./css/tentang.css";
 import { Row, Col } from "react-bootstrap";
+import { useEffect } from 'react';
 
 const tentangKami = () => {
+  useEffect(() => {
+    const lastChecked = localStorage.getItem('lastChecked');
+    if (lastChecked) {
+      document.getElementById(lastChecked).checked = true;
+    } else {
+      document.getElementById('c1').checked = true; // Set default to c1
+    }
+  }, []);
+
+  const handleChange = (id) => {
+    localStorage.setItem('lastChecked', id);
+  };
+
   return (
     <>
       <div className="tentang">
@@ -23,8 +37,44 @@ const tentangKami = () => {
             <p className="">
               Visi kami menjadi lembaga pendidikan pencetak lulusan unggul yang;
             </p>
-            <Row className="p-0 m-0 w-100">
-              <div class="col col-12 col-md-auto">
+
+            <div className="wrapper-visi">
+              <div className="container-visi">
+                <input type="radio" name="slide" id="c1" onChange={() => handleChange('c1')} checked />
+                <label for="c1" className="card-visi position-relative">
+                  <div class="row">
+                    <div className="overlay">
+                    <h1 className="fw-semibold">
+                      Beriman & <br /> Bertaqwa
+                    </h1>
+                    </div>
+                  </div>
+                </label>
+                <input type="radio" name="slide" id="c2" checked />
+                <label for="c2" className="card-visi position-relative">
+                <div class="row">
+                    <div className="overlay">
+                    <h1 className="fw-semibold">
+                      Berakhlak <br /> Mulia
+                    </h1>
+                    </div>
+                  </div>
+                </label>
+                <input type="radio" name="slide" id="c3" checked />
+                <label for="c3" className="card-visi position-relative">
+                <div class="row">
+                    <div className="overlay">
+                    <h1 className="fw-semibold">
+                      Berprestasi
+                    </h1>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            {/* <Row className="w-100 mx-auto">
+              <div class="card-visi col col-12 col-md-5 flex-fill">
                 <div className="overlay">
                   <h1 className="">Beriman & Bertaqwa</h1>
                 </div>
@@ -33,20 +83,22 @@ const tentangKami = () => {
                   src="./assets/tentang/beriman.svg"
                   alt=""
                 />
-              </div>
-              <div class="col col-12 col-md-3">
+                </div>
+
+              <div class="card-visi col col-12 col-md-3 col-lg-auto flex-fill ">
                 <div className="overlay">
                   <h1 className="">Berakhlak Mulia</h1>
                 </div>
                 <img className="w-100" src="./assets/tentang/akhlak.svg" alt="" />
               </div>
-              <div class="col col-12 col-md-3">
+
+              <div class="card-visi col col-12 col-md-3 col-lg-auto flex-fill">
                 <div className="overlay">
                   <h1 className="">Berprestasi</h1>
                 </div>
                 <img className="w-100" src="./assets/tentang/prestasi.svg" alt="" />
-              </div>
-            </Row>
+                </div>
+            </Row> */}
           </div>
         </div>
 

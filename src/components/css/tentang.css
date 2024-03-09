@@ -14,7 +14,7 @@
     height: 1200px;
     .atas {
       padding: 30px 40px 50px 40px;
-  
+
       .about {
         padding: 0;
         flex-direction: column;
@@ -26,7 +26,7 @@
           letter-spacing: -0.24px;
           color: black;
         }
-  
+
         .kanan {
           font-size: 18px;
           color: black;
@@ -34,14 +34,14 @@
           letter-spacing: -0.24px;
         }
       }
-  
+
       .visi {
         .row {
           margin: 0;
           padding: 0;
           gap: 15px;
           flex-direction: column;
-  
+
           .overlay {
             position: absolute;
             top: 0;
@@ -56,7 +56,7 @@
               rgba(0, 0, 0, 0)
             );
             border-radius: 10px;
-  
+
             h1 {
               display: flex;
               position: absolute;
@@ -71,7 +71,7 @@
             }
           }
         }
-  
+
         p {
           width: 100%;
           font-size: 15px;
@@ -79,14 +79,14 @@
           letter-spacing: -0.24px;
           margin-bottom: 20px;
         }
-  
+
         .col {
           position: relative;
           height: 200px;
           max-height: 200px;
           padding: 0;
           margin: 0;
-  
+
           img {
             padding: 0;
             margin: 0;
@@ -99,19 +99,19 @@
             background-size: cover;
             background-position: center;
           }
-  
+
           &.fotoBesar {
             /* width: 100px; */
           }
         }
       }
     }
-  
+
     .bawah {
       p {
         padding-left: 40px;
       }
-  
+
       .logos {
         white-space: nowrap;
         overflow: hidden;
@@ -119,18 +119,18 @@
         background: white;
         display: flex;
         margin: 0;
-  
+
         &:hover .logos-slide {
           animation-play-state: paused;
         }
-  
+
         .logos-slide {
-          animation: 7s  scroll infinite linear;
+          animation: 7s scroll infinite linear;
           display: flex;
           gap: 25px;
           width: fit-content;
           margin: 0 25px 0 0;
-  
+
           img {
             height: 60px;
           }
@@ -147,7 +147,7 @@
     height: 1200px;
     .atas {
       padding: 30px 40px 50px 40px;
-  
+
       .about {
         margin-bottom: 30px;
         .kiri {
@@ -156,7 +156,7 @@
           letter-spacing: -0.24px;
           color: black;
         }
-  
+
         .kanan {
           font-size: 24px;
           color: black;
@@ -164,14 +164,14 @@
           letter-spacing: -0.24px;
         }
       }
-  
+
       .visi {
         margin-top: 70px;
         .row {
           margin: 0;
           padding: 0;
           gap: 9px;
-  
+
           .overlay {
             position: absolute;
             top: 0;
@@ -186,7 +186,7 @@
               rgba(0, 0, 0, 0)
             );
             border-radius: 10px;
-  
+
             h1 {
               display: flex;
               position: absolute;
@@ -201,21 +201,21 @@
             }
           }
         }
-  
+
         p {
           font-size: 20px;
           line-height: 120%;
           letter-spacing: -0.24px;
           margin-bottom: 20px;
         }
-  
+
         .col {
           position: relative;
           height: 350px;
           max-height: 350px;
           padding: 0;
           margin: 0;
-  
+
           img {
             padding: 0;
             margin: 0;
@@ -227,38 +227,38 @@
             background-size: cover;
             background-position: center;
           }
-  
+
           &.fotoBesar {
             width: 100px;
           }
         }
       }
     }
-  
+
     .bawah {
       p {
         padding-left: 40px;
       }
-  
+
       .logos {
         white-space: nowrap;
         overflow: hidden;
         padding: 10px 0;
         background: white;
         display: flex;
-        margin: 0 ;
-  
+        margin: 0;
+
         &:hover .logos-slide {
           animation-play-state: paused;
         }
-  
+
         .logos-slide {
-          animation: 7s  scroll infinite linear;
+          animation: 7s scroll infinite linear;
           display: flex;
           gap: 25px;
           width: fit-content;
           margin: 0 25px 0 0;
-  
+
           img {
             height: 80px;
           }
@@ -275,7 +275,7 @@
     height: 1200px;
     .atas {
       padding: 30px 40px 50px 40px;
-  
+
       .about {
         margin-bottom: 30px;
         .kiri {
@@ -284,7 +284,7 @@
           letter-spacing: -0.24px;
           color: black;
         }
-  
+
         .kanan {
           font-size: 24px;
           color: black;
@@ -292,14 +292,27 @@
           letter-spacing: -0.24px;
         }
       }
-  
+
       .visi {
         margin-top: 70px;
         .row {
-          margin: 0;
-          padding: 0;
+          /* margin: 0; */
+          /* padding: 0; */
           gap: 30px;
-  
+
+          input {
+            display: none;
+          }
+
+          input:checked + label {
+            width: 500px;
+          }
+
+          .card-visi {
+            cursor: pointer;
+            transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+          }
+
           .overlay {
             position: absolute;
             top: 0;
@@ -314,7 +327,7 @@
               rgba(0, 0, 0, 0)
             );
             border-radius: 10px;
-  
+
             h1 {
               display: flex;
               position: absolute;
@@ -329,21 +342,21 @@
             }
           }
         }
-  
+
         p {
           font-size: 20px;
           line-height: 120%;
           letter-spacing: -0.24px;
           margin-bottom: 20px;
         }
-  
+
         .col {
           position: relative;
           height: 350px;
           max-height: 350px;
           padding: 0;
           margin: 0;
-  
+
           img {
             padding: 0;
             margin: 0;
@@ -355,19 +368,19 @@
             background-size: cover;
             background-position: center;
           }
-  
+
           &.fotoBesar {
             width: 100px;
           }
         }
       }
     }
-  
+
     .bawah {
       p {
         padding-left: 40px;
       }
-  
+
       .logos {
         white-space: nowrap;
         overflow: hidden;
@@ -375,18 +388,18 @@
         background: white;
         display: flex;
         margin: 0;
-  
+
         &:hover .logos-slide {
           animation-play-state: paused;
         }
-  
+
         .logos-slide {
-          animation: 7s  scroll infinite linear;
+          animation: 7s scroll infinite linear;
           display: flex;
           gap: 25px;
           width: fit-content;
           margin: 0 25px 0 0;
-  
+
           img {
             height: 80px;
           }
@@ -396,3 +409,105 @@
   }
 }
 
+.wrapper-visi {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    );
+    border-radius: 10px;
+
+    h1 {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      color: white;
+      font-size: 30px;
+      padding: 30px 20px;
+      margin: auto;
+      text-align: start;
+      line-height: 140%;
+      letter-spacing: -0.24px;
+    }
+  }
+}
+
+.container-visi {
+  height: 500px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.card-visi {
+  width: 250px;
+  border-radius: 2rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+}
+
+.card-visi .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 10px;
+}
+
+.card-visi .row h4{
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  transition: all 0.3s ease;
+}
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 400px;
+}
+
+input:checked + label h4 {
+ font-size: 30px;
+}
+
+.card-visi[for="c1"] {
+  background-image: url("/assets/tentang/beriman.svg");
+  background-repeat: no-repeat;
+  backgroud-size: cover;
+  background-position: center;
+}
+.card-visi[for="c2"] {
+  background-image: url("/assets/tentang/akhlak.svg");
+  background-repeat: no-repeat;
+  backgroud-size: cover;
+  background-position: center;
+}
+.card-visi[for="c3"] {
+  background-image: url("/assets/tentang/prestasi.svg");
+  background-repeat: no-repeat;
+  backgroud-size: cover;
+  background-position: center;
+}

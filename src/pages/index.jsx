@@ -13,7 +13,7 @@ import "../index.css";
 const index = () => {
   return (
     <>
-      <section className=" ">
+      <section className="heroSection">
         <Hero />
       </section>
       <section className="tentang-kami">

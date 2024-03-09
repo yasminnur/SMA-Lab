@@ -1,6 +1,6 @@
 /* PHONE  */
 @media (max-width: 425px) {
-  .carousel {
+  .carouselPrestasi {
     padding: 0 20px;
     margin: 0;
     width: 100%;
@@ -112,7 +112,7 @@
 
 /* TABLET  */
 @media (min-width: 426px) {
-  .carousel {
+  .carouselPrestasi {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -224,13 +224,14 @@
 
 /* LAPTOP  */
 @media (min-width: 769px) {
-  .carousel {
+  .carouselPrestasi {
     padding: 0;
     margin: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     height: fit-content;
+
+  
   
     .slider-wrapper {
       position: relative;

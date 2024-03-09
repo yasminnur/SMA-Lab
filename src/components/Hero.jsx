@@ -1,36 +1,61 @@
 import "./css/hero.css";
 // import React from "react";
-import Carousel from "./carousel"
+import CarouselCard from "./carousel";
+import { Carousel } from "react-bootstrap";
 
 const Hero = () => {
   return (
     <>
-      <div
-        className="hero w-100vw"
-        style={{
-          backgroundImage:
-            "linear-gradient(to top right, rgba(0,0,0,0.5), rgba(0,0,0,0)), url(https://images.unsplash.com/photo-1574958269340-fa927503f3dd?q=80&w=1948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
-          width: "100vw",
-          height: "100vh",
-          // height: "fit-content",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          overflow: "hidden",
-        }}
-      >
-        <div className="container">
-          <h1 className="fw-bold text-light ">
+      <div className="hero position-relative bg-danger">
+        <div className="container position-absolute z-2 bottom-0 pb-4">
+          {/* <h1 className="fw-bold text-light">
             Pendidikan Bermutu SMA Laboratorium UM Profesional
-          </h1>
+          </h1> */}
 
-          <div className="carouselContainer">
-          <Carousel />
+          <div className="carouselContainer p-0 m-0">
+            <CarouselCard />
           </div>
         </div>
+
+        <Carousel fade className="position-relative h-100">
+          <Carousel.Item className="h-100">
+            <div className="overlay position-absolute top-0 left-0 w-100 h-100"></div>
+            <img
+              src="./assets/hero/bg-1.svg"
+              alt=""
+              className="w-100 h-100"
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </Carousel.Item>
+          <Carousel.Item className="h-100">
+            <div className="overlay position-absolute top-0 left-0 w-100 h-100"></div>
+            <img
+              src="./assets/hero/bg-2.svg"
+              alt=""
+              className="w-100 h-100"
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </Carousel.Item>
+          <Carousel.Item className="h-100">
+            <div className="overlay position-absolute top-0 left-0 w-100 h-100"></div>
+            <img
+              src="./assets/hero/bg-3.svg"
+              alt=""
+              className="w-100 h-100"
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </Carousel.Item>
+        </Carousel>
       </div>
     </>
   );
 };
+
 
 export default Hero;

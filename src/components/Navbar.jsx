@@ -18,14 +18,16 @@ const Navbar = () => {
     organisasi: false,
     galeri: false,
     ekstrakurikuler: false,
-    inovasi: false
+    inovasi: false,
   });
 
   const handleClickList = (menu) => {
-    setActiveMenu({
-      ...activeMenu,
-      [menu]: !activeMenu[menu]
-    });
+    
+    const updatedActiveMenu = Object.keys(activeMenu).reduce((acc, key) => {
+      acc[key] = key === menu ? !activeMenu[key] : false;
+      return acc;
+    }, {});
+    setActiveMenu(updatedActiveMenu);
   };
 
   const handleMenuClick = () => {
@@ -40,14 +42,12 @@ const Navbar = () => {
       setNavbarStyle({
         backgroundColor: "rgba(0, 0, 0, 0.15)",
         backdropFilter: "blur(25px)",
-        // width: '100%'
       });
     } else {
       setLogoSrc("./assets/navbar/logoWhite.svg");
       setNavbarStyle({
         backgroundColor: "rgba(0, 0, 0, 0.6)",
         backdropFilter: "blur(25px)",
-        // width: '100%'
       });
     }
 
@@ -60,14 +60,17 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar w-100" style={navbarStyle}>
+      <div className="navbar w-100 z-3" style={navbarStyle}>
         <div className="navbarContent w-100 d-flex align-items-center justify-content-between">
           <div className="d-flex me-auto gap-3">
             <img className="logoSMA" src={logoSrc} alt="" />
-            <img className="text-logo" src="./assets/navbar/logoText.svg" alt="" />
+            <img
+              className="text-logo"
+              src="./assets/navbar/logoText.svg"
+              alt=""
+            />
           </div>
           <div className="buttonMenu d-flex">
-            <img className="search" src="./assets/navbar/search.svg" alt="" />
             <button className="PPDB fw-bold">PPDB</button>
             <button
               className={`Menu ${isActive ? "bg-light text-dark" : ""}`}
@@ -115,12 +118,48 @@ const Navbar = () => {
         {showMenu && (
           <div className="navbarActive">
             <ul className="mainMenu">
-                 <li onClick={() => handleClickList('profil')} className={activeMenu.profil ? 'listActive' : 'listNotActive'}>Profil Sekolah</li>
-            <li onClick={() => handleClickList('informasi')} className={activeMenu.informasi ? 'listActive' : 'listNotActive'}>Informasi</li>
-            <li onClick={() => handleClickList('organisasi')} className={activeMenu.organisasi ? 'listActive' : 'listNotActive'}>Organisasi</li>
-              <li onClick={() => handleClickList('galeri')} className={activeMenu.galeri ? 'listActive' : 'listNotActive'}>Galeri</li>
-              <li onClick={() => handleClickList('ekstrakurikuler')} className={activeMenu.ekstrakurikuler ? 'listActive' : 'listNotActive'}>Ekstrakurikuler</li>
-              <li onClick={() => handleClickList('inovasi')} className={activeMenu.inovasi ? 'listActive' : 'listNotActive'}>Inovasi Menagajar</li>
+              <li
+                onClick={() => handleClickList("profil")}
+                className={activeMenu.profil ? "listActive" : "listNotActive"}
+              >
+                Profil Sekolah
+              </li>
+              <li
+                onClick={() => handleClickList("informasi")}
+                className={
+                  activeMenu.informasi ? "listActive" : "listNotActive"
+                }
+              >
+                Informasi
+              </li>
+              <li
+                onClick={() => handleClickList("organisasi")}
+                className={
+                  activeMenu.organisasi ? "listActive" : "listNotActive"
+                }
+              >
+                Organisasi
+              </li>
+              <li
+                onClick={() => handleClickList("galeri")}
+                className={activeMenu.galeri ? "listActive" : "listNotActive"}
+              >
+                Galeri
+              </li>
+              <li
+                onClick={() => handleClickList("ekstrakurikuler")}
+                className={
+                  activeMenu.ekstrakurikuler ? "listActive" : "listNotActive"
+                }
+              >
+                Ekstrakurikuler
+              </li>
+              <li
+                onClick={() => handleClickList("inovasi")}
+                className={activeMenu.inovasi ? "listActive" : "listNotActive"}
+              >
+                Inovasi Menagajar
+              </li>
             </ul>
 
             {activeMenu.profil && (
@@ -136,19 +175,69 @@ const Navbar = () => {
                   </li>
                   <li>
                     Struktur Organigram
-                     <i class="bi bi-chevron-right"></i>
+                    <i class="bi bi-chevron-right"></i>
                   </li>
                   <li>
                     Guru & Karyawan
-                     <i class="bi bi-chevron-right"></i>
+                    <i class="bi bi-chevron-right"></i>
                   </li>
                   <li>
                     Statistika
-                     <i class="bi bi-chevron-right"></i>
+                    <i class="bi bi-chevron-right"></i>
                   </li>
                   <li>
                     Logo
-                     <i class="bi bi-chevron-right"></i>
+                    <i class="bi bi-chevron-right"></i>
+                  </li>
+                </ul>
+              </div>
+            )}
+
+            {activeMenu.informasi && (
+              <div className="profilMenu">
+                <ul>
+                  <li>
+                    Kabar SMA Lab UM
+                    <i class="bi bi-chevron-right"></i>
+                  </li>
+                  <li>
+                    Prestasi
+                    <i class="bi bi-chevron-right"></i>
+                  </li>
+                  <li>
+                    Struktur Organigram
+                    <i class="bi bi-chevron-right"></i>
+                  </li>
+                  <li>
+                    Jurnalistik Siswa
+                    <i class="bi bi-chevron-right"></i>
+                  </li>
+                  <li>
+                    Agenda
+                    <i class="bi bi-chevron-right"></i>
+                  </li>
+                  <li>
+                    Pengumuman
+                    <i class="bi bi-chevron-right"></i>
+                  </li>
+                </ul>
+              </div>
+            )}
+
+            {activeMenu.organisasi && (
+              <div className="profilMenu">
+                <ul>
+                  <li>
+                    OSIS
+                    <i class="bi bi-chevron-right"></i>
+                  </li>
+                  <li>
+                    Pramuka
+                    <i class="bi bi-chevron-right"></i>
+                  </li>
+                  <li>
+                    PMR
+                    <i class="bi bi-chevron-right"></i>
                   </li>
                 </ul>
               </div>
