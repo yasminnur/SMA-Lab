@@ -29,13 +29,10 @@ const index = () => {
       <section className="ekstra overflow-hidden">
         <Ekstra />
       </section>
-      <section className="komen mb-5">
+      <section className="komen mb-5" id="testi">
         <Komen />
       </section>
-      <section
-        className="ppdb mb-5"
-        // style={{ padding: "30px 40px 50px 40px", height: "fit-content" }}
-      >
+      <section className="ppdb mb-5">
         <PPDB />
       </section>
       <section className="social-media">

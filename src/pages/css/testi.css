@@ -1,0 +1,31 @@
+.testiPage {
+    width: 100vw;
+/* height: 100vh; */
+    .header {
+        max-height: 240px;
+        height: 240px;
+
+        img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .overlay {
+            background: linear-gradient(
+              to top right,
+              rgba(0, 0, 0, 0.65),
+              rgba(75, 1, 82, 0.4)
+            );
+          }
+
+          h1 {
+            font-size: 130px;
+            line-height: 120%;
+            letter-spacing: -0.24px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+    }
+}

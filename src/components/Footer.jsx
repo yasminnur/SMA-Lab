@@ -1,4 +1,5 @@
 import { Row, Col } from "react-bootstrap";
+import Copyright from "./Copyright";
 import "./css/footer.css";
 
 const Footer = () => {
@@ -89,11 +90,12 @@ const Footer = () => {
           </Row>
         </div>
 
-        <div className="footer-bawah w-100 p-4 bg-dark">
+        <Copyright />
+        {/* <div className="footer-bawah w-100 p-4 bg-dark">
           <p className="text-center text-light m-0">
             Copyright © 2024 | SMA Laboratorium UM
           </p>
-        </div>
+        </div> */}
       </div>
     </>
   );

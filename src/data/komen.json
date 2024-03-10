@@ -1,20 +1,42 @@
 [
     {
-        "comment": "Menjadi pribadi dan generasi penerus yang cerdas, berprestasi dan berwawasan luas, tidak cukup tanpa pondasi moral dan akhlak yg baik. Dengan memilih SMA Lab UM, akan menjadi pribadi yang tidak hanya mengem... ",
+        "comment": "Kami memilih menyekolahkan anak kami Shabrina Witjaksono di SMA Laboratorium UM Malang setelah mendapat referensi dari kakak kami yang anaknya juga alumni sekolah ini. Selama anak kami menempuh pendidikan di sekolah ini, yang kami rasakan adalah semakin meningkatnya  kepercayaan diri, kemandirian dan tanggung jawabnya.  Jajaran guru dan staf SMA Laboratorium memberikan perhatian secara intensif dan komunikatif kepada siswa dan wali siswa.  Selain itu, sarana dan prasarana sekolah juga tersedia sesuai kebutuhan dan membuat suasana pembelajaran semakin nyaman.  Besar harapan kami, SMA Laboratorium UM Malang semakin berkembang dan sukses mendidik anak-anak yang berakhlak mulia, berkarakter dan bertanggung jawab pada masa depannya dan masa depan negara ini.",
         "sender" :
             {
                 "photo": "./assets/komen/person1.svg",
-                "name": "Supriyanto S.Kom",
-                "profesi": "Teacher"
+                "name": "Tanto Witjaksono",
+                "wali": "Shabrina Witjaksono",
+                "kelas": "XII MIPA-3"
             }
     },
     {
-        "comment": "Senang rasanya bisa berbagi ilmu dan mengembangkan potensi di civitas ini, susah senang duka lara semua dilewati setiap masa, banyak hal yang sudah dilalui oleh sekolah ini untuk menjadi sebesar ini, bergabung tahun...",
+        "comment": "Dengan pilihan putri saya ke SMA Lab membuat saya semakin yakin bahwa ananda memilih sekolah yang tepat yang selama ini saya idam2 kan ternyata ananda sehati dalam pilihan ini 😊 jujur dengan pembelajaran di SMA Lab benar2 membuat putri saya lebih terarah karena pendidik benar2 bagus dan saya yakin serta optimis bahwa putri saya akan lebih baik lagi😊🙏 alhamdulilah ananda di tahun ini masuk eligibel bersyukur dengan pilihannya tersebut untuk menjadi bagian dari SMA Lab, semoga ananda bisa menjadi murid kebanggaan dan bisa membawa nama baik sekolah di manapun berada",
         "sender" :
             {
                 "photo": "./assets/komen/person2.svg",
-                "name": "Fasril Vaud Hi, S.Pd.",
-                "profesi": "Teacher"
+                "name": "Anonim",
+                "wali": "Titania Aurelia Arifin",
+                "kelas": "XII IPS-2"
+            }
+    },
+    {
+        "comment": "Sebagai orang tua, menurut saya adalah SANGAT PENTING UNTUK MEMILIH SEKOLAH YANG TEPAT BUAT ANAK. Oleh sebab itu saya menjatuhkan pilihan untuk anak saya di SEKOLAH SMA LABORATORIUM UM MALANG Mengapa demikian, sebab dengan adanya Guru - guru yang sangat perhatian dan profesional maka siswa dapat termotivasi untuk bersemangat dalam belajar dan meningkatkan pengetahuannya serta talenta yang dimilikinya. Begitu juga dengan adanya guru-guru yang sangat peduli dengan siswa maka siswa sangat termotivasi untuk selalu meningkatkan dan mengembangkan potensi dirinya.   Mari Maju dan sukses selalu siswa SMA LABORATORIUM UM MALANG",
+        "sender" :
+            {
+                "photo": "./assets/komen/person3.svg",
+                "name": "Sri Rahayu Ratnaningsih",
+                "wali": "Kadek Gea Fiantika Maharani",
+                "kelas": "XI IPS-4"
+            }
+    },
+    {
+        "comment": "Kami merasa tidak salah dalam memilih SMA Laboratorium UM sebagai Sekolah untuk putri kami melanjutkan pendidikan.  Selain Proses belajar mengajar yang sudah dijuruskan sesuai minat, Fasilitas dari segi apapun didapatkan secara lengkap. Dengan staff ,Guru Pendidik yang menurut saya sangat disiplin dan profesional. Secara keseluruhan SMA Laboratorium UM sangat berkompeten, berkomitmen untuk menjadikan pribadi siswa lebih disiplin, mandiri dan tentunya berkarakter serta lebih siap memasuki ke jenjang pendidikan yang lebih tinggi. Selain itu kegiatan ekstrakurikuler maupun kegiatan pendidikan pendukung secara keseluruhan sangat bermanfaat, dan juga memberikan pengetahuan dan pengalaman yang belum pernah dimiliki.  Sukses dan jaya selalu SMA Laboratorium UM Malang",
+        "sender" :
+            {
+                "photo": "./assets/komen/person4.svg",
+                "name": "Rahma Yuliana",
+                "wali": "Ananda Beauty Rachmadani Soebagio",
+                "kelas": "X IPS-3"
             }
     }
 ]
