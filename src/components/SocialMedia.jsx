@@ -7,7 +7,7 @@ const SocialMedia = () => {
       <div className="sosmed">
         <h5>Social Media</h5>
         {/* =========== ATAS =============== */}
-        <div className="atas gap-3 mt-4 gap-md-4 p-0 m-0 d-flex w-100">
+        <div className="atas gap-3 mt-4 gap-md-4 p-0 m-0 d-flex w-100 flex-wrap">
           {/* <div className="col col-md-8 col-mode-phone gap-3 gap-md-4"> */}
             <Col className="">
             <div className="card-post w-100">

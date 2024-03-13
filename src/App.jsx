@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Index from "./pages/index"
 import TestiPage from "./pages/testiPage"
 import SambutanPage from "./pages/sambutanPage"
+import BeritaPage from "./pages/beritaPage"
 import TentangPage from "./pages/tentangPage"
 import Testi from "./components/Komen"
 // import Sidebar from "./components/Sidebar"
@@ -22,6 +23,7 @@ function App() {
         <Routes>
         <Route path="/" Component={Index} />
         <Route path="/testiPage" Component={TestiPage} />
+        <Route path="/beritaPage" Component={BeritaPage} />
         {/* <Route path="/sidebar" Component={Sidebar} /> */}
         <Route path="/sambutanPage" Component={SambutanPage} />
         <Route path="/tentangPage" Component={TentangPage} />
