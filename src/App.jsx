@@ -18,8 +18,8 @@ function App() {
         
         
         {/* <Index /> */}
+        <Navbar />
         <Routes>
-        {/* <Navbar /> */}
         <Route path="/" Component={Index} />
         <Route path="/testiPage" Component={TestiPage} />
         {/* <Route path="/sidebar" Component={Sidebar} /> */}
