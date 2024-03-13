@@ -272,12 +272,15 @@
 @media (min-width: 769px) {
   .tentang {
     width: 100vw;
-    height: 1200px;
+    height: fit-content;
+    padding: 80px 0;
+
     .atas {
-      padding: 30px 40px 50px 40px;
+      padding: 0 60px;
 
       .about {
         margin-bottom: 30px;
+
         .kiri {
           font-size: 20px;
           line-height: 120%;
@@ -286,7 +289,7 @@
         }
 
         .kanan {
-          font-size: 24px;
+          font-size: 23px;
           color: black;
           line-height: 140%;
           letter-spacing: -0.24px;
@@ -295,9 +298,13 @@
 
       .visi {
         margin-top: 70px;
+
+        .visikami {
+          font-size: 20px;
+          line-height: 120%;
+          letter-spacing: -0.24px;
+        }
         .row {
-          /* margin: 0; */
-          /* padding: 0; */
           gap: 30px;
 
           input {
@@ -378,7 +385,10 @@
 
     .bawah {
       p {
-        padding-left: 40px;
+        padding: 0 60px;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: -0.24px;
       }
 
       .logos {
@@ -447,15 +457,16 @@
 }
 
 .container-visi {
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: start;
+  /* gap: 10px; */
 }
 
 .card-visi {
-  width: 250px;
-  border-radius: 2rem;
+  width: 300px;
+  border-radius: 10px;
   background-size: cover;
   cursor: pointer;
   overflow: hidden;
@@ -472,7 +483,7 @@
   margin-left: 10px;
 }
 
-.card-visi .row h4{
+.card-visi .row h4 {
   color: white;
   border-radius: 50%;
   display: flex;
@@ -490,7 +501,7 @@ input:checked + label {
 }
 
 input:checked + label h4 {
- font-size: 30px;
+  font-size: 30px;
 }
 
 .card-visi[for="c1"] {
@@ -502,7 +513,8 @@ input:checked + label h4 {
 .card-visi[for="c2"] {
   background-image: url("/assets/tentang/akhlak.svg");
   background-repeat: no-repeat;
-  backgroud-size: cover;
+  /* backgroud-size: auto; */
+  background-size: cover;
   background-position: center;
 }
 .card-visi[for="c3"] {

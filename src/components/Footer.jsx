@@ -90,7 +90,7 @@ const Footer = () => {
           </Row>
         </div>
 
-        <Copyright />
+        {/* <Copyright /> */}
         {/* <div className="footer-bawah w-100 p-4 bg-dark">
           <p className="text-center text-light m-0">
             Copyright © 2024 | SMA Laboratorium UM

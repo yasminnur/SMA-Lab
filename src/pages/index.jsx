@@ -13,31 +13,48 @@ import "../index.css";
 const index = () => {
   return (
     <>
-      <section className="heroSection">
+      {/* Hero Section */}
+      <section className="">
         <Hero />
       </section>
-      <section className="tentang-kami">
+
+      {/* Tentang Section */}
+      <section className="">
         <Tentang />
       </section>
-      <section className="agenda">
+
+      {/* Agenda Section */}
+      <section className="">
         <Agenda />
       </section>
+
+      {/* Kabar Section */}
       <section className="kabar-terbaru" style={{ background: "#FAFAFA" }}>
         <Kabar />
-        <Jurnalistik />
+        {/* <Jurnalistik /> */}
       </section>
-      <section className="ekstra overflow-hidden">
+
+      {/* Estra Section */}
+      <section className="">
         <Ekstra />
       </section>
-      <section className="komen mb-5" id="testi">
+
+      {/* Testi Section */}
+      <section className="" id="testi">
         <Komen />
       </section>
-      <section className="ppdb mb-5">
+
+      {/* PPDB Section */}
+      <section className="mb-5">
         <PPDB />
       </section>
+
+      {/* Sosmed Section */}
       <section className="social-media">
         <Sosmed />
       </section>
+
+      {/* Footer Section */}
       <section className="footer">
         <Footer />
       </section>

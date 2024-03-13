@@ -27,8 +27,8 @@ const Komen = () => {
 
   return (
     <>
-      <div className="komen w-100 p-0" id="testi">
-        <div className="nav d-flex justify-content-between align-items-center mb-4 w-100">
+      <div className="komen w-100" id="testi">
+        <div className="nav d-flex justify-content-between align-items-center mb-5 w-100">
           <p className="p-0 m-0">Cerita mereka tentang SMA Lab UM</p>
           <div className="nav-slider gap-3 d-none d-md-flex">
             <div
@@ -80,11 +80,11 @@ const Komen = () => {
                     src={item.sender.photo}
                     alt=""
                   />
-                  <div className="nameContainer">
+                  <div className="nameContainer d-flex flex-column align-items-center">
                     <p className="name w-100 m-0 p-0 fw-semibold">
                       {item.sender.name}
                     </p>
-                    <p className="wali">
+                    <p className="wali m-0">
                       {" "}
                       wali dari{" "}
                       <span className="fw-semibold">

@@ -6,7 +6,7 @@ import { Carousel } from "react-bootstrap";
 const Hero = () => {
   return (
     <>
-      <div className="hero position-relative bg-danger">
+      <div className="hero position-relative">
         <div className="container position-absolute z-2 bottom-0 pb-4">
           {/* <h1 className="fw-bold text-light">
             Pendidikan Bermutu SMA Laboratorium UM Profesional
@@ -17,30 +17,32 @@ const Hero = () => {
           </div>
         </div>
 
-        <Carousel fade className="position-relative h-100">
-          <Carousel.Item className="h-100">
-            <div className="overlay position-absolute top-0 left-0 w-100 h-100"></div>
+        <Carousel fade className="position-relative bg-warning" style={{height: "100vh"}}>
+          <Carousel.Item className="bg-danger" style={{height: "100vh"}}>
+            <div className="overlay position-absolute top-0 left-0 w-100" style={{height: "100vh"}}></div>
             <img
               src="./assets/hero/bg-1.svg"
               alt=""
-              className="w-100 h-100"
+              className="w-100"
               style={{
                 objectFit: "cover",
+                height: "100%"
               }}
             />
           </Carousel.Item>
-          <Carousel.Item className="h-100">
-            <div className="overlay position-absolute top-0 left-0 w-100 h-100"></div>
+          <Carousel.Item className=""  style={{height: "100vh"}}>
+            <div className="overlay position-absolute top-0 left-0 w-100 "></div>
             <img
               src="./assets/hero/bg-2.svg"
               alt=""
-              className="w-100 h-100"
+              className="w-100"
               style={{
                 objectFit: "cover",
+                height: "100%"
               }}
             />
           </Carousel.Item>
-          <Carousel.Item className="h-100">
+          <Carousel.Item className="" style={{height: "100vh"}}>
             <div className="overlay position-absolute top-0 left-0 w-100 h-100"></div>
             <img
               src="./assets/hero/bg-3.svg"
@@ -48,6 +50,7 @@ const Hero = () => {
               className="w-100 h-100"
               style={{
                 objectFit: "cover",
+                height: "100%"
               }}
             />
           </Carousel.Item>

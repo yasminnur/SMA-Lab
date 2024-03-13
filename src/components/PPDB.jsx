@@ -3,16 +3,15 @@ const PPDB = () => {
   return (
     <>
       <div
-        className="ppdb w-100 rounded-4"
-        style={{
+        className="ppdb w-100  "
+      >
+        <div className="containernya position-relative rounded-4" style={{
           height: "fit-content",
           background: "#861FC1",
           
-        }}
-      >
-        <div className="containernya">
+        }}>
         <div className="content d-flex justify-content-md-between">
-          <div className="kiri my-auto w-100 mb-5">
+          <div className="kiri my-auto w-100">
             <p className="text-light p-0 m-0 mb-3 text-center text-md-start"
               // style={{ fontSize: "10px" }}
             >
@@ -34,7 +33,7 @@ const PPDB = () => {
             Daftar Sekarang!
           </button>
                   </div>
-            <img className="mx-auto" src="./assets/ekstra/ppdb.svg" alt=""
+            <img className="mx-auto position-absolute bottom-0" src="./assets/ekstra/ppdb.svg" alt=""
               // style={{ maxWidth: '600px', maxHeight: '250px' }}
             />
           </div>

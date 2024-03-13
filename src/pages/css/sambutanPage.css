@@ -1,0 +1,19 @@
+.sambutanPage {
+    padding: 70px 30px;
+
+    h3 {
+        font-size: 30px;
+        line-height: 160%;
+    }
+    p {
+        font-size: 18px;
+        line-height: 160%;
+    }
+
+    .nextPage {
+        p {
+            font-size: 15px;
+        }
+        
+    }
+}

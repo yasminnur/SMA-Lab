@@ -12,8 +12,8 @@ const ekstra = () => {
   return (
     <>
       <div
-        className="ekstra w-100 h-100 bg-light"
-        style={{ width: "100vw", height: "100vh" }}
+        className="ekstra w-100 h-100"
+        style={{ width: "100vw", height: "100vh", overflow: 'hidden' }}
       >
         <h5
           className="w-100 fw-bold m-0 mb-3 mb-md-4"

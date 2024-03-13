@@ -1,0 +1,33 @@
+.tentangPage {
+  padding: 70px 30px;
+  color: #161616;
+
+  h3 {
+    font-size: 30px;
+    line-height: 160%;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 160%;
+  }
+
+  ul {
+    font-size: 15px;
+    line-height: 160%;
+  }
+
+  .visimisi {
+    margin-top: 60px;
+
+    h5 {
+      font-size: 20px;
+      line-height: 160%;
+    }
+
+    li {
+      font-size: 18px;
+      line-height: 160%;
+    }
+  }
+}

@@ -167,7 +167,7 @@
       }
     }
     .card-kabar-container {
-      height: 350px;
+      /* height: 350px; */
     }
     .card-kabar {
       .image {
@@ -212,8 +212,11 @@
 @media (min-width: 769px) {
   .kabar {
     width: 100vw;
-    /* height: 100vh; */
-    padding: 30px 60px 0px 60px;
+    padding: 80px 60px 80px 60px;
+
+    h5 {
+      font-size: 20px;
+    }
 
     .nav-container {
       display: flex;
@@ -229,13 +232,17 @@
           li {
             margin: 0;
             padding: 0;
+            font-size: 16px;
           }
         }
       }
 
       .lainnya {
+        font-size: 16px;
         align-items: center;
+
         img {
+          width: 20px;
         }
       }
     }
@@ -244,16 +251,24 @@
       .img-container {
         overflow: hidden;
         display: inline-block;
+        border-radius: 10px;
+        height: 350px;
 
         img {
-          background-size: cover;
+          /* background-size: cover; */
+          object-fit: cover;
+          height: 100%;
           transition: all 1.1s;
+          /* background-size: cover; */
+          background-position: center;
         }
+
         &:hover img {
           transform: scale(1.2);
         }
       }
     }
+
     .card-kabar {
       .image {
         position: relative;
@@ -265,11 +280,35 @@
           background-color: rgba(0, 0, 0, 0.6);
           opacity: 0;
           transition: opacity 0.3s ease;
+
+          img {
+            width: 25px;
+            height: 25px;
+          }
         }
+        
         &:hover .overlay {
           opacity: 1;
           transition: opacity 0.3s ease;
         }
+      }
+
+      .desc {
+        .ket {
+          p {
+            font-size: 10px;
+            white-space: nowrap;
+          }
+        }
+        h4 {
+          font-size: 14px;
+        }
+      }
+
+
+      .desc-container {
+        display: flex;
+        align-items: center;
       }
     }
   }

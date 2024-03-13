@@ -25,9 +25,9 @@ const Agenda = () => {
   };
   return (
     <>
-      <div className="agenda" style={{ padding: "30px 40px 50px 40px" }}>
-        <Row className="">
-          <Col className="kiri" xs={12} md={5} >
+      <div className="agenda">
+        <Row className="m-0 p-0">
+          <Col className="kiri m-0" xs={12} md={4} >
             <div className="atas ">
               <p>Agenda SMA Lab UM</p>
               <h3 className="">Berbagai acara sekolah di SMA Lab UM</h3>
@@ -42,19 +42,19 @@ const Agenda = () => {
             </div>
           </Col>
 
-          <Col className="kanan">
+          <Col className="kanan m-0 p-0">
             <div className="slider-desc-wrapper">
               <div className="desc">
                 {jsonData.map((item, index) => (
                   <div
-                    className={`desc-content ${
+                    className={`desc-content mb-3 ${
                       index === activeIndex ? "active" : "visually-hidden"
                     }`}
                     key={index}
                   >
                     <div className="head">
                     <div className={`baris1 ${index === activeIndex ? "active" : ""}`}>
-                        <h5 className="text-capitalize fw-bold">
+                        <h5 className="text-capitalize fw-bold m-0">
                           {item.program}: {""}
                           {item.title}
                         </h5>
@@ -80,20 +80,21 @@ const Agenda = () => {
                         </div>
                       </div> */}
                       <div className="baris2 d-flex gap-2">
-                        <p>{item.date}</p>
+                        <p className="m-0">{item.date}</p>
                         <div className="circle rounded-circle"></div>
-                        <p>{item.time}</p>
+                        <p className="m-0">{item.time}</p>
                       </div>
                     </div>
-                    <div className="d-flex justify-content-end gap-2 align-items-center">
+                    <div className="place d-flex justify-content-end gap-2 align-items-center">
                       <img src="./assets/agenda/location.svg" alt="" />
-                      <p className="p-0 m-0">{item.place}</p>
+                      <p className="place p-0 m-0">{item.place}</p>
                       </div>
                   </div>
                 ))}
               </div>
             </div>
             <div className="slider-image-wrapper p-0 m-0">
+              
               <div className="slider">
                 <div className="overlay w-100 h-100 d-flex align-items-center">
                   <Button className="d-flex rounded-2 text-nowrap mx-auto gap-3 fw-semibold border-0" style={{ padding: '12px 15px',height: 'fit-content', background: '#ECE9EA', color: '#2E2E2E', lineHeight: '140%'}}>

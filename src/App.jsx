@@ -28,6 +28,8 @@ function App() {
           <Route path="#testi" Component={Testi} />
          
         </Routes>
+
+        <Copyright />
         {/* <div>
         <Sidebar>
           <Routes>
