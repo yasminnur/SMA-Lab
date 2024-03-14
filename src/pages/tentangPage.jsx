@@ -1,15 +1,17 @@
 import Sidemenu from "../components/Sidebar";
 import "./css/tentangPage.css";
+import { Link } from 'react-router-dom';
+
 const TentangPage = () => {
   return (
     <>
-      <div className="tentangPage d-flex gap-5">
-        <div className="col-3">
+      <div className="tentangPage d-flex gap-3 gap-md-5">
+        <div className="sidemenu-container">
           <Sidemenu />
         </div>
-        <div className="col container ">
+        <div className="col container">
           <h3 className=" fw-bolder mb-3">Sejarah SMA Lab UM</h3>
-          <img className="mb-4 ms-0 p-0" src="./assets/tentang/sponsor4.svg" alt="" />
+          <img className="mb-4 ms-0 p-0 um-logo" src="./assets/tentang/sponsor4.svg" alt="" />
           <p className="m-0">
             SMA Laboratorium adalah merupakan salah satu sekolah laboratorium
             yang berada dalam naungan Universitas Negeri Malang (d.h. IKIP
@@ -68,10 +70,12 @@ const TentangPage = () => {
                 alt=""
                 style={{ width: "20px", transform: "rotate(180deg)" }}
               />
-              <p className="m-0">Sebelumya</p>
+              <Link className="m-0 text-decoration-none" to="/sambutanPage">Sebelumya</Link>
+              {/* <p className="m-0">Sebelumya</p> */}
             </div>
             <div className="nextPage d-flex align-items-center gap-2">
-              <p className="m-0">Berikutnya</p>
+            <Link className="m-0 text-decoration-none" to="#">Berikutnya</Link>
+              {/* <p className="m-0">Berikutnya</p> */}
               <img
                 src="./assets/kabar/arrow-biru.svg"
                 alt=""

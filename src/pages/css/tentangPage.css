@@ -1,33 +1,171 @@
-.tentangPage {
-  padding: 70px 30px;
-  color: #161616;
+/* PHONE  */
+@media (max-width: 425px) {
+  .tentangPage {
+    padding: 30px 20px;
+    color: #161616;
 
-  h3 {
-    font-size: 30px;
-    line-height: 160%;
+    .sidemenu-container {
+      width: 10%;
+      min-width: 100px;
+    }
+    .container {
+      flex-grow: 1; /* Memberikan fleksibilitas pada bagian konten utama */
+      padding: 0;
+    }
+    .um-logo {
+      width: 100px;
+    }
+
+    h3 {
+      font-size: 30px;
+      line-height: 160%;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 160%;
+    }
+
+    ul {
+      font-size: 15px;
+      line-height: 160%;
+    }
+
+    .visimisi {
+      margin-top: 60px;
+
+      h5 {
+        font-size: 20px;
+        line-height: 160%;
+      }
+
+      li {
+        font-size: 18px;
+        line-height: 160%;
+      }
+    }
+
+    .pageControl {
+      a {
+        color: #161616;
+        font-size: 15px;
+      }
+    }
   }
+}
 
-  p {
-    font-size: 18px;
-    line-height: 160%;
-  }
+/* TABLET  */
+@media (min-width: 426px) {
+  .tentangPage {
+    padding: 70px 30px;
+    color: #161616;
 
-  ul {
-    font-size: 15px;
-    line-height: 160%;
-  }
+    .sidemenu-container {
+      width: 20%;
+    }
 
-  .visimisi {
-    margin-top: 60px;
+    .um-logo {
+      width: 200px;
+    }
 
-    h5 {
+    h3 {
       font-size: 20px;
       line-height: 160%;
     }
 
-    li {
+    p {
+      font-size: 15px;
+      line-height: 160%;
+    }
+
+    ul {
+      font-size: 13px;
+      line-height: 160%;
+    }
+
+    .visimisi {
+      margin-top: 40px;
+
+      h5 {
+        font-size: 18px;
+        line-height: 160%;
+      }
+
+      li {
+        font-size: 15px;
+        line-height: 160%;
+      }
+    }
+
+    .pageControl {
+      a {
+        color: #161616;
+        font-size: 12px;
+      }
+
+      img {
+        width: 18px;
+      }
+    }
+  }
+}
+
+/* LAPTOP  */
+@media (min-width: 769px) {
+  .tentangPage {
+    padding: 70px 30px;
+    color: #161616;
+
+    .sidemenu-container {
+      width: 20%;
+    }
+
+    .um-logo {
+      width: 230px;
+    }
+
+    h3 {
+      font-size: 30px;
+      line-height: 160%;
+    }
+
+    p {
       font-size: 18px;
       line-height: 160%;
     }
+
+    ul {
+      font-size: 15px;
+      line-height: 160%;
+    }
+
+    .visimisi {
+      margin-top: 60px;
+
+      h5 {
+        font-size: 20px;
+        line-height: 160%;
+      }
+
+      li {
+        font-size: 18px;
+        line-height: 160%;
+      }
+    }
+
+    .pageControl {
+      a {
+        color: #161616;
+        font-size: 15px;
+      }
+
+      img {
+        width: 18px;
+      }
+    }
   }
+}
+
+/* LAPTOP L  */
+@media (min-width: 1025px) {
 }

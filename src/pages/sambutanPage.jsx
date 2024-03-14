@@ -1,5 +1,7 @@
 import Sidemenu from "../components/Sidebar";
 import "./css/sambutanPage.css";
+import { Link } from 'react-router-dom';
+
 const sambutanPage = () => {
   return (
     <>
@@ -9,7 +11,7 @@ const sambutanPage = () => {
         </div>
         <div className="col container" style={{ height: "100vh" }}>
           <h3 className=" fw-bolder mb-4">Kepala Sekolah SMA Lab UM</h3>
-          <p className="">
+          <p className=" fw-normal">
             Salam budaya,
             <br />
             Puji syukur ke hadirat Allah swt kami dapat hadir untuk turut
@@ -33,8 +35,8 @@ const sambutanPage = () => {
             berprestasi akademik dan nonakademik dan berkepedulian sosial.
           </p>
 
-          <div className="nextPage mt-5 d-flex align-items-center justify-content-between">
-            <p className="w-100 m-0">Berikutnya</p>
+          <div className="nextPage mt-5 d-flex align-items-center gap-2">
+            <Link className="m-0 fw-medium text-decoration-none" to="/tentangPage">Berikutnya</Link>
             <img
               src="./assets/kabar/arrow-biru.svg"
               alt=""

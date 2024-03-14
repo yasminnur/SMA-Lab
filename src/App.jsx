@@ -19,7 +19,7 @@ function App() {
         
         
         {/* <Index /> */}
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
         <Route path="/" Component={Index} />
         <Route path="/testiPage" Component={TestiPage} />

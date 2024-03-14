@@ -1,40 +1,127 @@
-.sidemenu {
-  a{
-        font-size: 16px;
+/* PHONE  */
+@media (max-width: 425px) {
+  .sidemenu {
+    position: fixed;
+    z-index: 999;
+
+    a {
+      font-size: 10px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        font-weight: bold;
+      }
+      &:active {
+        font-weight: bold;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+
+      li {
+
+        &:hover {
+          font-weight: bold;
+        }
+        &:active {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+/* TABLET  */
+@media (min-width: 426px) {
+  .sidemenu {
+    position: fixed;
+    z-index: 999;
+
+    a {
+      font-size: 13px;
+      line-height: 30px;
+      letter-spacing: -0.24px;
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        font-weight: bold;
+      }
+      &:active {
+        font-weight: bold;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+
+      li {
+        &:hover {
+          font-weight: bold;
+        }
+        &:active {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+/* LAPTOP  */
+@media (min-width: 769px) {
+  .sidemenu {
+    position: fixed;
+    z-index: 999;
+
+    a {
+      font-size: 16px;
       line-height: 36px;
       letter-spacing: -0.24px;
       text-decoration: none;
       color: black;
 
       &:hover {
-        font-weight: bold; 
+        font-weight: bold;
       }
       &:active {
         font-weight: bold;
       }
     }
 
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
 
-    li {
-      font-size: 16px;
-      line-height: 36px;
-      letter-spacing: -0.24px;
+      li {
+        font-size: 16px;
+        line-height: 36px;
+        letter-spacing: -0.24px;
 
-      &:hover {
-        font-weight: bold; 
-      }
-      &:active {
-        font-weight: bold;
-      }
+        &:hover {
+          font-weight: bold;
+        }
+        &:active {
+          font-weight: bold;
+        }
 
-      a {
-        text-decoration: none;
-        color: black;
+        a {
+          text-decoration: none;
+          color: black;
+        }
       }
     }
   }
+}
+
+/* LAPTOP L  */
+@media (min-width: 1025px) {
 }
