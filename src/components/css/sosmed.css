@@ -4,40 +4,41 @@
     padding: 30px 20px 50px 20px;
 
     .atas {
-      flex-direction: column;
+      /* flex-direction: column; */
 
       .col-mode-phone {
         display: flex;
       }
 
       .card-post {
-        /* padding: 5px; */
         overflow: hidden;
-        min-height: 290px;
-        max-height: 290px;
+        /* min-height: 290px;
+        max-height: 290px; */
 
-        .desc-instagram {
+        .desc-whatsapp {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           min-height: 150px;
           max-height: 150px;
-        }
-        .instagram-post {
-          /* object-fit: cover;
-          max-height: 150px;
-          min-height: 150px;
-          min-width: 150px; */
-        }
 
-        p {
-          line-height: 14px;
-          font-size: 11px;
+          p,
+          span {
+            line-height: 140%;
+            letter-spacing: -0.24px;
+            font-size: 13px;
+          }
+
+          .account {
+            a {
+              line-height: 14px;
+              font-size: 10px;
+            }
+          }
         }
       }
 
-      .wa-container {
-        /* padding: 20px; */
+      /* .wa-container {
         display: flex;
         flex-direction: column;
         gap: 15px;
@@ -53,6 +54,15 @@
             line-height: 20px;
             font-size: 13px;
           }
+        }
+      } */
+
+      .overlay {
+        img {
+          width: 15px;
+        }
+        p {
+          font-size: 12px;
         }
       }
     }
@@ -104,12 +114,15 @@
       }
     }
 
-    .panah {
-      font-size: 15px;
-      cursor: pointer;
-
+    .lainnya {
+      p {
+        color: #091e6f;
+        font-size: 12px;
+        line-height: 140%;
+        letter-spacing: -0.24px;
+      }
       img {
-        width: 15px;
+        width: 12px;
       }
     }
   }
@@ -133,42 +146,24 @@
         /* min-height: 290px;
             max-height: 290px; */
 
-        .desc-instagram {
+        .desc-whatsapp {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          /* min-height: 150px;
-              max-height: 150px; */
-        }
-        .instagram-post {
-          object-fit: cover;
-          max-height: 200px;
-          min-height: 200px;
-          min-width: 200px;
+          min-height: 150px;
+          max-height: 150px;
         }
 
-        p {
+        p,
+        span {
           line-height: 14px;
           font-size: 11px;
         }
-      }
 
-      .wa-container {
-        /* padding: 20px; */
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-
-        .card-wa {
-          padding: 10px 15px;
-          background: #fafafa;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-
-          p {
-            line-height: 20px;
-            font-size: 13px;
+        .account {
+          a {
+            line-height: 14px;
+            font-size: 10px;
           }
         }
       }
@@ -221,12 +216,15 @@
       }
     }
 
-    .panah {
-      font-size: 15px;
-      cursor: pointer;
-
+    .lainnya {
+      p {
+        color: #091e6f;
+        font-size: 12px;
+        line-height: 140%;
+        letter-spacing: -0.24px;
+      }
       img {
-        width: 15px;
+        width: 12px;
       }
     }
   }
@@ -234,130 +232,112 @@
 
 /* LAPTOP  */
 @media (min-width: 769px) {
-    .sosmed {
-        padding: 80px 60px;
-    
-        .atas {
-          /* flex-direction: column; */
-    
-          .col-mode-phone {
-            display: flex;
-          }
-    
-          .card-post {
-            /* padding: 5px; */
-            overflow: hidden;
-            /* min-height: 290px;
-                max-height: 290px; */
-    
-            .desc-instagram {
-              display: flex;
-              flex-direction: column;
-              justify-content: space-between;
-              /* min-height: 150px;
-                  max-height: 150px; */
-            }
-            .instagram-post {
-              object-fit: cover;
-              max-height: 260px;
-              min-height: 260px;
-              min-width: 203px;
-            }
-    
-            p {
-              line-height: 25px;
-              font-size: 15px;
-            }
-          }
-    
-          .wa-container {
-            /* padding: 20px; */
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-    
-            .card-wa {
-              padding: 10px 15px;
-              background: #fafafa;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-between;
-    
-              p {
-                line-height: 20px;
-                font-size: 13px;
-              }
-            }
-          }
+  .sosmed {
+    padding: 80px 60px;
 
-          .overlay {
-            img {
-              width: 15px;
-            }
+    .atas {
+      /* flex-direction: column; */
 
-            p {
-              font-size: 13px;
-            }
-          }
-        }
-    
-        .bawah {
-          .youtube-container {
-            .youtube-post {
-              object-fit: cover;
-              max-height: 250px;
-              min-height: 250px;
-            }
-    
-            h4 {
-              font-size: 20px;
-            }
-          }
-    
-          .facebook-container {
-            .facebook-post {
-              object-fit: cover;
-              max-height: 250px;
-              min-height: 250px;
-            }
-    
-            p {
-              font-size: 15px;
-            }
-          }
-        }
-    
-        .account {
-          img {
-            width: 13px;
-            height: 13px;
-          }
-          a {
-            font-size: 10px;
-            cursor: pointer;
-            white-space: nowrap;
-          }
-        }
-    
-        .desc {
+      .col-mode-phone {
+        display: flex;
+      }
+
+      .card-post {
+        overflow: hidden;
+
+        .desc-whatsapp {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-    
-          h4 {
-            font-size: 20px;
-          }
+          min-height: 150px;
+          max-height: 150px;
         }
-    
-        .panah {
+
+        p,
+        span {
+          line-height: 25px;
           font-size: 15px;
-          cursor: pointer;
-    
-          img {
-            width: 15px;
+        }
+
+        .account {
+          a {
+            line-height: 14px;
+            font-size: 13px;
           }
         }
       }
+
+      .overlay {
+        img {
+          width: 15px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .bawah {
+      .youtube-container {
+        .youtube-post {
+          object-fit: cover;
+          max-height: 250px;
+          min-height: 250px;
+        }
+
+        h4 {
+          font-size: 20px;
+        }
+      }
+
+      .facebook-container {
+        .facebook-post {
+          object-fit: cover;
+          max-height: 250px;
+          min-height: 250px;
+        }
+
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .account {
+      img {
+        width: 13px;
+        height: 13px;
+      }
+      a {
+        font-size: 10px;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+    }
+
+    .desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h4 {
+        font-size: 20px;
+      }
+    }
+
+    .lainnya {
+      p {
+        color: #091e6f;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: -0.24px;
+      }
+      img {
+        width: 23px;
+      }
+    }
+  }
 }
 
 /* LAPTOP L  */

@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Content from "./carouselContent";
-
 import "./css/carousel.css";
 
 const Carousel = () => {
@@ -23,8 +22,9 @@ const Carousel = () => {
 
   return (
     <>
-      <div className="carouselPrestasi d-flex w-100 justify-content-between">
-        <div className="slider-wrapper">
+      <div className="carouselPrestasi d-flex w-100 justify-content-between p-2 p-md-0">
+      
+        <div className="slider-wrapper m-0 p-0">
           <div className="image-list">
             <Content className="image-item" />
             <Content className="image-item" />
@@ -32,8 +32,7 @@ const Carousel = () => {
             <Content className="image-item" />
           </div>
         </div>
-
-        <div className="kanan">
+        <div className="kanan ">
         <div className="buttonSet">
           <button
             id="prev-slide"
@@ -58,6 +57,8 @@ const Carousel = () => {
         </div>
         
       </div>
+
+
     </>
   );
 };

@@ -11,24 +11,32 @@
 @media (max-width: 425px) {
   .tentang {
     width: 100vw;
-    height: 1200px;
+    height: fit-content;
+    padding: 60px 0;
+
+    h3 {
+      font-size: 17px;
+      line-height: 120%;
+      letter-spacing: -0.24px;
+    }
+
     .atas {
-      padding: 30px 40px 50px 40px;
+      padding: 0 20px;
 
       .about {
-        padding: 0;
+        /* margin-bottom: 20px; */
         flex-direction: column;
-        margin: 0 0 30px 0;
+        gap: 15px;
 
         .kiri {
-          font-size: 15px;
+          font-size: 18px;
           line-height: 120%;
           letter-spacing: -0.24px;
           color: black;
         }
 
         .kanan {
-          font-size: 18px;
+          font-size: 20px;
           color: black;
           line-height: 140%;
           letter-spacing: -0.24px;
@@ -36,86 +44,232 @@
       }
 
       .visi {
-        .row {
-          margin: 0;
-          padding: 0;
-          gap: 15px;
-          flex-direction: column;
+        margin-top: 20px;
 
-          .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(
-              to top,
-              rgba(0, 0, 0, 0.7),
-              rgba(0, 0, 0, 0.4),
-              rgba(0, 0, 0, 0),
-              rgba(0, 0, 0, 0)
-            );
-            border-radius: 10px;
+        .wrapper-visi {
+          width: 100%;
+          height: fit-content;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-            h1 {
-              display: flex;
+          .container-visi {
+            height: fit-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+          }
+        }
+
+        .card-visi {
+          width: 100%;
+          height: 150px;
+          border-radius: 10px;
+          background-size: cover;
+          cursor: pointer;
+          overflow: hidden;
+          margin: 0 10px;
+          display: flex;
+          align-items: flex-end;
+          transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+
+          .row {
+            display: flex;
+            flex-wrap: nowrap;
+            margin-left: 10px;
+
+            .overlay {
               position: absolute;
-              bottom: 0;
-              color: white;
-              font-size: 20px;
-              padding: 30px 20px;
-              margin: auto;
-              text-align: start;
-              line-height: 140%;
-              letter-spacing: -0.24px;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 0)
+              );
+
+              h1 {
+                display: flex;
+                position: absolute;
+                bottom: 0;
+                color: white;
+                font-size: 25px;
+                margin: auto;
+                text-align: start;
+                line-height: 140%;
+                letter-spacing: -0.24px;
+                transition: all 0.3s ease;
+              }
             }
           }
         }
 
-        p {
-          width: 100%;
-          font-size: 15px;
-          line-height: 120%;
-          letter-spacing: -0.24px;
-          margin-bottom: 20px;
-        }
+        input {
+          display: none;
 
-        .col {
-          position: relative;
-          height: 200px;
-          max-height: 200px;
-          padding: 0;
-          margin: 0;
-
-          img {
-            padding: 0;
-            margin: 0;
-            border-radius: 10px;
-            /* width: 100px; */
-            width: 100%;
-            object-fit: cover;
-            max-height: 350px;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-          }
-
-          &.fotoBesar {
-            /* width: 100px; */
+          &:checked + label {
+            height: 300px;
           }
         }
       }
     }
 
     .bawah {
-      p {
-        padding-left: 40px;
+      h3 {
+        padding: 0 20px;
       }
 
       .logos {
         white-space: nowrap;
         overflow: hidden;
-        padding: 10px 0;
+        padding: 20px 0;
+        background: white;
+        display: flex;
+        margin: 0;
+
+        &:hover .logos-slide {
+          animation-play-state: paused;
+        }
+
+        .logos-slide {
+          animation: 7s scroll infinite linear;
+          display: flex;
+          gap: 25px;
+          width: fit-content;
+          margin: 0 25px 0 0;
+
+          img {
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* TABLET  */
+@media (min-width: 426px) {
+  .tentang {
+    width: 100vw;
+    height: fit-content;
+    padding: 60px 0;
+
+    h3 {
+      font-size: 19px;
+      line-height: 120%;
+      letter-spacing: -0.24px;
+    }
+
+    .atas {
+      padding: 0 40px;
+
+      .about {
+        margin-bottom: 30px;
+
+        .kiri {
+          font-size: 20px;
+          line-height: 120%;
+          letter-spacing: -0.24px;
+          color: black;
+        }
+
+        .kanan {
+          font-size: 23px;
+          color: black;
+          line-height: 140%;
+          letter-spacing: -0.24px;
+        }
+      }
+
+      .visi {
+        margin-top: 70px;
+
+        .wrapper-visi {
+          width: 100%;
+          height: fit-content;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .container-visi {
+            height: 400px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: start;
+          }
+        }
+
+        .card-visi {
+          width: 300px;
+          border-radius: 10px;
+          background-size: cover;
+          cursor: pointer;
+          overflow: hidden;
+          margin: 0 10px;
+          display: flex;
+          align-items: flex-end;
+          transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+
+          .row {
+            color: white;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-left: 10px;
+
+            .overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 0)
+              );
+              border-radius: 10px;
+
+              h1 {
+                display: flex;
+                position: absolute;
+                bottom: 0;
+                color: white;
+                font-size: 27px;
+                margin: auto;
+                text-align: start;
+                line-height: 140%;
+                letter-spacing: -0.24px;
+                transition: all 0.6s ease;
+              }
+            }
+          }
+        }
+
+        input {
+          display: none;
+
+          &:checked + label {
+            width: 400px;
+          }
+        }
+      }
+    }
+
+    .bawah {
+      h3 {
+        padding: 0 40px;
+      }
+
+      .logos {
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 20px 0;
         background: white;
         display: flex;
         margin: 0;
@@ -140,140 +294,18 @@
   }
 }
 
-/* TABLET  */
-@media (min-width: 426px) {
-  .tentang {
-    width: 100vw;
-    height: 1200px;
-    .atas {
-      padding: 30px 40px 50px 40px;
-
-      .about {
-        margin-bottom: 30px;
-        .kiri {
-          font-size: 20px;
-          line-height: 120%;
-          letter-spacing: -0.24px;
-          color: black;
-        }
-
-        .kanan {
-          font-size: 24px;
-          color: black;
-          line-height: 140%;
-          letter-spacing: -0.24px;
-        }
-      }
-
-      .visi {
-        margin-top: 70px;
-        .row {
-          margin: 0;
-          padding: 0;
-          gap: 9px;
-
-          .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(
-              to top,
-              rgba(0, 0, 0, 0.7),
-              rgba(0, 0, 0, 0.4),
-              rgba(0, 0, 0, 0),
-              rgba(0, 0, 0, 0)
-            );
-            border-radius: 10px;
-
-            h1 {
-              display: flex;
-              position: absolute;
-              bottom: 0;
-              color: white;
-              font-size: 23px;
-              padding: 30px 20px;
-              margin: auto;
-              text-align: start;
-              line-height: 140%;
-              letter-spacing: -0.24px;
-            }
-          }
-        }
-
-        p {
-          font-size: 20px;
-          line-height: 120%;
-          letter-spacing: -0.24px;
-          margin-bottom: 20px;
-        }
-
-        .col {
-          position: relative;
-          height: 350px;
-          max-height: 350px;
-          padding: 0;
-          margin: 0;
-
-          img {
-            padding: 0;
-            margin: 0;
-            border-radius: 10px;
-            width: 100%;
-            object-fit: cover;
-            max-height: 350px;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-          }
-
-          &.fotoBesar {
-            width: 100px;
-          }
-        }
-      }
-    }
-
-    .bawah {
-      p {
-        padding-left: 40px;
-      }
-
-      .logos {
-        white-space: nowrap;
-        overflow: hidden;
-        padding: 10px 0;
-        background: white;
-        display: flex;
-        margin: 0;
-
-        &:hover .logos-slide {
-          animation-play-state: paused;
-        }
-
-        .logos-slide {
-          animation: 7s scroll infinite linear;
-          display: flex;
-          gap: 25px;
-          width: fit-content;
-          margin: 0 25px 0 0;
-
-          img {
-            height: 80px;
-          }
-        }
-      }
-    }
-  }
-}
-
 /* LAPTOP  */
 @media (min-width: 769px) {
   .tentang {
     width: 100vw;
     height: fit-content;
     padding: 80px 0;
+
+    h3 {
+      font-size: 20px;
+      line-height: 120%;
+      letter-spacing: -0.24px;
+    }
 
     .atas {
       padding: 0 60px;
@@ -299,96 +331,82 @@
       .visi {
         margin-top: 70px;
 
-        .visikami {
-          font-size: 20px;
-          line-height: 120%;
-          letter-spacing: -0.24px;
+        .wrapper-visi {
+          width: 100%;
+          height: fit-content;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .container-visi {
+            height: 400px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: start;
+          }
         }
-        .row {
-          gap: 30px;
 
-          input {
-            display: none;
-          }
+        .card-visi {
+          width: 300px;
+          border-radius: 10px;
+          background-size: cover;
+          cursor: pointer;
+          overflow: hidden;
+          margin: 0 10px;
+          display: flex;
+          align-items: flex-end;
+          transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
 
-          input:checked + label {
-            width: 500px;
-          }
+          .row {
+            color: white;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-left: 10px;
 
-          .card-visi {
-            cursor: pointer;
-            transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
-          }
-
-          .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(
-              to top,
-              rgba(0, 0, 0, 0.7),
-              rgba(0, 0, 0, 0.4),
-              rgba(0, 0, 0, 0),
-              rgba(0, 0, 0, 0)
-            );
-            border-radius: 10px;
-
-            h1 {
-              display: flex;
+            .overlay {
               position: absolute;
-              bottom: 0;
-              color: white;
-              font-size: 30px;
-              padding: 30px 20px;
-              margin: auto;
-              text-align: start;
-              line-height: 140%;
-              letter-spacing: -0.24px;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 0)
+              );
+              border-radius: 10px;
+
+              h1 {
+                display: flex;
+                position: absolute;
+                bottom: 0;
+                color: white;
+                font-size: 28px;
+                margin: auto;
+                text-align: start;
+                line-height: 140%;
+                letter-spacing: -0.24px;
+                transition: all 0.6s ease;
+              }
             }
           }
         }
 
-        p {
-          font-size: 20px;
-          line-height: 120%;
-          letter-spacing: -0.24px;
-          margin-bottom: 20px;
-        }
+        input {
+          display: none;
 
-        .col {
-          position: relative;
-          height: 350px;
-          max-height: 350px;
-          padding: 0;
-          margin: 0;
-
-          img {
-            padding: 0;
-            margin: 0;
-            border-radius: 10px;
-            width: 100%;
-            object-fit: cover;
-            max-height: 350px;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-          }
-
-          &.fotoBesar {
-            width: 100px;
+          &:checked + label {
+            width: 400px;
           }
         }
       }
     }
 
     .bawah {
-      p {
+      h3 {
         padding: 0 60px;
-        font-size: 20px;
-        line-height: 120%;
-        letter-spacing: -0.24px;
       }
 
       .logos {
@@ -417,109 +435,34 @@
       }
     }
   }
-}
-
-.wrapper-visi {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0)
-    );
-    border-radius: 10px;
-
-    h1 {
-      display: flex;
-      position: absolute;
-      bottom: 0;
-      color: white;
-      font-size: 30px;
-      padding: 30px 20px;
-      margin: auto;
-      text-align: start;
-      line-height: 140%;
-      letter-spacing: -0.24px;
-    }
+  input {
+    display: none;
   }
-}
 
-.container-visi {
-  height: 400px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: start;
-  /* gap: 10px; */
-}
+  input:checked + label {
+    width: 400px;
+  }
 
-.card-visi {
-  width: 300px;
-  border-radius: 10px;
-  background-size: cover;
-  cursor: pointer;
-  overflow: hidden;
-  margin: 0 10px;
-  display: flex;
-  align-items: flex-end;
-  transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
-}
-
-.card-visi .row {
-  color: white;
-  display: flex;
-  flex-wrap: nowrap;
-  margin-left: 10px;
-}
-
-.card-visi .row h4 {
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 15px;
-  transition: all 0.3s ease;
-}
-input {
-  display: none;
-}
-
-input:checked + label {
-  width: 400px;
-}
-
-input:checked + label h4 {
-  font-size: 30px;
+  input:checked + label h4 {
+    font-size: 30px;
+  }
 }
 
 .card-visi[for="c1"] {
   background-image: url("/assets/tentang/beriman.svg");
   background-repeat: no-repeat;
-  backgroud-size: cover;
+  background-size: cover;
   background-position: center;
 }
 .card-visi[for="c2"] {
   background-image: url("/assets/tentang/akhlak.svg");
   background-repeat: no-repeat;
-  /* backgroud-size: auto; */
   background-size: cover;
   background-position: center;
 }
 .card-visi[for="c3"] {
   background-image: url("/assets/tentang/prestasi.svg");
   background-repeat: no-repeat;
-  backgroud-size: cover;
+  background-size: cover;
   background-position: center;
 }

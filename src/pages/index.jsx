@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
 import Tentang from "../components/tentangKami";
 import Agenda from "../components/Agenda";
 import Kabar from "../components/KabarKami";
@@ -13,6 +14,7 @@ import "../index.css";
 const index = () => {
   return (
     <>
+      <Navbar />
       {/* Hero Section */}
       <section className="">
         <Hero />

@@ -22,7 +22,6 @@ const Navbar = () => {
   });
 
   const handleClickList = (menu) => {
-    
     const updatedActiveMenu = Object.keys(activeMenu).reduce((acc, key) => {
       acc[key] = key === menu ? !activeMenu[key] : false;
       return acc;
@@ -124,6 +123,38 @@ const Navbar = () => {
               >
                 Profil Sekolah
               </li>
+              <div className="profilContainer">
+                {activeMenu.profil && (
+                  <div className="profilMenuPhone submenu">
+                    <ul>
+                      <li>
+                        Sambutan
+                        <i class="bi bi-chevron-right"></i>
+                      </li>
+                      <li>
+                        Tentang SMA Lab UM
+                        <i class="bi bi-chevron-right"></i>
+                      </li>
+                      <li>
+                        Struktur Organigram
+                        <i class="bi bi-chevron-right"></i>
+                      </li>
+                      <li>
+                        Guru & Karyawan
+                        <i class="bi bi-chevron-right"></i>
+                      </li>
+                      <li>
+                        Statistika
+                        <i class="bi bi-chevron-right"></i>
+                      </li>
+                      <li>
+                        Logo
+                        <i class="bi bi-chevron-right"></i>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
               <li
                 onClick={() => handleClickList("informasi")}
                 className={
@@ -132,6 +163,38 @@ const Navbar = () => {
               >
                 Informasi
               </li>
+              <div className="profilContainer">
+                {activeMenu.informasi && (
+                  <div className="profilMenuPhone submenu">
+                    <ul>
+                      <li>
+                        Kabar SMA Lab UM
+                        <i class="bi bi-chevron-right"></i>
+                      </li>
+                      <li>
+                        Prestasi
+                        <i class="bi bi-chevron-right"></i>
+                      </li>
+                      <li>
+                        Struktur Organigram
+                        <i class="bi bi-chevron-right"></i>
+                      </li>
+                      <li>
+                        Jurnalistik Siswa
+                        <i class="bi bi-chevron-right"></i>
+                      </li>
+                      <li>
+                        Agenda
+                        <i class="bi bi-chevron-right"></i>
+                      </li>
+                      <li>
+                        Pengumuman
+                        <i class="bi bi-chevron-right"></i>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
               <li
                 onClick={() => handleClickList("organisasi")}
                 className={
@@ -140,6 +203,26 @@ const Navbar = () => {
               >
                 Organisasi
               </li>
+              <div className="profilContainer">
+                {activeMenu.organisasi && (
+                  <div className="profilMenuPhone submenu">
+                    <ul>
+                      <li>
+                        OSIS
+                        <i class="bi bi-chevron-right"></i>
+                      </li>
+                      <li>
+                        Pramuka
+                        <i class="bi bi-chevron-right"></i>
+                      </li>
+                      <li>
+                        PMR
+                        <i class="bi bi-chevron-right"></i>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
               <li
                 onClick={() => handleClickList("galeri")}
                 className={activeMenu.galeri ? "listActive" : "listNotActive"}
@@ -163,7 +246,7 @@ const Navbar = () => {
             </ul>
 
             {activeMenu.profil && (
-              <div className="profilMenu">
+              <div className="profilMenuSamping">
                 <ul>
                   <li>
                     Sambutan
@@ -194,7 +277,7 @@ const Navbar = () => {
             )}
 
             {activeMenu.informasi && (
-              <div className="profilMenu">
+              <div className="profilMenuSamping">
                 <ul>
                   <li>
                     Kabar SMA Lab UM
@@ -225,7 +308,7 @@ const Navbar = () => {
             )}
 
             {activeMenu.organisasi && (
-              <div className="profilMenu">
+              <div className="profilMenuSamping">
                 <ul>
                   <li>
                     OSIS

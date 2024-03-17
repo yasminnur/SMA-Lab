@@ -1,142 +1,152 @@
 /* PHONE  */
 @media (max-width: 425px) {
-    .ppdb {
-        padding: 30px 20px 0 20px;
-    
-        .containernya {
-            /* padding: 0 10px; */
-    
-        .content {
-            flex-direction: column;
-            justify-content: center;
-            
-            .kiri {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            p {
-                font-size: 10px; 
-            }
-            h3 {
-                line-height: 120%;
-                letter-spacing: -0.24px;
-                font-size: 30px;
-            }
-            button {
-                width: fit-content;
-                border: none;
-                outline: none;
-                letter-spacing: 140%;
-                font-size: 15px;
-                background: #FEB700;
-                font-weight: semibold;
-                padding: 10px 15px;  
-                cursor: pointer;
-            }
+  .ppdb {
+    padding: 30px 20px 0 20px;
+
+    .containernya {
+      padding: 20px 15px 0 15px;
+      
+
+      .content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+        .kiri {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          p {
+            font-size: 12px;
+          }
+
+          h3 {
+            line-height: 120%;
+            letter-spacing: -0.24px;
+            font-size: 25px;
+          }
+
+          button {
+            width: fit-content;
+            border: none;
+            outline: none;
+            letter-spacing: 140%;
+            font-size: 12px;
+            background: #feb700;
+            font-weight: semibold;
+            padding: 10px 12px;
+            cursor: pointer;
+          }
         }
-            img {
-                display: flex;
-                max-width: 250px;
-            }
-            }
+        img {
+          display: flex;
+          max-width: 250px;
         }
+      }
     }
+  }
 }
 
 /* TABLET  */
 @media (min-width: 426px) {
-    .ppdb {
-        padding: 30px 20px 0 20px;
-    
-        .containernya {
-            padding: 0 20px;
-    
-        .content {
-            /* flex-direction: column; */
-            justify-content: center;
-            
-            .kiri {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            p {
-                font-size: 10px; 
-            }
-            h3 {
-                line-height: 120%;
-                letter-spacing: -0.24px;
-                font-size: 30px;
-            }
-            button {
-                width: fit-content;
-                border: none;
-                outline: none;
-                letter-spacing: 140%;
-                font-size: 15px;
-                background: #FEB700;
-                font-weight: semibold;
-                padding: 10px 15px;  
-                cursor: pointer;
-            }
+  .ppdb {
+    padding: 30px 20px 0 20px;
+
+    .containernya {
+      padding: 40px 40px;
+      /* padding: 0 20px; */
+
+      .content {
+        /* flex-direction: column; */
+        /* justify-content: center; */
+
+        .kiri {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          /* align-items: center; */
+          p {
+            font-size: 15px;
+          }
+
+          h3 {
+            line-height: 120%;
+            letter-spacing: -0.24px;
+            font-size: 35px;
+          }
+
+          button {
+            width: fit-content;
+            border: none;
+            outline: none;
+            letter-spacing: 140%;
+            font-size: 15px;
+            background: #feb700;
+            font-weight: semibold;
+            padding: 10px 15px;
+            cursor: pointer;
+          }
         }
-            img {
-                display: flex;
-                max-width: 350px;
-            }
-            }
+        img {
+          right: 0px;
+          position: absolute;
+          /* display: flex; */
+          max-width: 370px;
         }
+      }
     }
+  }
 }
 
 /* LAPTOP  */
 @media (min-width: 769px) {
-    .ppdb {
-        padding: 20px 60px;
-    
-        .containernya {
-            padding: 40px 40px;
-            /* padding: 0 20px; */
-    
-        .content {
-            /* flex-direction: column; */
-            /* justify-content: center; */
-            
-            .kiri {
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-                /* align-items: center; */
-            p {
-                font-size: 10px; 
-            }
-            h3 {
-                line-height: 120%;
-                letter-spacing: -0.24px;
-                font-size: 40px;
-            }
-            button {
-                width: fit-content;
-                border: none;
-                outline: none;
-                letter-spacing: 140%;
-                font-size: 15px;
-                background: #FEB700;
-                font-weight: semibold;
-                padding: 10px 15px;  
-                cursor: pointer;
-            }
+  .ppdb {
+    padding: 20px 60px;
+
+    .containernya {
+      padding: 40px 40px;
+      /* padding: 0 20px; */
+
+      .content {
+        /* flex-direction: column; */
+        /* justify-content: center; */
+
+        .kiri {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          /* align-items: center; */
+          p {
+            font-size: 15px;
+          }
+          h3 {
+            line-height: 120%;
+            letter-spacing: -0.24px;
+            font-size: 40px;
+          }
+          button {
+            width: fit-content;
+            border: none;
+            outline: none;
+            letter-spacing: 140%;
+            font-size: 15px;
+            background: #feb700;
+            font-weight: semibold;
+            padding: 10px 15px;
+            cursor: pointer;
+          }
         }
-            img {
-                right: 40px;
-                /* display: flex; */
-                max-width: 400px;
-            }
-            }
+        img {
+          right: 40px;
+          /* display: flex; */
+          position: absolute;
+          max-width: 400px;
         }
+      }
     }
+  }
 }
 
 /* LAPTOP L  */
 @media (min-width: 1025px) {
 }
-

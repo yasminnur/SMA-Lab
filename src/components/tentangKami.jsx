@@ -20,12 +20,12 @@ const tentangKami = () => {
     <>
       <div className="tentang">
         <div className="atas">
-          <Row className="about p-0 m-0">
+          <Row className="about m-0">
             <Col className="col kiri p-0 m-0" xs={4}>
-              <p className="text-nowrap m-0">Tentang kami</p>
+              <h3 className="text-nowrap fw-normal m-0">Tentang kami</h3>
             </Col>
             <Col className="col kanan p-0 m-0">
-              <p>
+              <p className=" fw-medium">
                 <span className="fw-bold">SMA Laboratorium</span> merupakan
                 salah satu sekolah laboratorium yang berada dalam naungan
                 Universitas Negeri Malang (d.h. IKIP Negeri Malang).
@@ -34,9 +34,9 @@ const tentangKami = () => {
           </Row>
 
           <div className="visi">
-            <p className="m-0 p-0 mb-3 visikami">
+            <h3 className="m-0 fw-normal p-0 mb-3 visikami">
               Visi kami menjadi lembaga pendidikan pencetak lulusan unggul yang;
-            </p>
+            </h3>
 
             <div className="wrapper-visi m-0 p-0">
               <div className="container-visi m-0 p-0 gap-4 w-100">
@@ -49,9 +49,9 @@ const tentangKami = () => {
                 />
                 <label for="c1" className="card-visi p-0 m-0 position-relative">
                   <div class="row">
-                    <div className="overlay">
-                      <h1 className="fw-semibold">
-                        Beriman & <br /> Bertaqwa
+                    <div className="overlay p-0">
+                      <h1 className="fw-semibold px-3 py-2 py-md-3">
+                        Beriman & Bertaqwa
                       </h1>
                     </div>
                   </div>
@@ -59,9 +59,9 @@ const tentangKami = () => {
                 <input type="radio" name="slide" id="c2" checked />
                 <label for="c2" className="card-visi p-0 m-0 position-relative">
                   <div class="row">
-                    <div className="overlay">
-                      <h1 className="fw-semibold">
-                        Berakhlak <br /> Mulia
+                    <div className="overlay p-0">
+                      <h1 className="fw-semibold px-3 py-2 py-md-3">
+                        Berakhlak Mulia
                       </h1>
                     </div>
                   </div>
@@ -69,8 +69,8 @@ const tentangKami = () => {
                 <input type="radio" name="slide" id="c3" checked />
                 <label for="c3" className="card-visi p-0 m-0 position-relative">
                   <div class="row">
-                    <div className="overlay">
-                      <h1 className="fw-semibold">Berprestasi</h1>
+                    <div className="overlay p-0">
+                      <h1 className="fw-semibold px-3 py-2 py-md-3">Berprestasi</h1>
                     </div>
                   </div>
                 </label>
@@ -80,7 +80,7 @@ const tentangKami = () => {
         </div>
 
         <div className="bawah mt-5">
-          <p className="m-0 mb-3 fw-semibold">Kerjasama Lembaga :</p>
+          <h3 className="m-0 mb-3 fw-semibold">Kerjasama Lembaga :</h3>
           <div className="logos w-100">
             <div className="logos-slide">
               <img src="./assets/tentang/sponsor1.svg" alt="" />

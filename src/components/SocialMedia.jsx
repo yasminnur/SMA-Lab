@@ -7,149 +7,154 @@ const SocialMedia = () => {
       <div className="sosmed">
         <h5>Social Media</h5>
         {/* =========== ATAS =============== */}
-        <div className="atas gap-3 mt-4 gap-md-4 p-0 m-0 d-flex w-100 flex-wrap">
+        <div className="atas mt-4 m-0 d-flex w-100 flex-wrap">
           {/* <div className="col col-md-8 col-mode-phone gap-3 gap-md-4"> */}
-            <Col className="">
+          <Col xs={6} md={3} className="p-2 p-md-2">
             <div className="card-post w-100">
               <div className="position-relative">
                 <img
                   src="./assets/sosmed/sosmed1.svg"
                   className="instagram-post rounded-3 w-100 "
                   alt="instagram post"
-              />
-              <div className="overlay position-absolute d-flex gap-2 bottom-0 left-0 py-1 px-2">
+                />
+                <div className="overlay position-absolute d-flex align-items-center gap-2 bottom-0 left-0 py-1 px-2">
                   <img src="./assets/sosmed/videoIcon.svg" alt="" />
                   <p className="m-0 text-light">0:29</p>
                 </div>
-                </div>
-                <div className="desc-instagram">
-                <p
-                  className="p-0 m-0 mt-2 mt-md-3"
-                >
+              </div>
+              <div className="desc-whatsapp">
+                <p className="p-0 m-0 mt-2 mt-md-3">
                   Mau Tau gag kenapa nama sekolah Kami SMA Laboratorium?🤔 ...
-                  <span className="text-decoration-underline" style={{color: '#2F80ED'}}>
+                  <span
+                    className="text-decoration-underline"
+                    style={{ color: "#2F80ED" }}
+                  >
                     Lihat selengkapnya
                   </span>
                 </p>
                 <div className="account d-flex align-items-center gap-2 mt-3">
                   <img src="./assets/sosmed/whatsapp.svg" alt="instagram" />
                   <a
-                    className="p-0 m-0 text-decoration-none text-dark"
+                    className="p-0 m-0 fw-medium text-decoration-none text-dark"
                     href="https://www.instagram.com/smalabum/"
                     target="blank"
                   >
                     SMA LABORATORIUM UM OFFICIAL
                   </a>
-                  </div>
-                  </div>
+                </div>
               </div>
-            </Col>
-            <Col className="">
-              <div className="card-post w-100">
+            </div>
+          </Col>
+          <Col xs={6} md={3} className="p-2 p-md-2">
+            <div className="card-post w-100">
               <div className="position-relative">
                 <img
                   src="./assets/sosmed/sosmed2.svg"
                   className="instagram-post rounded-3 w-100 "
                   alt="instagram post"
-              />
-              <div className="overlay position-absolute d-flex gap-2 bottom-0 left-0 py-1 px-2">
+                />
+                <div className="overlay position-absolute d-flex align-items-center gap-2 bottom-0 left-0 py-1 px-2">
                   <img src="./assets/sosmed/videoIcon.svg" alt="" />
                   <p className="m-0 text-light">0:29</p>
                 </div>
-                </div>
-                <div className="desc-instagram">
-                  <p
-                    className="p-0 m-0 mt-2 mt-md-3"
+              </div>
+              <div className="desc-whatsapp">
+                <p className="p-0 m-0 mt-2 mt-md-3">
+                  Jum’at Bersih SMA Laboratorium UM 23 Februari 2024...
+                  <span
+                    className="text-decoration-underline"
+                    style={{ color: "#2F80ED" }}
                   >
-                   Jum’at Bersih SMA Laboratorium UM 23 Februari 2024...
-                    <span className="text-decoration-underline" style={{color: '#2F80ED'}}>
-                      Lihat selengkapnya
-                    </span>
-                  </p>
-                  <div className="account d-flex align-items-center gap-2 mt-3">
-                    <img src="./assets/sosmed/whatsapp.svg" alt="instagram" />
-                    <a
-                      className="p-0 m-0 text-decoration-none text-dark"
-                      href="https://www.instagram.com/smalabum/"
-                      target="blank"
-                    >
-                      SMA LABORATORIUM UM OFFICIAL
-                    </a>
-                  </div>
+                    Lihat selengkapnya
+                  </span>
+                </p>
+                <div className="account d-flex align-items-center gap-2 mt-3">
+                  <img src="./assets/sosmed/whatsapp.svg" alt="instagram" />
+                  <a
+                    className="p-0 m-0 fw-medium text-decoration-none text-dark"
+                    href="https://www.instagram.com/smalabum/"
+                    target="blank"
+                  >
+                    SMA LABORATORIUM UM OFFICIAL
+                  </a>
                 </div>
               </div>
-            </Col>
-            <Col className="">
-              <div className="card-post w-100">
+            </div>
+          </Col>
+          <Col xs={6} md={3} className="p-2 p-md-2">
+            <div className="card-post w-100">
               <div className="position-relative">
                 <img
                   src="./assets/sosmed/sosmed3.svg"
                   className="instagram-post rounded-3 w-100 "
                   alt="instagram post"
-              />
-              <div className="overlay position-absolute d-flex gap-2 bottom-0 left-0 py-1 px-2">
+                />
+                <div className="overlay position-absolute d-flex align-items-center gap-2 bottom-0 left-0 py-1 px-2">
                   <img src="./assets/sosmed/videoIcon.svg" alt="" />
                   <p className="m-0 text-light">0:29</p>
                 </div>
-                </div>
-                <div className="desc-instagram">
-                  <p
-                    className="p-0 m-0 mt-2 mt-md-3"
+              </div>
+              <div className="desc-whatsapp">
+                <p className="p-0 m-0 mt-2 mt-md-3">
+                  “Recharge Energy To Be Stronge Kegiatan Kakak Kelas XII
+                  setelah ...
+                  <span
+                    className="text-decoration-underline"
+                    style={{ color: "#2F80ED" }}
                   >
-                  “Recharge Energy To Be Stronge
-Kegiatan Kakak Kelas XII setelah ...
-                    <span className="text-decoration-underline" style={{color: '#2F80ED'}}>
-                      Lihat selengkapnya
-                    </span>
-                  </p>
-                  <div className="account d-flex align-items-center gap-2 mt-3">
-                    <img src="./assets/sosmed/whatsapp.svg" alt="instagram" />
-                    <a
-                      className="p-0 m-0 text-decoration-none text-dark"
-                      href="https://www.instagram.com/smalabum/"
-                      target="blank"
-                    >
-                      SMA LABORATORIUM UM OFFICIAL
-                    </a>
-                  </div>
+                    Lihat selengkapnya
+                  </span>
+                </p>
+                <div className="account d-flex align-items-center gap-2 mt-3">
+                  <img src="./assets/sosmed/whatsapp.svg" alt="instagram" />
+                  <a
+                    className="p-0 m-0 fw-medium text-decoration-none text-dark"
+                    href="https://www.instagram.com/smalabum/"
+                    target="blank"
+                  >
+                    SMA LABORATORIUM UM OFFICIAL
+                  </a>
                 </div>
               </div>
-            </Col>
-            <Col className="">
-              <div className="card-post w-100">
+            </div>
+          </Col>
+          <Col xs={6} md={3} className="p-2 p-md-2">
+            <div className="card-post w-100">
               <div className="position-relative">
                 <img
                   src="./assets/sosmed/sosmed4.svg"
                   className="instagram-post rounded-3 w-100 "
                   alt="instagram post"
-              />
-              <div className="overlay position-absolute d-flex gap-2 bottom-0 left-0 py-1 px-2">
+                />
+                <div className="overlay position-absolute d-flex align-items-center gap-2 bottom-0 left-0 py-1 px-2">
                   <img src="./assets/sosmed/videoIcon.svg" alt="" />
                   <p className="m-0 text-light">0:29</p>
                 </div>
-                </div>
-                <div className="desc-instagram">
-                  <p
-                    className="p-0 m-0 mt-2 mt-md-3"
+              </div>
+              <div className="desc-whatsapp">
+                <p className="p-0 m-0 mt-2 mt-md-3">
+                  ✅ Mau Tau Cara Bikin Batik di Giriloyo? ✅ Mau Belajar
+                  Asyik...
+                  <span
+                    className="text-decoration-underline"
+                    style={{ color: "#2F80ED" }}
                   >
-                    ✅ Mau Tau Cara Bikin Batik di Giriloyo? ✅ Mau Belajar Asyik...
-                    <span className="text-decoration-underline" style={{color: '#2F80ED'}}>
-                      Lihat selengkapnya
-                    </span>
-                  </p>
-                  <div className="account d-flex align-items-center gap-2 mt-3">
-                    <img src="./assets/sosmed/whatsapp.svg" alt="instagram" />
-                    <a
-                      className="p-0 m-0 text-decoration-none text-dark"
-                      href="https://www.instagram.com/smalabum/"
-                      target="blank"
-                    >
-                      SMA LABORATORIUM UM OFFICIAL
-                    </a>
-                  </div>
+                    Lihat selengkapnya
+                  </span>
+                </p>
+                <div className="account d-flex align-items-center gap-2 mt-3">
+                  <img src="./assets/sosmed/whatsapp.svg" alt="instagram" />
+                  <a
+                    className="p-0 m-0 fw-medium text-decoration-none text-dark"
+                    href="https://www.instagram.com/smalabum/"
+                    target="blank"
+                  >
+                    SMA LABORATORIUM UM OFFICIAL
+                  </a>
                 </div>
               </div>
-            </Col>
+            </div>
+          </Col>
           {/* </div> */}
           {/* <Col className="wa-container">
             <Row className="m-0 p-0" style={{ height: "50%" }}>
@@ -232,7 +237,10 @@ Kegiatan Kakak Kelas XII setelah ...
                 <p className="p-0 m-0 mt-3">
                   Guru senior di sekolah kami nih... Pengen kenal lebih dekat?
                   Yukk gabung bersama kami. only di SMA LAB UM Malang Info...{" "}
-                  <span className="text-decoration-underline" style={{color: '#2F80ED'}}>
+                  <span
+                    className="text-decoration-underline"
+                    style={{ color: "#2F80ED" }}
+                  >
                     Lihat selengkapnya
                   </span>
                 </p>
@@ -251,7 +259,7 @@ Kegiatan Kakak Kelas XII setelah ...
           </Row>
         </div>
         {/* =========== PANAH ============== */}
-        <div className="panah d-flex align-items-center w-100 gap-2 mt-4">
+        <div className="lainnya d-flex align-items-center w-100 gap-2 mt-4">
           <p className="p-0 m-0">Lainnya</p>
           <img src="./assets/kabar/arrow-biru.svg" alt="" />
         </div>

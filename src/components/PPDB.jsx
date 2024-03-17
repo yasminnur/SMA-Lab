@@ -33,7 +33,7 @@ const PPDB = () => {
             Daftar Sekarang!
           </button>
                   </div>
-            <img className="mx-auto position-absolute bottom-0" src="./assets/ekstra/ppdb.svg" alt=""
+            <img className="mx-auto bottom-0" src="./assets/ekstra/ppdb.svg" alt=""
               // style={{ maxWidth: '600px', maxHeight: '250px' }}
             />
           </div>

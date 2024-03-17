@@ -15,11 +15,11 @@ const ekstra = () => {
         className="ekstra w-100 h-100"
         style={{ width: "100vw", height: "100vh", overflow: 'hidden' }}
       >
-        <h5
-          className="w-100 fw-bold m-0 mb-3 mb-md-4"
+        <h3
+          className="w-100 fw-semibold m-0 mb-3 mb-md-4"
         >
           Ekstrakurikuler
-        </h5>
+        </h3>
         <div className="card-wrapper w-100 mb-3 mb-md-4">
           <div className="card-ekstra ekstra1 d-flex gap-3 gap-md-4">
             {jsonData

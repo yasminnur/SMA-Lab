@@ -28,8 +28,8 @@ const Komen = () => {
   return (
     <>
       <div className="komen w-100" id="testi">
-        <div className="nav d-flex justify-content-between align-items-center mb-5 w-100">
-          <p className="p-0 m-0">Cerita mereka tentang SMA Lab UM</p>
+        <div className="nav d-flex justify-content-between align-items-center mb-4 mb-md-5 w-100">
+          <h3 className="p-0 m-0 fw-semibold">Cerita mereka tentang SMA Lab UM</h3>
           <div className="nav-slider gap-3 d-none d-md-flex">
             <div
               className="arrow p-2 d-flex rounded-circle"
@@ -64,10 +64,10 @@ const Komen = () => {
               key={index}
             >
               <div className="komenContainer">
-                <h3 className="p-0 m-0 mb-2 mb-md-3 fw-semibold">
+                <p className="p-0 m-0 mb-2 mb-md-3 fw-semibold">
                   {item.comment.substring(0, 248)}...
-                </h3>
-                <Link to={{ pathname: "/testiPage", state: { testi: item } }}>
+                </p>
+                <Link className="text-dark" to={{ pathname: "/testiPage", state: { testi: item } }}>
                   Lihat selengkapnya
                 </Link>
 
@@ -85,8 +85,7 @@ const Komen = () => {
                       {item.sender.name}
                     </p>
                     <p className="wali m-0">
-                      {" "}
-                      wali dari{" "}
+                      wali dari {" "}
                       <span className="fw-semibold">
                         {item.sender.wali}
                       </span> / {item.sender.kelas}
