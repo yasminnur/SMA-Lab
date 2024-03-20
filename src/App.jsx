@@ -6,32 +6,63 @@ import BeritaPage from "./pages/beritaPage";
 import PengumumanPage from "./pages/pengumumanPage";
 import PengumumanDetailPage from "./pages/pengumumanDetailPage";
 import AgendaPage from "./pages/agendaPage";
-import AgendaDetail from "./components/Agenda/agendaDetail"
+import AgendaDetail from "./components/Agenda/agendaDetail";
 import TentangPage from "./pages/tentangPage";
 import Testi from "./components/Komen";
 import Sidebar from "./components/Sidebar";
 import Copyright from "./components/Copyright";
-import KabarDetail from "./components/Berita/KabarDetail"
+import KabarDetail from "./components/Berita/KabarDetail";
+import IndexBerita from "./components/Berita/index";
+import KabarBerita from "./components/Berita/KabarSekolah";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import React, { useEffect, useState } from "react";
 
 function App() {
-  // const location = useLocation();
+  const location = useLocation();
+  const [navbarBackground, setNavbarBackground] = useState("");
 
-  // const pathsWithNavbar = ['/'];
+  // Fungsi untuk menentukan warna background Navbar berdasarkan lokasi saat ini
+  const getNavbarBackground = () => {
+    switch (location.pathname) {
+      case "/":
+        setNavbarBackground("rgba(0, 0, 0, 0.15)");
+        break;
+      case "/beritaPage":
+        setNavbarBackground("black");
+        break;
+      case "/agendaPage":
+        setNavbarBackground("black");
+        break;
+      case "/pengumumanPage":
+        setNavbarBackground("black");
+        break;
+      default:
+        setNavbarBackground(""); // Warna default
+        break;
+    }
+  };
 
-  // const pathsWithSidebar = ['/testiPage', '/beritaPage', '/sambutanPage', '/tentangPage'];
+  useEffect(() => {
+    getNavbarBackground();
+  }, [location.pathname]);
 
-  // const shouldShowNavbar = pathsWithNavbar.includes(location.pathname);
-
-  // const shouldShowSidebar = pathsWithSidebar.includes(location.pathname);
-
+  // Fungsi untuk menentukan apakah Navbar harus ditampilkan berdasarkan lokasi saat ini
+  const shouldShowNavbar = () => {
+    // Daftar halaman di mana Navbar harus ditampilkan
+    const pagesWithNavbar = [
+      "/",
+      "/beritaPage",
+      "/agendaPage",
+      "/pengumumanPage",
+    ];
+    return pagesWithNavbar.includes(location.pathname);
+  };
   return (
     <>
-      <div className="app w-100vw">
-        {/* <Navbar /> */}
-        {/* <Index /> */}
+    <div className="app w-100vw">
+        {shouldShowNavbar() && <Navbar background={navbarBackground} />}
         <Routes>
           <Route path="/" Component={Index} />
           <Route path="/testiPage" Component={TestiPage} />
@@ -41,21 +72,14 @@ function App() {
           <Route path="/sambutanPage" Component={SambutanPage} />
           <Route path="/tentangPage" Component={TentangPage} />
           <Route path="/pengumumanPage" Component={PengumumanPage} />
-          <Route path="/pengumumanDetailPage" Component={PengumumanDetailPage} />
+          <Route
+            path="/pengumumanDetailPage"
+            Component={PengumumanDetailPage}
+          />
           <Route path="/kabarDetailPage" Component={KabarDetail} />
           <Route path="#testi" Component={Testi} />
         </Routes>
-
         <Copyright />
-{/* {shouldShowNavbar && <Navbar />}
-      {shouldShowSidebar && <Sidebar />}
-      <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/testiPage" element={<TestiPage />} />
-        <Route path="/beritaPage" element={<BeritaPage />} />
-        <Route path="/sambutanPage" element={<SambutanPage />} />
-        <Route path="/tentangPage" element={<TentangPage />} />
-      </Routes> */}
       </div>
     </>
   );

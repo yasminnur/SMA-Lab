@@ -12,6 +12,9 @@ import Footer from "../components/Footer";
 import "../index.css";
 
 const index = () => {
+  const thumbnailSrc = "./assets/footer/thumbnail.svg";
+  const linkUrl = "https://youtu.be/AsnN3t7JPHU?si=Q1pYgUwhXAv0xLWY";
+
   return (
     <>
       <Navbar />
@@ -57,8 +60,9 @@ const index = () => {
       </section>
 
       {/* Footer Section */}
-      <section className="footer">
-        <Footer />
+      <section className="">
+        <Footer  thumbnailSrc={thumbnailSrc}
+        linkUrl={linkUrl} />
       </section>
     </>
   );

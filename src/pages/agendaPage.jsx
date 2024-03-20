@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Index from "../components/Agenda/index";
 import SemuaAcara from "../components/Agenda/semuaAcara";
+import Footer from "../components/Footer"
 import "./css/agendaPage.css";
 
 const agendaPage = () => {
+  const thumbnailSrc = "./assets/footer/thumbnail2.svg";
+  const linkUrl = "#";
   const [selectedItem, setSelectedItem] = useState("Acara Mendatang");
 
   // Fungsi untuk menangani klik item menu
@@ -40,10 +43,16 @@ const agendaPage = () => {
                 <li>Prestasi</li>
                 <li>Artikel</li> */}
           </ul>
-          <div className="search-container d-flex align-items-center">
+          <div
+            className="search-container rounded-3 d-flex gap-2 align-items-center"
+            style={{ background: "#F9F9F9" }}
+          >
             <img src="./assets/BeritaPage/search.svg" alt="" />
-            <input type="text" />
-            Temukan berita apa pun di sini
+            <input
+              className="d-flex w-100"
+              type="text"
+              placeholder="Temukan berita apa pun di sini"
+            />
           </div>
         </div>
 
@@ -54,9 +63,9 @@ const agendaPage = () => {
           {/* {selectedItem === 'Prestasi' && <PrestasiContent />} */}
           {/* {selectedItem === 'Artikel' && <ArtikelContent />} */}
         </div>
-
-        {/* ============================= */}
       </div>
+      <Footer  thumbnailSrc={thumbnailSrc}
+        linkUrl={linkUrl} />
     </>
   );
 };

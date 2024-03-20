@@ -1,20 +1,20 @@
 import { Row, Col } from "react-bootstrap";
-import "./index.css"
+import "./index.css";
 
 const index = () => {
   return (
-      <>
-          <div className="beritaMain">
-          <div className="headline">
-          <div className="d-flex align-items-end mb-3">
-            <Col xs={8} className="m-0 p-0 d-flex justify-content-start">
+    <>
+      <div className="beritaMain">
+        <div className="headline">
+          <div className="d-flex align-items-end mb-2 mb-lg-3 justify-content-between">
+            <div className="m-0 p-0 d-flex justify-content-start">
               <h1 className="p-0 m-0 fw-bolder">Berita.</h1>
-            </Col>
-            <Col className="m-0 p-0 d-flex justify-content-end">
+            </div>
+            <div className="m-0 p-0 d-flex justify-content-end">
               <p className="d-flex p-0 m-0 fw-semibold text-nowrap">
                 SMA Laboratorium UM
               </p>
-            </Col>
+            </div>
           </div>
           <div className="position-relative">
             <img
@@ -23,20 +23,15 @@ const index = () => {
               alt=""
             />
             <div className="float-card position-absolute bg-light rounded-3 p-3">
-              <h5 className="w-100 d-inline-block mb-3">KABAR SEKOLAH</h5>
+              <h5 className="w-100 d-inline-block mb-1 mb-lg-3 ">
+                KABAR SEKOLAH
+              </h5>
               <h3 className="fw-bold mb-3">
                 Antusiasme Siswa Kelas XII Sambut Ujian Praktik
               </h3>
               <div className="ket d-flex gap-1 m-0 mb-1 mb-md-2 ">
                 <p className="p-0 m-0">Admin</p>
-                <div
-                  className="circle rounded-circle bg-dark"
-                  style={{
-                    width: "4px",
-                    height: "4px",
-                    marginTop: "8px",
-                  }}
-                ></div>
+                <div className="circle rounded-circle bg-dark"></div>
                 <p className="p-0 m-0">05 Mar, 2024</p>
               </div>
             </div>
@@ -44,20 +39,22 @@ const index = () => {
         </div>
 
         {/* INFO TERKINI */}
-        <div className="info-terkini mt-5 pt-4 pb-5 border-top border-bottom border-dark">
-          <h4 className="mb-4">Info terkini</h4>
-          <div className="d-flex gap-4">
+        <div className="info-terkini mt-5 pt-4 pb-5">
+          <h4 className="mb-3 mb-lg-4 fw-bold">Info terkini</h4>
+          <div className="d-flex flex-column flex-md-row gap-4">
             <Col md={7}>
               <img
                 src="./assets/BeritaPage/thumbnail1.svg"
                 alt=""
-                className="w-100 rounded-3 mb-3"
+                className="w-100 rounded-3 mb-2 mb-lg-3"
               />
-              <h5 className="w-100 d-inline-block mb-3">KABAR SEKOLAH</h5>
+              <h5 className="w-100 d-inline-block mb-1 mb-lg-3">
+                KABAR SEKOLAH
+              </h5>
               <h3 className="fw-bold">
                 Antusiasme Siswa Kelas XII Sambut Ujian Praktik
               </h3>
-              <p className=" fw-light">
+              <p className=" fw-light mb-2 mb-lg-3">
                 Pada tanggal 15 Januari sampai 6 Februari 2024, SMA Lab UM
                 menggelar ujian praktik untuk siswa kelas XII. Ujian ini
                 terintegrasi dalam serangkaian ujian sekolah yang bertujuan
@@ -68,14 +65,7 @@ const index = () => {
               </p>
               <div className="ket d-flex gap-1">
                 <p className="p-0 m-0">Admin</p>
-                <div
-                  className="circle rounded-circle bg-dark"
-                  style={{
-                    width: "4px",
-                    height: "4px",
-                    marginTop: "8px",
-                  }}
-                ></div>
+                <div className="circle rounded-circle bg-dark"></div>
                 <p className="p-0 m-0">05 Mar, 2024</p>
               </div>
             </Col>
@@ -84,13 +74,15 @@ const index = () => {
                 <img
                   src="./assets/BeritaPage/thumbnail2.svg"
                   alt=""
-                  className="w-100 rounded-3 mb-3"
+                  className="w-100 rounded-3 mb-2 mb-lg-3"
                 />
-                <h5 className="w-100 d-inline-block mb-2">KABAR SEKOLAH</h5>
+                <h5 className="w-100 d-inline-block mb-1 mb-lg-2">
+                  KABAR SEKOLAH
+                </h5>
                 <h3 className="fw-bold title-kanan">
                   Peringatan Isra’ Mi’raj Tingkatkan Kepribadian
                 </h3>
-                <p className=" fw-light">
+                <p className="fw-light mb-2 mb-lg-3">
                   Peristiwa Isra’ Mi’raj memiliki arti penting bagi pembinaan
                   keperibadian manusia, karena dalam peristiwa Isra’
                   Mi’raj tersebut Nabi menerima perintah shalat lima waktu dalam
@@ -100,11 +92,6 @@ const index = () => {
                   <p className="p-0 m-0">Admin</p>
                   <div
                     className="circle rounded-circle bg-dark"
-                    style={{
-                      width: "4px",
-                      height: "4px",
-                      marginTop: "8px",
-                    }}
                   ></div>
                   <p className="p-0 m-0">05 Mar, 2024</p>
                 </div>
@@ -118,7 +105,7 @@ const index = () => {
                 </Col>
 
                 <Col>
-                  <h5 className="w-100 d-inline-block mb-3">ARTIKEL</h5>
+                  <h5 className="w-100 d-inline-block mb-2 mb-lg-3">ARTIKEL</h5>
                   <h3 className="fw-bold title-kanan">
                     Ramadhan bulan penuh berkah
                   </h3>
@@ -126,11 +113,6 @@ const index = () => {
                     <p className="p-0 m-0">Admin</p>
                     <div
                       className="circle rounded-circle bg-dark"
-                      style={{
-                        width: "4px",
-                        height: "4px",
-                        marginTop: "8px",
-                      }}
                     ></div>
                     <p className="p-0 m-0">05 Mar, 2024</p>
                   </div>
@@ -141,29 +123,22 @@ const index = () => {
         </div>
 
         {/* BERITA LAINNYA */}
-        <div className="berita-lainnya pt-4 pb-5 border-top border-bottom border-dark">
-          <h4 className="mb-4">Info terkini</h4>
-          <div className="d-flex gap-3">
+        <div className="berita-lainnya pt-4 pb-5 ">
+          <h4 className="mb-3 mb-lg-4 fw-bold">Berita lainnya</h4>
+          <div className="d-flex gap-3 flex-wrap">
             <Col>
               <img
                 src="./assets/BeritaPage/berita1.svg"
                 alt=""
-                className="w-100 rounded-3 mb-3"
+                className="w-100 rounded-3 mb-2 mb-lg-3"
               />
-              <h5 className="w-100 d-inline-block mb-3">KABAR SEKOLAH</h5>
-              <h3 className="fw-bold title-kanan mb-3">
+              <h5 className="w-100 d-inline-block mb-1 mb-lg-2">KABAR SEKOLAH</h5>
+              <h3 className="fw-bold title-kanan mb-2 mb-lg-3">
                 Jumat Bersih, Bentuk Tanggung Jawab terhadap Lingkungan Sekitar
               </h3>
               <div className="ket d-flex gap-1">
                 <p className="p-0 m-0">Itsnaini Ningtiyas</p>
-                <div
-                  className="circle rounded-circle bg-dark"
-                  style={{
-                    width: "4px",
-                    height: "4px",
-                    marginTop: "8px",
-                  }}
-                ></div>
+                <div className="circle rounded-circle bg-dark"></div>
                 <p className="p-0 m-0">19 Feb, 2024</p>
               </div>
             </Col>
@@ -171,22 +146,15 @@ const index = () => {
               <img
                 src="./assets/BeritaPage/berita2.svg"
                 alt=""
-                className="w-100 rounded-3 mb-3"
+                className="w-100 rounded-3 mb-2 mb-lg-3"
               />
-              <h5 className="w-100 d-inline-block mb-3">KABAR SEKOLAH</h5>
-              <h3 className="fw-bold title-kanan mb-3">
+              <h5 className="w-100 d-inline-block mb-1 mb-lg-2">KABAR SEKOLAH</h5>
+              <h3 className="fw-bold title-kanan mb-2 mb-lg-3">
                 Outdoor Learning Tumbuhkan Semangat Wirausaha
               </h3>
               <div className="ket d-flex gap-1">
                 <p className="p-0 m-0">Dewi H.S</p>
-                <div
-                  className="circle rounded-circle bg-dark"
-                  style={{
-                    width: "4px",
-                    height: "4px",
-                    marginTop: "8px",
-                  }}
-                ></div>
+                <div className="circle rounded-circle bg-dark"></div>
                 <p className="p-0 m-0">19 Feb, 2024</p>
               </div>
             </Col>
@@ -194,23 +162,16 @@ const index = () => {
               <img
                 src="./assets/BeritaPage/berita3.svg"
                 alt=""
-                className="w-100 rounded-3 mb-3"
+                className="w-100 rounded-3 mb-2 mb-lg-3"
               />
-              <h5 className="w-100 d-inline-block mb-3">KABAR SEKOLAH</h5>
-              <h3 className="fw-bold title-kanan mb-3">
+              <h5 className="w-100 d-inline-block mb-1 mb-lg-2">KABAR SEKOLAH</h5>
+              <h3 className="fw-bold title-kanan mb-2 mb-lg-3">
                 Program Roots, Mencegah dan Mengurangi Perundungan di Lingkungan
                 Sekolah
               </h3>
               <div className="ket d-flex gap-1">
                 <p className="p-0 m-0">Admin</p>
-                <div
-                  className="circle rounded-circle bg-dark"
-                  style={{
-                    width: "4px",
-                    height: "4px",
-                    marginTop: "8px",
-                  }}
-                ></div>
+                <div className="circle rounded-circle bg-dark"></div>
                 <p className="p-0 m-0">19 Feb, 2024</p>
               </div>
             </Col>
@@ -218,22 +179,15 @@ const index = () => {
               <img
                 src="./assets/BeritaPage/berita4.svg"
                 alt=""
-                className="w-100 rounded-3 mb-3"
+                className="w-100 rounded-3 mb-2 mb-lg-3"
               />
-              <h5 className="w-100 d-inline-block mb-3">KABAR SEKOLAH</h5>
-              <h3 className="fw-bold title-kanan mb-3">
+              <h5 className="w-100 d-inline-block mb-1 mb-lg-2">KABAR SEKOLAH</h5>
+              <h3 className="fw-bold title-kanan mb-2 mb-lg-3">
                 Siswa Milenial dengan Kreatifitas Tanpa Batas
               </h3>
               <div className="ket d-flex gap-1">
                 <p className="p-0 m-0">Dewi H.S</p>
-                <div
-                  className="circle rounded-circle bg-dark"
-                  style={{
-                    width: "4px",
-                    height: "4px",
-                    marginTop: "8px",
-                  }}
-                ></div>
+                <div className="circle rounded-circle bg-dark"></div>
                 <p className="p-0 m-0">19 Feb, 2024</p>
               </div>
             </Col>
@@ -241,12 +195,14 @@ const index = () => {
         </div>
 
         {/* WHATSAPP CHANNEL */}
-        <div className="whatsapp-channel pt-4 pb-5 border-bottom border-dark">
-          <h4 className="mb-4">Whatsapp Channel</h4>
-          <div className="d-flex gap-3">
+        <div className="whatsapp-channel pt-4 pb-5">
+          <h4 className="mb-3 mb-lg-4 fw-bold">Whatsapp Channel</h4>
+          <div className="d-flex gap-3 flex-wrap">
             <Col>
-              <div className="card-postt w-100">
-                <div className="position-relative" style={{ height: "350px" }}>
+              <div className="card-post w-100">
+                <div className="position-relative card-container"
+                  // style={{ height: "350px" }}
+                >
                   <img
                     src="./assets/sosmed/sosmed1.svg"
                     className="instagram-post w-100 h-100 rounded-3"
@@ -254,8 +210,10 @@ const index = () => {
                     alt="instagram post"
                   />
                   <div className="overlay position-absolute d-flex gap-2 bottom-0 left-0 py-1 px-2">
+                    <div className="d-flex align-items-center gap-1 gap-md-2">
                     <img src="./assets/sosmed/videoIcon.svg" alt="" />
-                    <p className="m-0 text-light">0:29</p>
+                      <p className="m-0 text-light">0:29</p>
+                      </div>
                   </div>
                 </div>
                 <div className="desc-instagram">
@@ -287,7 +245,9 @@ const index = () => {
             </Col>
             <Col>
               <div className="card-post w-100">
-                <div className="position-relative" style={{ height: "350px" }}>
+                <div className="position-relative card-container"
+                  // style={{ height: "350px" }}
+                >
                   <img
                     src="./assets/sosmed/sosmed2.svg"
                     className="instagram-post w-100 h-100 rounded-3"
@@ -295,8 +255,10 @@ const index = () => {
                     alt="instagram post"
                   />
                   <div className="overlay position-absolute d-flex gap-2 bottom-0 left-0 py-1 px-2">
+                  <div className="d-flex align-items-center gap-1 gap-md-2">
                     <img src="./assets/sosmed/videoIcon.svg" alt="" />
-                    <p className="m-0 text-light">0:29</p>
+                      <p className="m-0 text-light">0:29</p>
+                      </div>
                   </div>
                 </div>
                 <div className="desc-instagram">
@@ -328,7 +290,9 @@ const index = () => {
             </Col>
             <Col>
               <div className="card-post w-100">
-                <div className="position-relative" style={{ height: "350px" }}>
+                <div className="position-relative card-container"
+                  // style={{ height: "350px" }}
+                >
                   <img
                     src="./assets/sosmed/sosmed3.svg"
                     className="instagram-post w-100 h-100 rounded-3"
@@ -336,8 +300,10 @@ const index = () => {
                     alt="instagram post"
                   />
                   <div className="overlay position-absolute d-flex gap-2 bottom-0 left-0 py-1 px-2">
+                  <div className="d-flex align-items-center gap-1 gap-md-2">
                     <img src="./assets/sosmed/videoIcon.svg" alt="" />
-                    <p className="m-0 text-light">0:29</p>
+                      <p className="m-0 text-light">0:29</p>
+                      </div>
                   </div>
                 </div>
                 <div className="desc-instagram">
@@ -369,7 +335,9 @@ const index = () => {
             </Col>
             <Col>
               <div className="card-post w-100">
-                <div className="position-relative" style={{ height: "350px" }}>
+                <div className="position-relative card-container"
+                  // style={{ height: "350px" }}
+                >
                   <img
                     src="./assets/sosmed/sosmed4.svg"
                     className="instagram-post w-100 h-100 rounded-3"
@@ -377,8 +345,10 @@ const index = () => {
                     alt="instagram post"
                   />
                   <div className="overlay position-absolute d-flex gap-2 bottom-0 left-0 py-1 px-2">
+                  <div className="d-flex align-items-center gap-1 gap-md-2">
                     <img src="./assets/sosmed/videoIcon.svg" alt="" />
-                    <p className="m-0 text-light">0:29</p>
+                      <p className="m-0 text-light">0:29</p>
+                      </div>
                   </div>
                 </div>
                 <div className="desc-instagram">
@@ -409,10 +379,10 @@ const index = () => {
               </div>
             </Col>
           </div>
-              </div>
+        </div>
       </div>
-      </>
-  )
-}
+    </>
+  );
+};
 
-export default index
+export default index;

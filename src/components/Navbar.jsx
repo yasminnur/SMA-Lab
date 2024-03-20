@@ -2,16 +2,24 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./css/navbar.css";
 
-const Navbar = () => {
+const Navbar = ({background}) => {
   const [menuText, setMenuText] = useState("Menu");
   const [isActive, setIsActive] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [logoSrc, setLogoSrc] = useState("./assets/navbar/logoColor.svg");
   const [navbarStyle, setNavbarStyle] = useState({
     backgroundColor: "rgba(0, 0, 0, 0.15)",
+    backgroundColor: background || "rgba(0, 0, 0, 0.15)",
     backdropFilter: "blur(25px)",
     // width: '100%'
   });
+
+  useEffect(() => {
+    setNavbarStyle({
+      backgroundColor: background || "rgba(0, 0, 0, 0.15)",
+      backdropFilter: "blur(25px)",
+    });
+  }, [background]);
 
   const [activeMenu, setActiveMenu] = useState({
     profil: false,
@@ -40,12 +48,14 @@ const Navbar = () => {
     if (isActive) {
       setLogoSrc("./assets/navbar/logoColor.svg");
       setNavbarStyle({
-        backgroundColor: "rgba(0, 0, 0, 0.15)",
+        backgroundColor: background || "rgba(0, 0, 0, 0.15)",
+        // backgroundColor: "rgba(0, 0, 0, 0.15)",
         backdropFilter: "blur(25px)",
       });
     } else {
       setLogoSrc("./assets/navbar/logoWhite.svg");
       setNavbarStyle({
+        // backgroundColor: background || "rgba(0, 0, 0, 0.15)",
         backgroundColor: "rgba(0, 0, 0, 0.6)",
         backdropFilter: "blur(25px)",
       });
@@ -60,7 +70,10 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar w-100 z-3" style={navbarStyle}>
+      <div className="navbar w-100 z-3"
+        // style={{ backgroundColor: background }}
+        style={navbarStyle}
+      >
         <div className="navbarContent w-100 d-flex align-items-center justify-content-between">
           <div className="d-flex me-auto gap-3">
             <img className="logoSMA" src={logoSrc} alt="" />

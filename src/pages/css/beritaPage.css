@@ -1,4 +1,109 @@
-.beritaPage {
-    padding: 120px 60px 80px 60px;
-
+/* PHONE  */
+@media (max-width: 425px) {
+    .beritaPage {
+        padding: 150px 20px 80px 20px;
+      
+        .active {
+          color: #091e6f;
+          background: #ebdcff;
+        }
+      
+        li {
+          padding: 5px 15px;
+          border-radius: 10px;
+        }
+      
+        .search-container {
+          padding: 10px 12px;
+          color: #727272;
+          font-size: 15px;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+          width: fit-content;
+      
+          input {
+            /* width: fit-content; */
+            border: none;
+            background: transparent;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
 }
+
+/* TABLET  */
+@media (min-width: 426px) {
+    .beritaPage {
+        padding: 150px 40px 80px 40px;
+      
+        .active {
+          color: #091e6f;
+          background: #ebdcff;
+        }
+      
+        li {
+          padding: 5px 15px;
+          border-radius: 10px;
+        }
+      
+        .search-container {
+          padding: 10px 12px;
+          color: #727272;
+          font-size: 15px;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+          width: fit-content;
+      
+          input {
+            /* width: fit-content; */
+            border: none;
+            background: transparent;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+}
+
+/* LAPTOP  */
+@media (min-width: 769px) {
+    .beritaPage {
+        padding: 150px 60px 80px 60px;
+      
+        .active {
+          color: #091e6f;
+          background: #ebdcff;
+        }
+      
+        li {
+          padding: 5px 15px;
+          border-radius: 10px;
+        }
+      
+        .search-container {
+          padding: 10px 12px;
+          color: #727272;
+          font-size: 15px;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+          width: fit-content;
+      
+          input {
+            /* width: fit-content; */
+            border: none;
+            background: transparent;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+}
+
+/* LAPTOP L  */
+@media (min-width: 1025px) {
+}
+

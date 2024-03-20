@@ -3,6 +3,8 @@ import Footer from "../components/Footer";
 import { Link, useLocation } from "react-router-dom";
 
 const testiPage = () => {
+  const thumbnailSrc = "./assets/footer/thumbnail.svg";
+  const linkUrl = "https://youtu.be/AsnN3t7JPHU?si=Q1pYgUwhXAv0xLWY";
     // const location = useLocation();
     // const testi = location.state ? location.state.testi : null;
     
@@ -84,9 +86,9 @@ const testiPage = () => {
             </div>
           </div>
         </div>
-
-        <Footer />
       </div>
+      <Footer  thumbnailSrc={thumbnailSrc}
+        linkUrl={linkUrl} />
     </>
   );
 };

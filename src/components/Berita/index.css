@@ -1,90 +1,687 @@
-.beritaMain {
-    .headline {
-        h1 {
-            font-size: 100px;
+/* PHONE  */
+@media (max-width: 425px) {
+    .beritaMain {
+        .headline {
+          h1 {
+            font-size: 50px;
             line-height: 110%;
-            letter-spacing: -8px;
-        }
-
-        p {
-            font-size: 25px;
+            letter-spacing: -4px;
+          }
+    
+          img {
+            height: 350px;
+            object-fit: cover;
+          }
+          p {
+            font-size: 12px;
             letter-spacing: -0.24px;
-        }
-
-        .float-card {
-            max-width: 40%;
-            bottom: 20px;
-            left: 20px;
-
+          }
+    
+          .float-card {
+            width: 65%;
+            bottom: 15px;
+            left: 15px;
+    
             h5 {
-                font-size: 13px;
-                color: #861FC1;
-                line-height: 110%;
-                letter-spacing: -0.24px;
+              font-size: 12px;
+              color: #861fc1;
+              line-height: 110%;
+              letter-spacing: -0.24px;
             }
-
+    
             h3 {
-                font-size: 25px;
-                color: #272727;
-                line-height: 120%;
-                letter-spacing: -0.24px; 
+              font-size: 20px;
+              color: #272727;
+              line-height: 120%;
+              letter-spacing: -0.24px;
             }
-
+    
             p {
+              font-size: 10px;
+              color: #272727;
+              line-height: 18px;
+              letter-spacing: -0.24px;
+            }
+    
+            .ket {
+              p {
                 font-size: 12px;
                 color: #272727;
                 line-height: 18px;
-                letter-spacing: -0.24px; 
+                letter-spacing: -0.24px;
+              }
+              .circle {
+                width: 3px;
+                height: 3px;
+                margin-top: 8px;
+              }
             }
+          }
         }
+    
+        /* .ket {
+          p {
+            font-size: 12px;
+            color: #272727;
+            line-height: 18px;
+            letter-spacing: -0.24px;
+          }
+          .circle {
+            width: 3px;
+            height: 3px;
+            margin-top: 8px;
+          }
+        } */
+    
+        .info-terkini {
+          border-top: 1px solid #c3c3c3;
+          h5 {
+            font-size: 12px;
+            color: #861fc1;
+            line-height: 110%;
+            letter-spacing: -0.24px;
+          }
+    
+          h4 {
+            font-size: 20px;
+            line-height: 110%;
+            letter-sapcing: -0.24px;
+          }
+    
+          h3 {
+            font-size: 20px;
+            color: #272727;
+            line-height: 120%;
+            letter-spacing: -0.24px;
+          }
+    
+          p {
+            font-size: 14px;
+            color: #272727;
+            line-height: 160%;
+            letter-spacing: -0.24px;
+          }
+    
+          .unconnect {
+            .image {
+              background: #f9f9f9;
+            }
+          }
+    
+          .title-kanan {
+            font-size: 17px;
+          }
+    
+          .ket {
+            p {
+              font-size: 10px;
+              color: #272727;
+              line-height: 18px;
+              letter-spacing: -0.24px;
+            }
+            .circle {
+              width: 3px;
+              height: 3px;
+              margin-top: 8px;
+            }
+          }
+        }
+    
+        .berita-lainnya {
+          border-top: 1px solid #c3c3c3;
+          h5 {
+            font-size: 10px;
+            color: #861fc1;
+            line-height: 110%;
+            letter-spacing: -0.24px;
+          }
+    
+          h4 {
+            font-size: 20px;
+            line-height: 110%;
+            letter-sapcing: -0.24px;
+          }
+    
+          h3 {
+            font-size: 15px;
+            color: #272727;
+            line-height: 120%;
+            letter-spacing: -0.24px;
+          }
+    
+          .ket {
+            p {
+              font-size: 9px;
+              color: #272727;
+              line-height: 18px;
+              letter-spacing: -0.24px;
+            }
+            .circle {
+              width: 3px;
+              height: 3px;
+              margin-top: 8px;
+            }
+          }
+        }
+    
+        .whatsapp-channel {
+          border-top: 1px solid #c3c3c3;
+          h4 {
+            font-size: 20px;
+            line-height: 110%;
+            letter-sapcing: -0.24px;
+          }
+          .card-post {
+            .card-container {
+              height: 200px;
+    
+              .overlay {
+                img {
+                    width: 12px;
+                }
+                p {
+                  font-size: 10px;
+                  line-height: 110%;
+                  letter-sapcing: -0.24px;
+                  margin: 0;
+                }
+              }
+            }
+    
+            .desc-instagram {
+              p {
+                font-size: 12px;
+                line-height: 140%;
+                letter-sapcing: -0.24px;
+              }
+              a {
+                font-size: 8px;
+              }
+            }
+          }
+        }
+      }
+}
+
+/* TABLET  */
+@media (min-width: 426px) and (max-width: 768px) {
+  .beritaMain {
+    .headline {
+      h1 {
+        font-size: 80px;
+        line-height: 110%;
+        letter-spacing: -8px;
+      }
+
+      p {
+        font-size: 20px;
+        letter-spacing: -0.24px;
+      }
+
+      .float-card {
+        width: 65%;
+        bottom: 20px;
+        left: 20px;
+
+        h5 {
+          font-size: 12px;
+          color: #861fc1;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+        }
+
+        h3 {
+          font-size: 23px;
+          color: #272727;
+          line-height: 120%;
+          letter-spacing: -0.24px;
+        }
+
+        p {
+          font-size: 10px;
+          color: #272727;
+          line-height: 18px;
+          letter-spacing: -0.24px;
+        }
+
+        .ket {
+          p {
+            font-size: 12px;
+            color: #272727;
+            line-height: 18px;
+            letter-spacing: -0.24px;
+          }
+          .circle {
+            width: 3px;
+            height: 3px;
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+
+    /* .ket {
+      p {
+        font-size: 12px;
+        color: #272727;
+        line-height: 18px;
+        letter-spacing: -0.24px;
+      }
+      .circle {
+        width: 3px;
+        height: 3px;
+        margin-top: 8px;
+      }
+    } */
+
+    .info-terkini {
+      border-top: 1px solid #c3c3c3;
+      h5 {
+        font-size: 10px;
+        color: #861fc1;
+        line-height: 110%;
+        letter-spacing: -0.24px;
+      }
+
+      h4 {
+        font-size: 20px;
+        line-height: 110%;
+        letter-sapcing: -0.24px;
+      }
+
+      h3 {
+        font-size: 18px;
+        color: #272727;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #272727;
+        line-height: 160%;
+        letter-spacing: -0.24px;
+      }
+
+      .unconnect {
+        .image {
+          background: #f9f9f9;
+        }
+      }
+
+      .title-kanan {
+        font-size: 17px;
+      }
+
+      .ket {
+        p {
+          font-size: 10px;
+          color: #272727;
+          line-height: 18px;
+          letter-spacing: -0.24px;
+        }
+        .circle {
+          width: 3px;
+          height: 3px;
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .berita-lainnya {
+      border-top: 1px solid #c3c3c3;
+      h5 {
+        font-size: 10px;
+        color: #861fc1;
+        line-height: 110%;
+        letter-spacing: -0.24px;
+      }
+
+      h4 {
+        font-size: 20px;
+        line-height: 110%;
+        letter-sapcing: -0.24px;
+      }
+
+      h3 {
+        font-size: 15px;
+        color: #272727;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+      }
+
+      .ket {
+        p {
+          font-size: 10px;
+          color: #272727;
+          line-height: 18px;
+          letter-spacing: -0.24px;
+        }
+        .circle {
+          width: 3px;
+          height: 3px;
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .whatsapp-channel {
+      border-top: 1px solid #c3c3c3;
+      h4 {
+        font-size: 20px;
+        line-height: 110%;
+        letter-sapcing: -0.24px;
+      }
+      .card-post {
+        .card-container {
+          height: 250px;
+
+          .overlay {
+            img {
+            }
+            p {
+              font-size: 12px;
+              line-height: 110%;
+              letter-sapcing: -0.24px;
+              margin: 0;
+            }
+          }
+        }
+
+        .desc-instagram {
+          p {
+            font-size: 13px;
+            line-height: 140%;
+            letter-sapcing: -0.24px;
+          }
+          a {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* LAPTOP  */
+@media (min-width: 769px) {
+  .headline {
+    h1 {
+      font-size: 100px;
+      line-height: 110%;
+      letter-spacing: -8px;
+    }
+
+    p {
+      font-size: 20px;
+      letter-spacing: -0.24px;
+    }
+
+    .float-card {
+      width: 45%;
+      bottom: 20px;
+      left: 20px;
+
+      h5 {
+        font-size: 15px;
+        color: #861fc1;
+        line-height: 110%;
+        letter-spacing: -0.24px;
+      }
+
+      h3 {
+        font-size: 25px;
+        color: #272727;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+      }
+
+      /* p {
+            font-size: 13px;
+            color: #272727;
+            line-height: 18px;
+            letter-spacing: -0.24px;
+          } */
+
+      .ket {
+        p {
+          font-size: 14px;
+          color: #272727;
+          line-height: 18px;
+          letter-spacing: -0.24px;
+        }
+        .circle {
+          width: 4px;
+          height: 4px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+
+  .info-terkini {
+    border-top: 1px solid #c3c3c3;
+    h5 {
+      font-size: 13px;
+      color: #861fc1;
+      line-height: 110%;
+      letter-spacing: -0.24px;
+    }
+
+    h4 {
+      font-size: 25px;
+      line-height: 110%;
+      letter-sapcing: -0.24px;
+    }
+
+    h3 {
+      font-size: 23px;
+      color: #272727;
+      line-height: 120%;
+      letter-spacing: -0.24px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #272727;
+      line-height: 160%;
+      letter-spacing: -0.24px;
+    }
+
+    .unconnect {
+      .image {
+        background: #f9f9f9;
+      }
+    }
+
+    .title-kanan {
+      font-size: 20px;
+    }
+
+    .ket {
+      p {
+        font-size: 10px;
+        color: #272727;
+        line-height: 18px;
+        letter-spacing: -0.24px;
+      }
+      .circle {
+        width: 3px;
+        height: 3px;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .berita-lainnya {
+    border-top: 1px solid #c3c3c3;
+    h5 {
+      font-size: 13px;
+      color: #861fc1;
+      line-height: 110%;
+      letter-spacing: -0.24px;
+    }
+
+    h4 {
+      font-size: 25px;
+      line-height: 110%;
+      letter-sapcing: -0.24px;
+    }
+
+    h3 {
+      font-size: 18px;
+      color: #272727;
+      line-height: 120%;
+      letter-spacing: -0.24px;
+    }
+
+    .ket {
+        p {
+          font-size: 12px;
+          color: #272727;
+          line-height: 18px;
+          letter-spacing: -0.24px;
+        }
+        .circle {
+          width: 4px;
+          height: 4px;
+          margin-top: 7px;
+        }
+      }
+  }
+
+  .whatsapp-channel {
+    border-top: 1px solid #c3c3c3;
+    h4 {
+      font-size: 25px;
+      line-height: 110%;
+      letter-sapcing: -0.24px;
+    }
+    .card-post {
+      .card-container {
+        height: 300px;
+
+        .overlay {
+          img {
+          }
+          p {
+            font-size: 14px;
+            line-height: 110%;
+            letter-sapcing: -0.24px;
+            margin: 0;
+          }
+        }
+      }
+
+      .desc-instagram {
+        p {
+          font-size: 16px;
+          line-height: 140%;
+          letter-sapcing: -0.24px;
+        }
+        a {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+/* LAPTOP L  */
+@media (min-width: 1025px) {
+  .beritaMain {
+    .headline {
+      h1 {
+        font-size: 100px;
+        line-height: 110%;
+        letter-spacing: -8px;
+      }
+
+      p {
+        font-size: 25px;
+        letter-spacing: -0.24px;
+      }
+
+      .float-card {
+        max-width: 40%;
+        bottom: 20px;
+        left: 20px;
+
+        h5 {
+          font-size: 13px;
+          color: #861fc1;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+        }
+
+        h3 {
+          font-size: 25px;
+          color: #272727;
+          line-height: 120%;
+          letter-spacing: -0.24px;
+        }
+
+        p {
+          font-size: 12px;
+          color: #272727;
+          line-height: 18px;
+          letter-spacing: -0.24px;
+        }
+      }
     }
 
     .info-terkini,
     .berita-lainnya {
-        h5 {
-            font-size: 13px;
-            color: #861FC1;
-            line-height: 110%;
-            letter-spacing: -0.24px;
-        }
+      h5 {
+        font-size: 13px;
+        color: #861fc1;
+        line-height: 110%;
+        letter-spacing: -0.24px;
+      }
 
-        h3 {
-            font-size: 20px;
-            color: #272727;
-            line-height: 120%;
-            letter-spacing: -0.24px; 
-        }
+      h3 {
+        font-size: 20px;
+        color: #272727;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+      }
 
+      p {
+        font-size: 14px;
+        color: #272727;
+        line-height: 160%;
+        letter-spacing: -0.24px;
+      }
+
+      .ket {
         p {
-            font-size: 14px;
-            color: #272727;
-            line-height: 160%;
-            letter-spacing: -0.24px; 
+          font-size: 12px;
+          color: #272727;
+          line-height: 18px;
+          letter-spacing: -0.24px;
         }
+      }
 
-        .ket {
-            p {
-                font-size: 12px;
-                color: #272727;
-                line-height: 18px;
-                letter-spacing: -0.24px; 
-            }
+      .unconnect {
+        .image {
+          background: #f9f9f9;
         }
+      }
 
-        .unconnect {
-            .image {
-                background: #F9F9F9;
-            }
-        }
-
-        .title-kanan {
-            font-size: 17px; 
-        }
+      .title-kanan {
+        font-size: 17px;
+      }
     }
 
     .whatsapp-channel {
-        a {
-            font-size: 10px;
-        }
+      a {
+        font-size: 10px;
+      }
     }
+  }
+
+  .berita-lainnya,
+  .whatsapp-channel {
+    border-top: 1px solid #c3c3c3;
+  }
 }

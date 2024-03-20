@@ -4,8 +4,11 @@ import { Row, Col } from "react-bootstrap";
 import React, { useState, useEffect } from "react";
 import Index from "../components/Berita/index";
 import KabarSekolah from "../components/Berita/KabarSekolah";
+import { useLocation } from "react-router-dom";
 
 const beritaPage = () => {
+  const thumbnailSrc = "./assets/footer/thumbnail.svg";
+  const linkUrl = "https://youtu.be/AsnN3t7JPHU?si=Q1pYgUwhXAv0xLWY";
   const [selectedItem, setSelectedItem] = useState("Semua");
 
   // Fungsi untuk menangani klik item menu
@@ -20,43 +23,64 @@ const beritaPage = () => {
   //   setSelectedItem(item);
   // };
 
-  // useEffect(() => {
-  //   localStorage.setItem('selectedItem', selectedItem);
-  // }, [selectedItem]);
+  useEffect(() => {
+    localStorage.setItem('selectedItem', selectedItem);
+  }, [selectedItem]);
   return (
     <>
-        <div className="beritaPage">
-          <div className="navMenu d-flex align-items-center justify-content-between">
-            <ul className=" list-unstyled d-flex gap-3">
-              <li onClick={() => handleItemClick("Semua")}>Semua</li>
+      <div className="beritaPage">
+        <div className="navMenu mb-3 d-flex align-items-center justify-content-between">
+          <ul className=" list-unstyled d-flex gap-2 m-0">
+          <li
+              className={selectedItem === "Semua" ? "fw-semibold active" : ""}
+              onClick={() => handleItemClick("Semua")}
+            >
+              Semua
+            </li>
+            <li
+              className={selectedItem === "Kabar Sekolah" ? "fw-semibold active" : ""}
+              onClick={() => handleItemClick("Kabar Sekolah")}
+            >
+              Kabar Sekolah
+            </li>
+            <li
+              className={selectedItem === "Prestasi" ? "fw-semibold active" : ""}
+              onClick={() => handleItemClick("Prestasi")}
+            >
+              Prestasi
+            </li>
+            <li
+              className={selectedItem === "Artikel" ? "fw-semibold active" : ""}
+              onClick={() => handleItemClick("Artikel")}
+            >
+              Artikel
+            </li>
+            {/* <li onClick={() => handleItemClick("Semua")}>Semua</li>
               <li onClick={() => handleItemClick("Kabar Sekolah")}>
                 Kabar Sekolah
               </li>
               <li onClick={() => handleItemClick("Prestasi")}>Prestasi</li>
-              <li onClick={() => handleItemClick("Artikel")}>Artikel</li>
-              {/* <li>Semua</li>
-                <li>Kabar Sekolah</li>
-                <li>Prestasi</li>
-                <li>Artikel</li> */}
-            </ul>
-            <div className="search-container d-flex align-items-center">
-              <img src="./assets/BeritaPage/search.svg" alt="" />
-              <input type="text" />
-              Temukan berita apa pun di sini
-            </div>
+              <li onClick={() => handleItemClick("Artikel")}>Artikel</li> */}
+          </ul>
+          <div
+            className="search-container rounded-3 d-flex gap-2 align-items-center"
+            style={{ background: "#F9F9F9" }}
+          >
+            <img src="./assets/BeritaPage/search.svg" alt="" />
+            <input
+              className="d-flex w-100"
+              type="text"
+              placeholder="Temukan berita apa pun di sini"
+            />
           </div>
-
-          {/* Konten yang dipilih akan ditampilkan di sini */}
-          <div>
-            {selectedItem === "Semua" && <Index />}
-            {selectedItem === "Kabar Sekolah" && <KabarSekolah />}
-            {/* {selectedItem === 'Prestasi' && <PrestasiContent />} */}
-            {/* {selectedItem === 'Artikel' && <ArtikelContent />} */}
-          </div>
-
-          {/* ============================= */}
         </div>
-        <Footer />
+
+        <div>
+          {selectedItem === "Semua" && <Index />}
+          {selectedItem === "Kabar Sekolah" && <KabarSekolah />}
+        </div>
+      </div>
+      <Footer thumbnailSrc={thumbnailSrc} linkUrl={linkUrl} />
     </>
   );
 };

@@ -2,7 +2,7 @@ import { Row, Col } from "react-bootstrap";
 import Copyright from "./Copyright";
 import "./css/footer.css";
 
-const Footer = () => {
+const Footer = ({ linkUrl, thumbnailSrc }) => {
   return (
     <>
       <div className="footer w-100">
@@ -92,8 +92,11 @@ const Footer = () => {
                 </div>
               </Col>
 
-              <Col className="kanan p-0">
-                <a
+            <Col className="kanan p-0">
+            <a href={linkUrl} target="blank">
+              <img className="rounded-4" src={thumbnailSrc} alt="img" />
+            </a>
+                {/* <a
                   href="https://youtu.be/AsnN3t7JPHU?si=Q1pYgUwhXAv0xLWY"
                   target="blank"
                 >
@@ -102,7 +105,7 @@ const Footer = () => {
                     src="./assets/footer/thumbnail.svg"
                     alt=""
                   />
-                </a>
+                </a> */}
               </Col>
             </Col>
           </Row>

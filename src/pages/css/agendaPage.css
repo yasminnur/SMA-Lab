@@ -15,5 +15,24 @@
     .navMenu {
         margin-top: 80px;
         border-bottom: 1px solid #C3C3C3;
+
+        .search-container {
+            padding: 10px 12px;
+            color: #727272;
+            font-size: 15px;
+            line-height: 110%;
+            letter-spacing: -0.24px;
+            width: fit-content;
+        
+            input {
+              /* width: fit-content; */
+              border: none;
+              background: transparent;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
     }
+
 }
