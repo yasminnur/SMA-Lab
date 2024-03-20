@@ -6,12 +6,20 @@ const Footer = () => {
   return (
     <>
       <div className="footer w-100">
-        <div className="footer-atas ">
+        {/* <div className="footer-atas "> */}
           <Row className="d-flex">
             <Col xs={12} md={4} className="kiri p-0">
               <div className="logo d-flex align-items-center gap-3">
-                <img className="kiri" src="./assets/footer/logo.svg" alt="logo" />
-                <img className="kanan" src="./assets/footer/logo-text.svg" alt="logo" />
+                <img
+                  className="kiri"
+                  src="./assets/footer/logo.svg"
+                  alt="logo"
+                />
+                <img
+                  className="kanan"
+                  src="./assets/footer/logo-text.svg"
+                  alt="logo"
+                />
               </div>
               <p className="jalan m-0 p-0 mt-4">
                 Jl. Bromo No.16, Klojen, Kota Malang, Jawa Timur 65119 Indonesia
@@ -35,60 +43,70 @@ const Footer = () => {
                 <div className="bawah mt-5 mt-md-0 text-center text-md-start">
                   <p>OFFICIAL SOCIAL MEDIA</p>
                   <div className="d-flex gap-3 justify-content-center justify-content-md-start">
-                    <a href="https://www.facebook.com/smalabum?mibextid=ZbWKwL"
-                    target="blank">
-                    <div className="sosmed-akun mx-auto p-2 m-md-0 rounded-circle d-flex">
-                      <img
-                        className="m-0 p-0"
-                        src="./assets/footer/facebook.svg"
-                        alt=""
-                      />
+                    <a
+                      href="https://www.facebook.com/smalabum?mibextid=ZbWKwL"
+                      target="blank"
+                    >
+                      <div className="sosmed-akun mx-auto p-2 m-md-0 rounded-circle d-flex">
+                        <img
+                          className="m-0 p-0"
+                          src="./assets/footer/facebook.svg"
+                          alt=""
+                        />
                       </div>
                     </a>
-                    <a href="https://www.instagram.com/smalabum/"
-                      target="blank">
-                    <div className="sosmed-akun mx-auto p-2 m-md-0 rounded-circle d-flex">
-                      <img
-                        className="m-0 p-0"
-                        src="./assets/footer/instagram.svg"
-                        alt=""
-                      />
+                    <a
+                      href="https://www.instagram.com/smalabum/"
+                      target="blank"
+                    >
+                      <div className="sosmed-akun mx-auto p-2 m-md-0 rounded-circle d-flex">
+                        <img
+                          className="m-0 p-0"
+                          src="./assets/footer/instagram.svg"
+                          alt=""
+                        />
                       </div>
-                      </a>
+                    </a>
                     <a href="">
-                    <div className="sosmed-akun mx-auto p-2 m-md-0 rounded-circle d-flex">
-                      <img
-                        className="m-0 p-0"
-                        alt=""
-                        src="./assets/footer/x.svg"
-                      />
+                      <div className="sosmed-akun mx-auto p-2 m-md-0 rounded-circle d-flex">
+                        <img
+                          className="m-0 p-0"
+                          alt=""
+                          src="./assets/footer/x.svg"
+                        />
                       </div>
-                      </a>
-                    <a href="https://www.youtube.com/@smalabum7934" target="blank">
-                    <div className="sosmed-akun mx-auto p-2 m-md-0 rounded-circle d-flex">
-                      <img
-                        className="m-0 p-0"
-                        alt=""
-                        src="./assets/footer/youtube.svg"
-                      />
+                    </a>
+                    <a
+                      href="https://www.youtube.com/@smalabum7934"
+                      target="blank"
+                    >
+                      <div className="sosmed-akun mx-auto p-2 m-md-0 rounded-circle d-flex">
+                        <img
+                          className="m-0 p-0"
+                          alt=""
+                          src="./assets/footer/youtube.svg"
+                        />
                       </div>
-                      </a>
+                    </a>
                   </div>
                 </div>
               </Col>
 
               <Col className="kanan p-0">
-                <a href="https://youtu.be/AsnN3t7JPHU?si=Q1pYgUwhXAv0xLWY" target="blank">
-                <img
-                  className="rounded-4"
-                  src="./assets/footer/thumbnail.svg"
-                  alt=""
+                <a
+                  href="https://youtu.be/AsnN3t7JPHU?si=Q1pYgUwhXAv0xLWY"
+                  target="blank"
+                >
+                  <img
+                    className="rounded-4"
+                    src="./assets/footer/thumbnail.svg"
+                    alt=""
                   />
-                  </a>
+                </a>
               </Col>
             </Col>
           </Row>
-        </div>
+        {/* </div> */}
 
         {/* <Copyright /> */}
         {/* <div className="footer-bawah w-100 p-4 bg-dark">

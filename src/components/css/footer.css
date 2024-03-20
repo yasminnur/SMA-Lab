@@ -1,98 +1,87 @@
 /* PHONE  */
 @media (max-width: 425px) {
   .footer {
-    .footer-atas {
-      padding: 70px 30px 50px 30px;
-      height: fit-content;
-      background: #f8f8f8;
+    padding: 60px 20px;
+    height: fit-content;
+    background: #f8f8f8;
 
-      .row {
-        gap: 15px;
+    .row {
+      gap: 15px;
 
-        .kiri {
-          .logo {
-            .kiri {
-              width: 50px;
-            }
-          }
-
-          .jalan {
-            line-height: 140%;
-            letter-spacing: -0.24px;
-            font-size: 15px;
-          }
-
-          h5 {
-            line-height: 140%;
-            letter-spacing: -0.24px;
-            font-size: 15px;
-            font-weight: bold;
-          }
-
-          .infor {
-            line-height: 18px;
-            letter-spacing: -0.24px;
-            font-size: 15px;
-            font-weight: normal;
+      .kiri {
+        .logo {
+          .kiri {
+            width: 50px;
           }
         }
 
-        .tengah {
-            flex-direction: column;
+        .jalan {
+          line-height: 140%;
+          letter-spacing: -0.24px;
+          font-size: 15px;
+        }
 
-          .kiri {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+        h5 {
+          line-height: 140%;
+          letter-spacing: -0.24px;
+          font-size: 15px;
+          font-weight: bold;
+        }
 
-            .atas {
-              p {
-                line-height: 160%;
-                letter-spacing: -0.24px;
-                font-size: 15px;
-                font-weight: bold;
-                white-space: nowrap;
-              }
-            }
-
-            .bawah {
-                margin-top: 10px;
-              p {
-                font-size: 15px;
-              }
-
-              .sosmed-akun {
-                border: 1px solid black;
-                width: fit-content;
-                height: fit-content;
-
-                img {
-                  min-width: 15px;
-                  min-height: 15px;
-                }
-              }
-            }
-          }
-
-          .kanan {
-            margin-top: 25px;
-            img {
-                width: 285px;
-                max-width: 285px;
-              /* max-width: 200px; */
-              object-fit: cover;
-            }
-          }
+        .infor {
+          line-height: 18px;
+          letter-spacing: -0.24px;
+          font-size: 15px;
+          font-weight: normal;
         }
       }
-    }
 
-    .footer-bawah {
-      height: fit-content;
+      .tengah {
+        flex-direction: column;
 
-      p {
-        color: #808080;
-        font-size: 13px;
+        .kiri {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .atas {
+            p {
+              line-height: 160%;
+              letter-spacing: -0.24px;
+              font-size: 15px;
+              font-weight: bold;
+              white-space: nowrap;
+            }
+          }
+
+          .bawah {
+            margin-top: 10px;
+            p {
+              font-size: 15px;
+            }
+
+            .sosmed-akun {
+              border: 1px solid black;
+              width: fit-content;
+              height: fit-content;
+
+              img {
+                min-width: 15px;
+                min-height: 15px;
+              }
+            }
+          }
+        }
+
+        .kanan {
+          margin-top: 25px;
+          img {
+            width: 285px;
+            max-width: 285px;
+            /* max-width: 200px; */
+            object-fit: cover;
+          }
+        }
       }
     }
   }
@@ -101,85 +90,74 @@
 /* TABLET  */
 @media (min-width: 426px) {
   .footer {
-    .footer-atas {
-      padding: 70px 40px 50px 40px;
-      height: fit-content;
-      background: #f8f8f8;
+    padding: 60px 40px;
+    height: fit-content;
+    background: #f8f8f8;
 
-      .row {
-        gap: 80px;
+    .row {
+      gap: 80px;
 
-        .kiri {
-          .jalan {
-            line-height: 140%;
-            letter-spacing: -0.24px;
-            font-size: 15px;
-          }
-
-          h5 {
-            line-height: 140%;
-            letter-spacing: -0.24px;
-            font-size: 15px;
-            font-weight: bold;
-          }
-
-          .infor {
-            line-height: 18px;
-            letter-spacing: -0.24px;
-            font-size: 15px;
-            font-weight: normal;
-          }
+      .kiri {
+        .jalan {
+          line-height: 140%;
+          letter-spacing: -0.24px;
+          font-size: 15px;
         }
 
-        .tengah {
-          .kiri {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+        h5 {
+          line-height: 140%;
+          letter-spacing: -0.24px;
+          font-size: 15px;
+          font-weight: bold;
+        }
 
-            .atas {
-              p {
-                line-height: 160%;
-                letter-spacing: -0.24px;
-                font-size: 15px;
-                font-weight: bold;
-                white-space: nowrap;
-              }
-            }
-
-            .bawah {
-              p {
-              }
-
-              .sosmed-akun {
-                border: 1px solid black;
-                width: fit-content;
-                height: fit-content;
-
-                img {
-                  min-width: 15px;
-                  min-height: 15px;
-                }
-              }
-            }
-          }
-
-          .kanan {
-            img {
-              max-width: 500px;
-              object-fit: cover;
-            }
-          }
+        .infor {
+          line-height: 18px;
+          letter-spacing: -0.24px;
+          font-size: 15px;
+          font-weight: normal;
         }
       }
-    }
 
-    .footer-bawah {
-      height: fit-content;
+      .tengah {
+        .kiri {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
 
-      p {
-        color: #808080;
-        font-size: 13px;
+          .atas {
+            p {
+              line-height: 160%;
+              letter-spacing: -0.24px;
+              font-size: 15px;
+              font-weight: bold;
+              white-space: nowrap;
+            }
+          }
+
+          .bawah {
+            p {
+            }
+
+            .sosmed-akun {
+              border: 1px solid black;
+              width: fit-content;
+              height: fit-content;
+
+              img {
+                min-width: 15px;
+                min-height: 15px;
+              }
+            }
+          }
+        }
+
+        .kanan {
+          img {
+            max-width: 500px;
+            object-fit: cover;
+          }
+        }
       }
     }
   }
@@ -188,166 +166,76 @@
 /* LAPTOP  */
 @media (min-width: 769px) {
   .footer {
-    .footer-atas {
-      padding: 70px 40px 50px 40px;
-      height: fit-content;
-      background: #f8f8f8;
+    padding: 60px 60px;
+    height: fit-content;
+    background: #f8f8f8;
 
-      .row {
-        gap: 80px;
+    .row {
+      gap: 80px;
 
-        .kiri {
-          .jalan {
-            line-height: 140%;
-            letter-spacing: -0.24px;
-            font-size: 15px;
-          }
-
-          h5 {
-            line-height: 140%;
-            letter-spacing: -0.24px;
-            font-size: 15px;
-            font-weight: bold;
-          }
-
-          .infor {
-            line-height: 18px;
-            letter-spacing: -0.24px;
-            font-size: 15px;
-            font-weight: normal;
-          }
+      .kiri {
+        .jalan {
+          line-height: 140%;
+          letter-spacing: -0.24px;
+          font-size: 15px;
         }
 
-        .tengah {
-          .kiri {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+        h5 {
+          line-height: 140%;
+          letter-spacing: -0.24px;
+          font-size: 15px;
+          font-weight: bold;
+        }
 
-            .atas {
-              p {
-                line-height: 160%;
-                letter-spacing: -0.24px;
-                font-size: 15px;
-                font-weight: bold;
-                white-space: nowrap;
-              }
-            }
-
-            .bawah {
-              p {
-              }
-
-              .sosmed-akun {
-                border: 1px solid black;
-                width: fit-content;
-                height: fit-content;
-
-                img {
-                  min-width: 15px;
-                  min-height: 15px;
-                }
-              }
-            }
-          }
-
-          .kanan {
-            img {
-              max-width: 500px;
-              object-fit: cover;
-            }
-          }
+        .infor {
+          line-height: 18px;
+          letter-spacing: -0.24px;
+          font-size: 15px;
+          font-weight: normal;
         }
       }
-    }
 
-   
-  }
-}
-
-/* LAPTOP L  */
-@media (min-width: 1025px) {
-  .footer {
-    .footer-atas {
-      padding: 70px 40px 50px 40px;
-      height: fit-content;
-      background: #f8f8f8;
-
-      .row {
-        gap: 80px;
-
+      .tengah {
         .kiri {
-          .jalan {
-            line-height: 140%;
-            letter-spacing: -0.24px;
-            font-size: 15px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .atas {
+            p {
+              line-height: 160%;
+              letter-spacing: -0.24px;
+              font-size: 15px;
+              font-weight: bold;
+              white-space: nowrap;
+            }
           }
 
-          h5 {
-            line-height: 140%;
-            letter-spacing: -0.24px;
-            font-size: 15px;
-            font-weight: bold;
-          }
+          .bawah {
+            p {
+            }
 
-          .infor {
-            line-height: 18px;
-            letter-spacing: -0.24px;
-            font-size: 15px;
-            font-weight: normal;
+            .sosmed-akun {
+              border: 1px solid black;
+              width: fit-content;
+              height: fit-content;
+
+              img {
+                min-width: 15px;
+                min-height: 15px;
+              }
+            }
           }
         }
 
-        .tengah {
-          .kiri {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            .atas {
-              p {
-                line-height: 160%;
-                letter-spacing: -0.24px;
-                font-size: 15px;
-                font-weight: bold;
-                white-space: nowrap;
-              }
-            }
-
-            .bawah {
-              p {
-              }
-
-              .sosmed-akun {
-                border: 1px solid black;
-                width: fit-content;
-                height: fit-content;
-
-                img {
-                  min-width: 15px;
-                  min-height: 15px;
-                }
-              }
-            }
-          }
-
-          .kanan {
-            img {
-              max-width: 500px;
-              object-fit: cover;
-            }
+        .kanan {
+          img {
+            max-width: 500px;
+            object-fit: cover;
           }
         }
-      }
-    }
-
-    .footer-bawah {
-      height: fit-content;
-
-      p {
-        color: #808080;
-        font-size: 13px;
       }
     }
   }
 }
+

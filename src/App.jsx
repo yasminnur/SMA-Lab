@@ -3,10 +3,15 @@ import Index from "./pages/index";
 import TestiPage from "./pages/testiPage";
 import SambutanPage from "./pages/sambutanPage";
 import BeritaPage from "./pages/beritaPage";
+import PengumumanPage from "./pages/pengumumanPage";
+import PengumumanDetailPage from "./pages/pengumumanDetailPage";
+import AgendaPage from "./pages/agendaPage";
+import AgendaDetail from "./components/Agenda/agendaDetail"
 import TentangPage from "./pages/tentangPage";
 import Testi from "./components/Komen";
 import Sidebar from "./components/Sidebar";
 import Copyright from "./components/Copyright";
+import KabarDetail from "./components/Berita/KabarDetail"
 import { Route, Routes, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -31,8 +36,13 @@ function App() {
           <Route path="/" Component={Index} />
           <Route path="/testiPage" Component={TestiPage} />
           <Route path="/beritaPage" Component={BeritaPage} />
+          <Route path="/agendaPage" Component={AgendaPage} />
+          <Route path="/agendaDetailPage" Component={AgendaDetail} />
           <Route path="/sambutanPage" Component={SambutanPage} />
           <Route path="/tentangPage" Component={TentangPage} />
+          <Route path="/pengumumanPage" Component={PengumumanPage} />
+          <Route path="/pengumumanDetailPage" Component={PengumumanDetailPage} />
+          <Route path="/kabarDetailPage" Component={KabarDetail} />
           <Route path="#testi" Component={Testi} />
         </Routes>
 

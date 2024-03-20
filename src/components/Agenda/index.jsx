@@ -1,0 +1,153 @@
+import "./index.css";
+import { Row, Col, Button } from "react-bootstrap";
+
+const index = () => {
+  return (
+    <>
+      <div className="index">
+        <Row className="gap-1">
+          <Col className="m-0 kategory">
+            <div className="kategori d-flex align-items-center justify-content-between mb-5">
+              <h3 className="m-0">Kategori</h3>
+              <Button className="m-0 gap-2 d-flex">
+                Maret, 2024
+                <img src="./assets/agenda/calendar.svg" alt="" />
+              </Button>
+            </div>
+
+            <div className="periode mb-5">
+              <h5 className="fw-medium py-2">Sedang berlangsung</h5>
+              <h5 className="fw-medium py-2">Pekan ini</h5>
+              <h5 className="fw-medium py-2">Pekan depan</h5>
+              <h5 className="fw-medium py-2">Bulan depan</h5>
+            </div>
+
+            <div className="ppdb-card w-100">
+              <div
+                className="containernya position-relative rounded-4"
+                style={{
+                  height: "fit-content",
+                  background: "#861FC1",
+                }}
+              >
+                <div className="content d-flex">
+                  <div className="kiri my-auto w-100">
+                    <p className="text-light p-0 m-0 mb-3 text-center">
+                      PPDB SMA LAB UM
+                    </p>
+                    <h3
+                      className="fw-bold text-light m-0 p-0 mb-3 text-center"
+                      style={{
+                        lineHeight: "120%",
+                        letterSpacing: "-0.24px",
+                      }}
+                    >
+                      Yuk masuk SMA <br /> Lab UM Lur
+                    </h3>
+                    <button className="rounded-3 mx-auto fw-semibold">
+                      Daftar Sekarang!
+                    </button>
+                  </div>
+                  <img
+                    className="mx-auto bottom-0"
+                    src="./assets/ekstra/ppdb.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </Col>
+          <Col md={8} className="m-0 list-berita-lainnya">
+            <h3 className="m-0 fw-bold mb-5">Acara Mendatang</h3>
+            
+            <div className="agendaa gap-2 d-flex pb-4 mb-4">
+              <Col md={8}>
+                <h5 className="fw-bold mb-3">Hari Ini</h5>
+                <h3 className="fw-bold mb-3">
+                  Standup Comedy Routine: BOTOLAN (Bocah Tampan Reguler)
+                </h3>
+                <div className="ket mb-3 p-0 d-flex gap-2 fw-medium">
+                  <p className="p-0 m-0">Admin</p>
+                  <div className="p-0 circle rounded-circle bg-dark"></div>
+                  <p className="p-0 mb-2">05 Mar, 2024</p>
+                </div>
+              </Col>
+              <Col>
+                <img
+                  className="w-100 h-100 rounded-3"
+                  src="./assets/agenda/event1.svg"
+                  alt=""
+                />
+              </Col>
+            </div>
+            <div className="agendaa gap-2 d-flex pb-4 mb-4">
+              <Col md={8}>
+                <h5 className="fw-bold mb-3">15 Maret 2024</h5>
+                <h3 className="fw-bold mb-3">
+                Festival Pemilu : Kepoin Parpol, Adu Ide, Main Bareng
+                </h3>
+                <div className="ket mb-3 p-0 d-flex gap-2 fw-medium">
+                  <p className="p-0 m-0">Jum’at, 14:00 WIB</p>
+                  {/* <div className="p-0 circle rounded-circle bg-dark"></div>
+                  <p className="p-0 mb-2">05 Mar, 2024</p> */}
+                </div>
+              </Col>
+              <Col>
+                <img
+                  className="w-100 h-100 rounded-3"
+                  src="./assets/agenda/event2.svg"
+                  alt=""
+                />
+              </Col>
+            </div>
+            <div className="agendaa gap-2 d-flex pb-4 mb-4">
+              <Col md={8}>
+                <h5 className="fw-bold mb-3">15 Maret 2024</h5>
+                <h3 className="fw-bold mb-3">
+                From The River To The Liberty
+                </h3>
+                <div className="ket mb-3 p-0 d-flex gap-2 fw-medium">
+                  <p className="p-0 m-0">Jum’at, 16:00 WIB</p>
+                  {/* <div className="p-0 circle rounded-circle bg-dark"></div>
+                  <p className="p-0 mb-2">05 Mar, 2024</p> */}
+                </div>
+              </Col>
+              <Col>
+                <img
+                  className="w-100 h-100 rounded-3"
+                  src="./assets/agenda/event3.svg"
+                  alt=""
+                />
+              </Col>
+            </div>
+
+
+            <div className="page-indicator d-flex align-items-center justify-content-end gap-2 mt-3">
+              <div className="prev d-flex align-items-center gap-2">
+                <Button className="fw-medium">Previous</Button>
+                <div className="page-number rounded-circle d-flex align-items-center justify-content-center">
+                  <p className="fw-medium p-0 m-0">1</p>
+                </div>
+              </div>
+              <div className="next d-flex align-items-center gap-2">
+                <div className="page-number rounded-circle d-flex align-items-center justify-content-center">
+                  <p className="fw-medium p-0 m-0">2</p>
+                </div>
+                <Button className="fw-medium">Next</Button>
+              </div>
+            </div>
+
+            {/* DATA FILTERING TIDAK DITEMUKAN */}
+            <div className="data-tidak-ditemukan d-none h-100 d-flex flex-column justify-content-center align-items-center">
+              <img src="./assets/agenda/calendar-ungu.svg" alt="" />
+              <p>Data tidak ditemukan!</p>
+            </div>
+
+          </Col>
+        </Row>
+      </div>
+    </>
+  );
+};
+
+export default index;

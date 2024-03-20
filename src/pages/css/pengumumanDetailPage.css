@@ -1,0 +1,68 @@
+.pengumumanDetailPage {
+  .back {
+    padding: 80px 60px 50px 60px;
+    a {
+      color: black;
+      opacity: 0.7;
+      line-height: 36px;
+      letter-spacig: -0.24px;
+      font-size: 18px;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .page-indicator {
+    border-bottom: 1px solid #c3c3c3;
+    h3 {
+      font-size: 20px;
+      line-height: 120%;
+      letter-spacing: -0.24px;
+    }
+
+    i {
+      font-size: 20px;
+      opacity: 0.5;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .list-pengumuman-lain {
+    .ket {
+      p {
+        font-size: 15px;
+        color: #272727;
+        line-height: 18px;
+        letter-spacing: -0.24px;
+      }
+
+      .circle {
+        width: 5px;
+        height: 5px;
+        margin-top: 8px;
+      }
+    }
+    h2 {
+      font-size: 18px;
+      line-height: 140%;
+      letter-spacing: -0.24px;
+      color: #272727;
+    }
+  }
+
+  button {
+    background: #333333;
+    border: none;
+    padding: 10px 12px;
+
+    &:hover {
+      background: #333333 !important;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.kabar-sekolah-full {
+  padding: 80px 60px;
+
+  .back {
+    a {
+      color: black;
+      opacity: 0.7;
+      line-height: 36px;
+      letter-spacig: -0.24px;
+      font-size: 18px;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .content {
+    margin-bottom: 70px;
+    .image-content {
+      .social-media {
+        h3 {
+          font-size: 20px;
+          line-height: 120%;
+          letter-spacing: -0.24px;
+        }
+        .sosmed-akun {
+          border: 1px solid black;
+          width: fit-content;
+          height: fit-content;
+
+          img {
+            min-width: 15px;
+            min-height: 15px;
+          }
+        }
+      }
+    }
+
+    .text-content {
+      .headline {
+        h5 {
+          font-size: 13px;
+          color: #861fc1;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+        }
+
+        h1 {
+          font-size: 27px;
+          line-height: 120%;
+        }
+
+        .ket {
+          p {
+            font-size: 15px;
+          }
+
+          .circle {
+            width: 5px;
+            height: 5px;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      p {
+        font-size: 18px;
+        letter-spacing: -0.14px;
+        line-height: 160%;
+        color: #161616;
+      }
+    }
+  }
+
+  .berita-lain {
+    .page-indicator {
+      border-bottom: 1px solid #C3C3C3;
+        h3 {
+            font-size: 20px;
+            line-height: 120%;
+            letter-spacing: -0.24px 
+        }
+
+        i {
+            font-size: 20px;
+            opacity: 0.5;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    h5 {
+        font-size: 13px;
+        color: #861FC1;
+        line-height: 110%;
+        letter-spacing: -0.24px;
+    }
+
+    h3 {
+        font-size: 20px;
+        color: #272727;
+        line-height: 120%;
+        letter-spacing: -0.24px; 
+    }
+
+    p {
+        font-size: 14px;
+        color: #272727;
+        line-height: 160%;
+        letter-spacing: -0.24px; 
+    }
+
+    .ket {
+        p {
+            font-size: 12px;
+            color: #272727;
+            line-height: 18px;
+            letter-spacing: -0.24px; 
+        }
+    }
+  }
+}

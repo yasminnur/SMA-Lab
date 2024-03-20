@@ -1,0 +1,115 @@
+.pengumumanPage {
+  
+.pakai-padding {
+    padding: 80px 60px;
+  h1 {
+    font-size: 60px;
+    line-height: 110%;
+    letter-spacing: -4px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: auto;
+    letter-spacing: -0.24px;
+  }
+
+  .navMenu {
+    margin-top: 80px;
+    border-bottom: 1px solid #c3c3c3;
+
+    .kategori {
+      h3 {
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+      }
+      button {
+        padding: 8px 12px;
+        background: transparent;
+        color: #4f4f4f;
+        border: 1px solid #c3c3c3;
+        cursor: pointer;
+
+        &:hover {
+          color: #4f4f4f;
+          background: transparent;
+          border: 1px solid #c3c3c3;
+        }
+      }
+    }
+
+    .search-container {
+      padding: 10px 12px;
+      color: #727272;
+      font-size: 15px;
+      line-height: 110%;
+      letter-spacing: -0.24px;
+      width: fit-content;
+
+      input {
+        /* width: fit-content; */
+        border: none;
+        background: transparent;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .agenda-jadwal {
+    .ket {
+      p {
+        font-size: 15px;
+        color: #272727;
+        line-height: 18px;
+        letter-spacing: -0.24px;
+      }
+
+      .circle {
+        width: 5px;
+        height: 5px;
+        margin-top: 8px;
+      }
+    }
+    h2 {
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: -0.24px;
+        color: #272727;
+    }
+  }
+
+  .page-indicator {
+    button {
+      background: transparent;
+      border: none;
+      color: black;
+      opacity: 0.5;
+
+      &:focus {
+        background: transparent;
+        outline: none;
+      }
+
+      &:hover {
+        background: transparent;
+        opacity: 1;
+      }
+    }
+
+    .page-number {
+      width: 30px;
+      height: 30px;
+      font-size: 15px;
+      color: #3f3f46;
+      background: transparent;
+
+      &:hover {
+        color: white;
+        background: black;
+      }
+    }
+  }
+}
+}

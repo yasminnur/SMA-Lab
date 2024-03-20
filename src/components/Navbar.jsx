@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./css/navbar.css";
 
 const Navbar = () => {
@@ -128,27 +129,57 @@ const Navbar = () => {
                   <div className="profilMenuPhone submenu">
                     <ul>
                       <li>
-                        Sambutan
+                        <Link
+                          to="/sambutanPage"
+                          className="text-decoration-none text-light"
+                        >
+                          Sambutan
+                        </Link>
                         <i class="bi bi-chevron-right"></i>
                       </li>
                       <li>
-                        Tentang SMA Lab UM
+                        <Link
+                          to="/tentangPage"
+                          className="text-decoration-none text-light"
+                        >
+                          Tentang SMA Lab UM
+                        </Link>
                         <i class="bi bi-chevron-right"></i>
                       </li>
                       <li>
-                        Struktur Organigram
+                        <Link
+                          to="#"
+                          className="text-decoration-none text-light"
+                        >
+                          Struktur Organigram
+                        </Link>
                         <i class="bi bi-chevron-right"></i>
                       </li>
                       <li>
-                        Guru & Karyawan
+                        <Link
+                          to="#"
+                          className="text-decoration-none text-light"
+                        >
+                          Guru & Karyawan
+                        </Link>
                         <i class="bi bi-chevron-right"></i>
                       </li>
                       <li>
-                        Statistika
+                        <Link
+                          to="#"
+                          className="text-decoration-none text-light"
+                        >
+                          Statistika
+                        </Link>
                         <i class="bi bi-chevron-right"></i>
                       </li>
                       <li>
-                        Logo
+                        <Link
+                          to="#"
+                          className="text-decoration-none text-light"
+                        >
+                          Logo
+                        </Link>
                         <i class="bi bi-chevron-right"></i>
                       </li>
                     </ul>
@@ -168,27 +199,30 @@ const Navbar = () => {
                   <div className="profilMenuPhone submenu">
                     <ul>
                       <li>
-                        Kabar SMA Lab UM
+                        <Link
+                          to="/beritaPage"
+                          className="text-decoration-none text-light"
+                        >
+                          Berita
+                        </Link>
                         <i class="bi bi-chevron-right"></i>
                       </li>
                       <li>
-                        Prestasi
+                        <Link
+                          to="#"
+                          className="text-decoration-none text-light"
+                        >
+                          Agenda
+                        </Link>
                         <i class="bi bi-chevron-right"></i>
                       </li>
                       <li>
-                        Struktur Organigram
-                        <i class="bi bi-chevron-right"></i>
-                      </li>
-                      <li>
-                        Jurnalistik Siswa
-                        <i class="bi bi-chevron-right"></i>
-                      </li>
-                      <li>
-                        Agenda
-                        <i class="bi bi-chevron-right"></i>
-                      </li>
-                      <li>
-                        Pengumuman
+                        <Link
+                          to="#"
+                          className="text-decoration-none text-light"
+                        >
+                          Pengumuman
+                        </Link>
                         <i class="bi bi-chevron-right"></i>
                       </li>
                     </ul>
@@ -208,15 +242,30 @@ const Navbar = () => {
                   <div className="profilMenuPhone submenu">
                     <ul>
                       <li>
-                        OSIS
+                        <Link
+                          to="#"
+                          className="text-decoration-none text-light"
+                        >
+                          OSIS
+                        </Link>
                         <i class="bi bi-chevron-right"></i>
                       </li>
                       <li>
-                        Pramuka
+                        <Link
+                          to="#"
+                          className="text-decoration-none text-light"
+                        >
+                          Pramuka
+                        </Link>
                         <i class="bi bi-chevron-right"></i>
                       </li>
                       <li>
-                        PMR
+                        <Link
+                          to="#"
+                          className="text-decoration-none text-light"
+                        >
+                          PMR
+                        </Link>
                         <i class="bi bi-chevron-right"></i>
                       </li>
                     </ul>
@@ -249,27 +298,45 @@ const Navbar = () => {
               <div className="profilMenuSamping">
                 <ul>
                   <li>
-                    Sambutan
+                    <Link
+                      to="/sambutanPage"
+                      className="text-decoration-none text-light"
+                    >
+                      Sambutan
+                    </Link>
                     <i class="bi bi-chevron-right"></i>
                   </li>
                   <li>
-                    Tentang SMA Lab UM
+                    <Link
+                      to="/tentangPage"
+                      className="text-decoration-none text-light"
+                    >
+                      Tentang SMA Lab UM
+                    </Link>
                     <i class="bi bi-chevron-right"></i>
                   </li>
                   <li>
-                    Struktur Organigram
+                    <Link to="#" className="text-decoration-none text-light">
+                      Struktur Organigram
+                    </Link>
                     <i class="bi bi-chevron-right"></i>
                   </li>
                   <li>
-                    Guru & Karyawan
+                    <Link to="#" className="text-decoration-none text-light">
+                      Guru & Karyawan
+                    </Link>
                     <i class="bi bi-chevron-right"></i>
                   </li>
                   <li>
-                    Statistika
+                    <Link to="#" className="text-decoration-none text-light">
+                      Statistika
+                    </Link>
                     <i class="bi bi-chevron-right"></i>
                   </li>
                   <li>
-                    Logo
+                    <Link to="#" className="text-decoration-none text-light">
+                      Logo
+                    </Link>
                     <i class="bi bi-chevron-right"></i>
                   </li>
                 </ul>
@@ -280,27 +347,21 @@ const Navbar = () => {
               <div className="profilMenuSamping">
                 <ul>
                   <li>
-                    Kabar SMA Lab UM
+                    <Link to="/beritaPage" className="text-decoration-none text-light">
+                      Berita
+                    </Link>
                     <i class="bi bi-chevron-right"></i>
                   </li>
                   <li>
-                    Prestasi
+                    <Link to="#" className="text-decoration-none text-light">
+                      Agenda
+                    </Link>
                     <i class="bi bi-chevron-right"></i>
                   </li>
                   <li>
-                    Struktur Organigram
-                    <i class="bi bi-chevron-right"></i>
-                  </li>
-                  <li>
-                    Jurnalistik Siswa
-                    <i class="bi bi-chevron-right"></i>
-                  </li>
-                  <li>
-                    Agenda
-                    <i class="bi bi-chevron-right"></i>
-                  </li>
-                  <li>
-                    Pengumuman
+                    <Link to="#" className="text-decoration-none text-light">
+                      Pengumuman
+                    </Link>
                     <i class="bi bi-chevron-right"></i>
                   </li>
                 </ul>
@@ -311,15 +372,21 @@ const Navbar = () => {
               <div className="profilMenuSamping">
                 <ul>
                   <li>
-                    OSIS
+                    <Link to="#" className="text-decoration-none text-light">
+                      OSIS
+                    </Link>
                     <i class="bi bi-chevron-right"></i>
                   </li>
                   <li>
-                    Pramuka
+                    <Link to="#" className="text-decoration-none text-light">
+                      Pramuka
+                    </Link>
                     <i class="bi bi-chevron-right"></i>
                   </li>
                   <li>
-                    PMR
+                    <Link to="#" className="text-decoration-none text-light">
+                      PMR
+                    </Link>
                     <i class="bi bi-chevron-right"></i>
                   </li>
                 </ul>
