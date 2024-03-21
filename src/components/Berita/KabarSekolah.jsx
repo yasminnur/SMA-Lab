@@ -6,21 +6,17 @@ const KabarSekolah = () => {
   return (
     <>
       <div className="kabarSekolah">
-        <Row className="headline mb-4 mx-0 p-0 d-flex align-items-end gap-3">
-          <Col xs={8} className="m-0 p-0">
-            <h1 className="p-0 fw-bolder">Kabar Sekolah</h1>
-          </Col>
-          <Col className="m-0 p-0">
-            <p className="d-flex p-0 m-0 fw-semibold text-nowrap">
+        <div className="headline mb-3 mb-md-4 d-flex justify-content-between align-items-end">
+          <h1 className="m-0 p-0 fw-bolder">Kabar Sekolah</h1>
+          <p className="d-flex p-0 m-0 fw-semibold ">
               SMA Laboratorium UM
             </p>
-          </Col>
-        </Row>
+        </div>
 
-        <Row className="content m-0 p-0 gap-3">
-          <Col xs={8} className="kabar-container d-flex flex-column gap-4">
+        <Row className="content m-0 p-0 gap-5 gap-lg-3">
+          <Col xs={12} md={6} lg={8} className="kabar-container p-0 d-flex flex-column gap-4">
             <div className="card-kabar m-0 p-0">
-              <Row className="m-0 p-0 gap-4">
+              <Row className="m-0 p-0 gap-4 flex-column flex-lg-row">
                 <Col className="img-container m-0 p-0">
                   <img
                     className="w-100 h-100 rounded-4"
@@ -29,7 +25,7 @@ const KabarSekolah = () => {
                     style={{ objectFit: "cover" }}
                   />
                 </Col>
-                <Col xs={7} className="desc-container m-0 p-0  ">
+                <Col lg={7} className="desc-container m-0 p-0  ">
                   <div className="ket p-0 d-flex gap-2">
                     <p className="p-0 m-0">Admin</p>
                     <div className="p-0 circle rounded-circle bg-dark"></div>
@@ -58,7 +54,7 @@ const KabarSekolah = () => {
               </Row>
             </div>
             <div className="card-kabar m-0 p-0">
-              <Row className="m-0 p-0 gap-4">
+              <Row className="m-0 p-0 gap-4 flex-column flex-lg-row">
                 <Col className="img-container m-0 p-0">
                   <img
                     className="w-100 h-100 rounded-4"
@@ -67,7 +63,7 @@ const KabarSekolah = () => {
                     style={{ objectFit: "cover" }}
                   />
                 </Col>
-                <Col xs={7} className="desc-container m-0 p-0  ">
+                <Col lg={7} className="desc-container m-0 p-0  ">
                   <div className="ket p-0 d-flex gap-2">
                     <p className="p-0 m-0">Admin</p>
                     <div className="p-0 circle rounded-circle bg-dark"></div>
@@ -95,8 +91,8 @@ const KabarSekolah = () => {
               </Row>
             </div>
             
-            <div className="page-indicator d-flex align-items-center gap-2 mt-3">
-              <div className="prev d-flex align-items-center gap-2">
+            <div className="page-indicator justify-content-between justify-content-md-start d-flex align-items-center gap-0 gap-md-2 mt-3">
+              <div className="prev d-flex align-items-center  gap-md-2">
                 <Button className="fw-medium">Previous</Button>
                 <div className="page-number rounded-circle d-flex align-items-center justify-content-center">
                   <p className="fw-medium p-0 m-0">1</p>
@@ -111,7 +107,7 @@ const KabarSekolah = () => {
             </div>
           </Col>
 
-          <Col className="arsip-container m-0 p-0">
+          <Col className="arsip-container m-0 p-md-2 p-lg-0">
             <h3 className="fw-bold mb-3">Arsip</h3>
             <div className="arsip-tahun mb-5">
               <ul className="list-unstyled">

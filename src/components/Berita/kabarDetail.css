@@ -1,125 +1,565 @@
-.kabar-sekolah-full {
-  padding: 80px 60px;
-
-  .back {
-    a {
-      color: black;
-      opacity: 0.7;
-      line-height: 36px;
-      letter-spacig: -0.24px;
-      font-size: 18px;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
-
-  .content {
-    margin-bottom: 70px;
-    .image-content {
-      .social-media {
-        h3 {
-          font-size: 20px;
-          line-height: 120%;
-          letter-spacing: -0.24px;
-        }
-        .sosmed-akun {
-          border: 1px solid black;
-          width: fit-content;
-          height: fit-content;
-
-          img {
-            min-width: 15px;
-            min-height: 15px;
-          }
+/* PHONE  */
+@media (max-width: 425px) {
+  .kabar-sekolah-full {
+    padding: 90px 20px;
+  
+    .back {
+      a {
+        color: black;
+        opacity: 0.7;
+        line-height: 36px;
+        letter-spacig: -0.24px;
+        font-size: 15px;
+  
+        &:hover {
+          opacity: 1;
         }
       }
     }
-
-    .text-content {
-      .headline {
-        h5 {
-          font-size: 13px;
-          color: #861fc1;
-          line-height: 110%;
-          letter-spacing: -0.24px;
-        }
-
-        h1 {
-          font-size: 27px;
-          line-height: 120%;
-        }
-
-        .ket {
-          p {
+  
+    .content {
+      margin-bottom: 70px;
+      .image-content {
+        .social-media {
+          h3 {
+            margin-top: 20px;
             font-size: 15px;
-          }
-
-          .circle {
-            width: 5px;
-            height: 5px;
-            margin-top: 10px;
-          }
-        }
-      }
-
-      p {
-        font-size: 18px;
-        letter-spacing: -0.14px;
-        line-height: 160%;
-        color: #161616;
-      }
-    }
-  }
-
-  .berita-lain {
-    .page-indicator {
-      border-bottom: 1px solid #C3C3C3;
-        h3 {
-            font-size: 20px;
             line-height: 120%;
-            letter-spacing: -0.24px 
-        }
-
-        i {
-            font-size: 20px;
-            opacity: 0.5;
-
-            &:hover {
-                opacity: 1;
+            letter-spacing: -0.24px;
+          }
+          .sosmed-akun {
+            border: 1px solid black;
+            width: fit-content;
+            height: fit-content;
+  
+            img {
+              min-width: 15px;
+              min-height: 15px;
             }
+          }
         }
-    }
+      }
+  
+      .text-content {
+        .headline-kabar {
+          h5 {
+            font-size: 13px;
+            color: #861fc1;
+            line-height: 110%;
+            letter-spacing: -0.24px;
+          }
+  
+          h1 {
+            font-size: 25px;
+            line-height: 120%;
+          }
+  
+          .ket {
+            p {
+              font-size: 15px;
+            }
+  
+            .circle {
+              width: 5px;
+              height: 5px;
+              margin-top: 10px;
+            }
+          }
+        }
+  
+        p {
+          font-size: 18px;
+          letter-spacing: -0.14px;
+          line-height: 160%;
+          color: #161616;
+          text-align: justify;
 
-    h5 {
-        font-size: 13px;
-        color: #861FC1;
+        }
+      }
+    }
+  
+    .berita-lain {
+      .page-indicator {
+        border-bottom: 1px solid #C3C3C3;
+          h3 {
+            font-size: 20px;
+            line-height: 110%;
+            letter-sapcing: -0.24px;
+          }
+  
+          i {
+              font-size: 20px;
+              opacity: 0.5;
+  
+              &:hover {
+                  opacity: 1;
+              }
+          }
+      }
+    
+    .berita-lainnya {
+      border-top: 1px solid #c3c3c3;
+      h5 {
+        font-size: 10px;
+        color: #861fc1;
         line-height: 110%;
         letter-spacing: -0.24px;
-    }
+      }
 
-    h3 {
+      h4 {
         font-size: 20px;
+        line-height: 110%;
+        letter-sapcing: -0.24px;
+      }
+
+      h3 {
+        font-size: 15px;
         color: #272727;
         line-height: 120%;
-        letter-spacing: -0.24px; 
-    }
+        letter-spacing: -0.24px;
+      }
 
-    p {
-        font-size: 14px;
-        color: #272727;
-        line-height: 160%;
-        letter-spacing: -0.24px; 
-    }
-
-    .ket {
+      .ket {
         p {
+          font-size: 10px;
+          color: #272727;
+          line-height: 18px;
+          letter-spacing: -0.24px;
+        }
+        .circle {
+          width: 3px;
+          height: 3px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+    /* .berita-lain {
+      .page-indicator {
+        border-bottom: 1px solid #C3C3C3;
+          h3 {
+              font-size: 20px;
+              line-height: 120%;
+              letter-spacing: -0.24px 
+          }
+  
+          i {
+              font-size: 20px;
+              opacity: 0.5;
+  
+              &:hover {
+                  opacity: 1;
+              }
+          }
+      }
+  
+      h5 {
+          font-size: 13px;
+          color: #861FC1;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+      }
+  
+      h3 {
+          font-size: 20px;
+          color: #272727;
+          line-height: 120%;
+          letter-spacing: -0.24px; 
+      }
+  
+      p {
+          font-size: 14px;
+          color: #272727;
+          line-height: 160%;
+          letter-spacing: -0.24px; 
+      }
+  
+      .ket {
+          p {
+              font-size: 12px;
+              color: #272727;
+              line-height: 18px;
+              letter-spacing: -0.24px; 
+          }
+      }
+    } */
+  }
+}
+
+/* TABLET  */
+@media (min-width: 426px) {
+  .kabar-sekolah-full {
+    padding: 120px 40px;
+  
+    .back {
+      a {
+        color: black;
+        opacity: 0.7;
+        line-height: 36px;
+        letter-spacig: -0.24px;
+        font-size: 15px;
+  
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  
+    .content {
+      margin-bottom: 0px;
+      .image-content {
+        .social-media {
+          h3 {
+            font-size: 16px;
+            line-height: 120%;
+            letter-spacing: -0.24px;
+          }
+          .sosmed-akun {
+            border: 1px solid black;
+            width: fit-content;
+            height: fit-content;
+  
+            img {
+              min-width: 10px;
+              min-height: 10px;
+            }
+          }
+        }
+      }
+  
+      .text-content {
+        .headline-kabar {
+          h5 {
+            font-size: 13px;
+            color: #861fc1;
+            line-height: 110%;
+            letter-spacing: -0.24px;
+          }
+  
+          h1 {
+            font-size: 27px;
+            line-height: 120%;
+          }
+  
+          .ket {
+            p {
+              font-size: 15px;
+            }
+  
+            .circle {
+              width: 5px;
+              height: 5px;
+              margin-top: 10px;
+            }
+          }
+        }
+  
+        p {
+          font-size: 18px;
+          letter-spacing: -0.14px;
+          line-height: 160%;
+          color: #161616;
+        }
+      }
+    }
+  
+    .berita-lain {
+      .page-indicator {
+        border-bottom: 1px solid #C3C3C3;
+          h3 {
+              font-size: 20px;
+              line-height: 120%;
+              letter-spacing: -0.24px 
+          }
+  
+          i {
+              font-size: 18px;
+              opacity: 0.5;
+  
+              &:hover {
+                  opacity: 1;
+              }
+          }
+      }
+
+    .berita-lainnya {
+      border-top: 1px solid #c3c3c3;
+      h5 {
+        font-size: 10px;
+        color: #861fc1;
+        line-height: 110%;
+        letter-spacing: -0.24px;
+      }
+
+      h4 {
+        font-size: 20px;
+        line-height: 110%;
+        letter-sapcing: -0.24px;
+      }
+
+      h3 {
+        font-size: 15px;
+        color: #272727;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+      }
+
+      .ket {
+        p {
+          font-size: 10px;
+          color: #272727;
+          line-height: 18px;
+          letter-spacing: -0.24px;
+        }
+        .circle {
+          width: 3px;
+          height: 3px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+    /* .berita-lain {
+      .page-indicator {
+        border-bottom: 1px solid #C3C3C3;
+          h3 {
+              font-size: 20px;
+              line-height: 120%;
+              letter-spacing: -0.24px 
+          }
+  
+          i {
+              font-size: 20px;
+              opacity: 0.5;
+  
+              &:hover {
+                  opacity: 1;
+              }
+          }
+      }
+  
+      h5 {
+          font-size: 13px;
+          color: #861FC1;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+      }
+  
+      h3 {
+          font-size: 20px;
+          color: #272727;
+          line-height: 120%;
+          letter-spacing: -0.24px; 
+      }
+  
+      p {
+          font-size: 14px;
+          color: #272727;
+          line-height: 160%;
+          letter-spacing: -0.24px; 
+      }
+  
+      .ket {
+          p {
+              font-size: 12px;
+              color: #272727;
+              line-height: 18px;
+              letter-spacing: -0.24px; 
+          }
+      }
+    } */
+  }
+}
+
+/* LAPTOP  */
+@media (min-width: 769px) {
+  .kabar-sekolah-full {
+    padding: 130px 60px;
+  
+    .back {
+      a {
+        color: black;
+        opacity: 0.7;
+        line-height: 36px;
+        letter-spacig: -0.24px;
+        font-size: 18px;
+  
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  
+    .content {
+      margin-bottom: 70px;
+      .image-content {
+        .social-media {
+          h3 {
+            font-size: 20px;
+            line-height: 120%;
+            letter-spacing: -0.24px;
+          }
+          .sosmed-akun {
+            border: 1px solid black;
+            width: fit-content;
+            height: fit-content;
+  
+            img {
+              min-width: 15px;
+              min-height: 15px;
+            }
+          }
+        }
+      }
+  
+      .text-content {
+        .headline-kabar {
+          h5 {
+            font-size: 13px;
+            color: #861fc1;
+            line-height: 110%;
+            letter-spacing: -0.24px;
+          }
+  
+          h1 {
+            font-size: 27px;
+            line-height: 120%;
+            letter-spacing: -0.24px;
+          }
+  
+          .ket {
+            p {
+              font-size: 15px;
+            }
+  
+            .circle {
+              width: 5px;
+              height: 5px;
+              margin-top: 10px;
+            }
+          }
+        }
+  
+        p {
+          font-size: 18px;
+          letter-spacing: -0.14px;
+          line-height: 160%;
+          color: #161616;
+        }
+      }
+    }
+  
+    .berita-lain{
+      .page-indicator {
+        border-bottom: 1px solid #C3C3C3;
+          h3 {
+              font-size: 20px;
+              line-height: 120%;
+              letter-spacing: -0.24px 
+          }
+  
+          i {
+              font-size: 20px;
+              opacity: 0.5;
+  
+              &:hover {
+                  opacity: 1;
+              }
+          }
+      }
+
+    .berita-lainnya {
+      border-top: 1px solid #c3c3c3;
+      h5 {
+        font-size: 13px;
+        color: #861fc1;
+        line-height: 110%;
+        letter-spacing: -0.24px;
+      }
+  
+      h4 {
+        font-size: 25px;
+        line-height: 110%;
+        letter-sapcing: -0.24px;
+      }
+  
+      h3 {
+        font-size: 18px;
+        color: #272727;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+      }
+  
+      .ket {
+          p {
             font-size: 12px;
             color: #272727;
             line-height: 18px;
-            letter-spacing: -0.24px; 
+            letter-spacing: -0.24px;
+          }
+          .circle {
+            width: 4px;
+            height: 4px;
+            margin-top: 7px;
+          }
         }
     }
   }
+
+    /* .berita-lain {
+      .page-indicator {
+        border-bottom: 1px solid #C3C3C3;
+          h3 {
+              font-size: 20px;
+              line-height: 120%;
+              letter-spacing: -0.24px 
+          }
+  
+          i {
+              font-size: 20px;
+              opacity: 0.5;
+  
+              &:hover {
+                  opacity: 1;
+              }
+          }
+      }
+  
+      h5 {
+          font-size: 13px;
+          color: #861FC1;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+      }
+  
+      h3 {
+          font-size: 20px;
+          color: #272727;
+          line-height: 120%;
+          letter-spacing: -0.24px; 
+      }
+  
+      p {
+          font-size: 14px;
+          color: #272727;
+          line-height: 160%;
+          letter-spacing: -0.24px; 
+      }
+  
+      .ket {
+          p {
+              font-size: 12px;
+              color: #272727;
+              line-height: 18px;
+              letter-spacing: -0.24px; 
+          }
+      }
+    } */
+  }
 }
+
+/* LAPTOP L  */
+@media (min-width: 1025px) {
+}
+
+

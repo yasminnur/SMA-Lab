@@ -32,6 +32,9 @@ function App() {
       case "/beritaPage":
         setNavbarBackground("black");
         break;
+      case "/kabarDetailPage":
+        setNavbarBackground("black");
+        break;
       case "/agendaPage":
         setNavbarBackground("black");
         break;
@@ -54,6 +57,7 @@ function App() {
     const pagesWithNavbar = [
       "/",
       "/beritaPage",
+      "/kabarDetailPage",
       "/agendaPage",
       "/pengumumanPage",
     ];

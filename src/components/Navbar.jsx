@@ -222,7 +222,7 @@ const Navbar = ({background}) => {
                       </li>
                       <li>
                         <Link
-                          to="#"
+                          to="/agendaPage"
                           className="text-decoration-none text-light"
                         >
                           Agenda
@@ -231,7 +231,7 @@ const Navbar = ({background}) => {
                       </li>
                       <li>
                         <Link
-                          to="#"
+                          to="/pengumumanPage"
                           className="text-decoration-none text-light"
                         >
                           Pengumuman
@@ -366,13 +366,13 @@ const Navbar = ({background}) => {
                     <i class="bi bi-chevron-right"></i>
                   </li>
                   <li>
-                    <Link to="#" className="text-decoration-none text-light">
+                    <Link to="/agendaPage" className="text-decoration-none text-light">
                       Agenda
                     </Link>
                     <i class="bi bi-chevron-right"></i>
                   </li>
                   <li>
-                    <Link to="#" className="text-decoration-none text-light">
+                    <Link to="/pengumumanPage" className="text-decoration-none text-light">
                       Pengumuman
                     </Link>
                     <i class="bi bi-chevron-right"></i>

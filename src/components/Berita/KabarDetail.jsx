@@ -5,14 +5,14 @@ const KabarSekolahfull = () => {
   return (
     <>
       <div className="kabar-sekolah-full">
-        <div className="back d-inline-block w-100 mb-4">
+        <div className="back d-inline-block w-100 mb-2 mb-lg-4">
           <Link to="/beritaPage" className="text-decoration-none">
             👈 Kembali
           </Link>
         </div>
 
-        <Row className="content p-0 gap-5">
-          <Col md={5} className="image-content p-0 d-flex flex-column justify-content-between">
+        <Row className="content mx-0  p-0 gap-4 gap-lg-5">
+          <Col md={5} className="image-content p-0 m-md-0 mb-4  d-flex flex-column justify-content-between">
             <img
               className="w-100 rounded-4"
               src="./assets/BeritaPage/thumbnail1.svg"
@@ -63,8 +63,8 @@ const KabarSekolahfull = () => {
               </div>
               </div>
           </Col>
-          <Col className="text-content p-0">
-            <div className="headline">
+          <Col className="text-content p-0 m-0">
+            <div className="headline-kabar">
               <h5 className="w-100 d-inline-block mb-3">KABAR SEKOLAH</h5>
               <h1 className="fw-bold mb-3">
                 Antusiasme Siswa Kelas XII Sambut Ujian Praktik
@@ -75,7 +75,7 @@ const KabarSekolahfull = () => {
                 <p className="p-0 mb-2">05 Mar, 2024</p>
               </div>
             </div>
-            <p>
+            <p className="">
               Pada tanggal 15 Januari sampai 6 Februari 2024, SMA Lab UM
               menggelar ujian praktik untuk siswa kelas XII. Ujian ini
               terintegrasi dalam serangkaian ujian sekolah yang bertujuan untuk
@@ -133,7 +133,7 @@ const KabarSekolahfull = () => {
 
         <Row className="berita-lain p-0">
           
-           <div className="page-indicator mt-5 border-1 border-bottom border-black py-4 d-flex align-items-center justify-content-between">
+           <div className="page-indicator mt-5  py-4 d-flex align-items-center justify-content-between">
             <h3 className="fw-bold p-0 m-0">Baca berita lainnya</h3>
             <div className="d-flex gap-3 align-items-center">
             <i className="bi bi-arrow-left"></i>
@@ -142,26 +142,21 @@ const KabarSekolahfull = () => {
           </div>
           
           <div className="berita-lainnya pt-4 pb-5">
-          <div className="d-flex gap-3">
+          <div className="d-flex gap-3 flex-wrap">
             <Col>
               <img
                 src="./assets/BeritaPage/berita1.svg"
                 alt=""
-                className="w-100 rounded-3 mb-3"
+                className="w-100 rounded-3 mb-2 mb-lg-3"
               />
-              <h5 className="w-100 d-inline-block mb-3">KABAR SEKOLAH</h5>
-              <h3 className="fw-bold title-kanan mb-3">
+              <h5 className="w-100 d-inline-block mb-1 mb-lg-2">KABAR SEKOLAH</h5>
+              <h3 className="fw-bold title-kanan mb-2 mb-lg-3">
                 Jumat Bersih, Bentuk Tanggung Jawab terhadap Lingkungan Sekitar
               </h3>
               <div className="ket d-flex gap-1">
                 <p className="p-0 m-0">Itsnaini Ningtiyas</p>
                 <div
                   className="circle rounded-circle bg-dark"
-                  style={{
-                    width: "4px",
-                    height: "4px",
-                    marginTop: "8px",
-                  }}
                 ></div>
                 <p className="p-0 m-0">19 Feb, 2024</p>
               </div>
@@ -170,21 +165,16 @@ const KabarSekolahfull = () => {
               <img
                 src="./assets/BeritaPage/berita2.svg"
                 alt=""
-                className="w-100 rounded-3 mb-3"
+                className="w-100 rounded-3 mb-2 mb-lg-3"
               />
-              <h5 className="w-100 d-inline-block mb-3">KABAR SEKOLAH</h5>
-              <h3 className="fw-bold title-kanan mb-3">
+              <h5 className="w-100 d-inline-block mb-1 mb-lg-2">KABAR SEKOLAH</h5>
+              <h3 className="fw-bold title-kanan mb-2 mb-lg-3">
                 Outdoor Learning Tumbuhkan Semangat Wirausaha
               </h3>
               <div className="ket d-flex gap-1">
                 <p className="p-0 m-0">Dewi H.S</p>
                 <div
                   className="circle rounded-circle bg-dark"
-                  style={{
-                    width: "4px",
-                    height: "4px",
-                    marginTop: "8px",
-                  }}
                 ></div>
                 <p className="p-0 m-0">19 Feb, 2024</p>
               </div>
@@ -193,10 +183,10 @@ const KabarSekolahfull = () => {
               <img
                 src="./assets/BeritaPage/berita3.svg"
                 alt=""
-                className="w-100 rounded-3 mb-3"
+                className="w-100 rounded-3 mb-2 mb-lg-3"
               />
-              <h5 className="w-100 d-inline-block mb-3">KABAR SEKOLAH</h5>
-              <h3 className="fw-bold title-kanan mb-3">
+              <h5 className="w-100 d-inline-block mb-1 mb-lg-2">KABAR SEKOLAH</h5>
+              <h3 className="fw-bold title-kanan mb-2 mb-lg-3">
                 Program Roots, Mencegah dan Mengurangi Perundungan di Lingkungan
                 Sekolah
               </h3>
@@ -204,11 +194,6 @@ const KabarSekolahfull = () => {
                 <p className="p-0 m-0">Admin</p>
                 <div
                   className="circle rounded-circle bg-dark"
-                  style={{
-                    width: "4px",
-                    height: "4px",
-                    marginTop: "8px",
-                  }}
                 ></div>
                 <p className="p-0 m-0">19 Feb, 2024</p>
               </div>
@@ -217,21 +202,16 @@ const KabarSekolahfull = () => {
               <img
                 src="./assets/BeritaPage/berita4.svg"
                 alt=""
-                className="w-100 rounded-3 mb-3"
+                className="w-100 rounded-3 mb-2 mb-lg-3"
               />
-              <h5 className="w-100 d-inline-block mb-3">KABAR SEKOLAH</h5>
-              <h3 className="fw-bold title-kanan mb-3">
+              <h5 className="w-100 d-inline-block mb-1 mb-lg-2">KABAR SEKOLAH</h5>
+              <h3 className="fw-bold title-kanan mb-2 mb-lg-3">
                 Siswa Milenial dengan Kreatifitas Tanpa Batas
               </h3>
               <div className="ket d-flex gap-1">
                 <p className="p-0 m-0">Dewi H.S</p>
                 <div
                   className="circle rounded-circle bg-dark"
-                  style={{
-                    width: "4px",
-                    height: "4px",
-                    marginTop: "8px",
-                  }}
                 ></div>
                 <p className="p-0 m-0">19 Feb, 2024</p>
               </div>
