@@ -5,21 +5,21 @@ const index = () => {
   return (
     <>
       <div className="index">
-        <Row className="gap-1">
-          <Col className="m-0 kategory">
-            <div className="kategori d-flex align-items-center justify-content-between mb-5">
-              <h3 className="m-0">Kategori</h3>
+        <Row className="wrap m-0 p-0">
+          <Col className="mb-5 m-md-0 kategory p-0">
+            <div className="kategori d-flex align-items-center justify-content-between mb-3 mb-lg-5">
+              <h3 className="m-0 fw-bold">Kategori</h3>
               <Button className="m-0 gap-2 d-flex">
                 Maret, 2024
                 <img src="./assets/agenda/calendar.svg" alt="" />
               </Button>
             </div>
 
-            <div className="periode mb-5">
-              <h5 className="fw-medium py-2">Sedang berlangsung</h5>
-              <h5 className="fw-medium py-2">Pekan ini</h5>
-              <h5 className="fw-medium py-2">Pekan depan</h5>
-              <h5 className="fw-medium py-2">Bulan depan</h5>
+            <div className="periode mb-3 mb-md-5">
+              <h5 className="py-2">Sedang berlangsung</h5>
+              <h5 className="py-2">Pekan ini</h5>
+              <h5 className="py-2">Pekan depan</h5>
+              <h5 className="py-2">Bulan depan</h5>
             </div>
 
             <div className="ppdb-card w-100">
@@ -57,16 +57,16 @@ const index = () => {
               </div>
             </div>
           </Col>
-          <Col md={8} className="m-0 list-berita-lainnya">
-            <h3 className="m-0 fw-bold mb-5">Acara Mendatang</h3>
+          <Col md={6} lg={8} className="m-0 p-0 list-berita-lainnya">
+            <h3 className="m-0 fw-bold mb-4 mb-lg-5 text-center text-md-start">Acara Mendatang</h3>
             
-            <div className="agendaa gap-2 d-flex pb-4 mb-4">
-              <Col md={8}>
-                <h5 className="fw-bold mb-3">Hari Ini</h5>
+            <div className="agendaa gap-lg-2 d-flex pb-4 mb-4">
+              <Col xs={6} lg={8}>
+                <h5 className="fw-bold mb-lg-3">Hari Ini</h5>
                 <h3 className="fw-bold mb-3">
                   Standup Comedy Routine: BOTOLAN (Bocah Tampan Reguler)
                 </h3>
-                <div className="ket mb-3 p-0 d-flex gap-2 fw-medium">
+                <div className="ket mb-lg-3 p-0 d-flex gap-2 fw-medium">
                   <p className="p-0 m-0">Admin</p>
                   <div className="p-0 circle rounded-circle bg-dark"></div>
                   <p className="p-0 mb-2">05 Mar, 2024</p>
@@ -81,8 +81,8 @@ const index = () => {
               </Col>
             </div>
             <div className="agendaa gap-2 d-flex pb-4 mb-4">
-              <Col md={8}>
-                <h5 className="fw-bold mb-3">15 Maret 2024</h5>
+              <Col xs={6} lg={8}>
+                <h5 className="fw-bold mb-lg-3">15 Maret 2024</h5>
                 <h3 className="fw-bold mb-3">
                 Festival Pemilu : Kepoin Parpol, Adu Ide, Main Bareng
                 </h3>
@@ -101,8 +101,8 @@ const index = () => {
               </Col>
             </div>
             <div className="agendaa gap-2 d-flex pb-4 mb-4">
-              <Col md={8}>
-                <h5 className="fw-bold mb-3">15 Maret 2024</h5>
+              <Col xs={6} lg={8}>
+                <h5 className="fw-bold mb-lg-3">15 Maret 2024</h5>
                 <h3 className="fw-bold mb-3">
                 From The River To The Liberty
                 </h3>
