@@ -86,7 +86,7 @@ const index = () => {
               <Link
                 to={`/agendaDetailPage/${index}`}
                 key={index}
-                className="agenda-link"
+                className="agenda-link "
               >
                 <div className="agendaa gap-lg-2 d-flex pb-4 mb-4">
                   <Col xs={6} lg={8}>
