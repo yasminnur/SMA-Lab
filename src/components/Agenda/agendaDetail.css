@@ -1,150 +1,465 @@
-.agenda-detail {
-  /* padding: 80px 60px; */
-  .back {
-    padding: 80px 60px 50px 60px;
-    a {
-      color: black;
-      opacity: 0.7;
-      line-height: 36px;
-      letter-spacig: -0.24px;
-      font-size: 18px;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
-
-  .headline {
-    padding: 0 60px 60px 60px;
-
-    .agendaa {
-      h5 {
-        color: #861fc1;
+/* PHONE  */
+@media (max-width: 425px) {
+  .agenda-detail {
+    /* padding: 80px 60px; */
+    .back {
+      padding: 80px 20px 50px 20px;
+      a {
+        color: black;
+        opacity: 0.7;
+        line-height: 36px;
+        letter-spacig: -0.24px;
         font-size: 18px;
-        line-height: 110%;
-        letter-spacing: -0.24px;
-      }
-
-      h3 {
-        font-size: 35px;
-        line-height: 140%;
-        letter-spacing: -0.24px;
-      }
-
-      .desc-bawah {
-        .ket {
-          p {
-            font-size: 18px;
-            color: #272727;
-            line-height: 18px;
-            letter-spacing: -0.24px;
-          }
-
-          .circle {
-            width: 4px;
-            height: 4px;
-            background: black;
-            margin-top: 8px;
-          }
-        }
-      }
-
-      img {
-        object-fit: cover;
-      }
-    }
-  }
-
-  .content {
-    padding: 60px;
-
-    p,
-    li {
-      font-size: 18px;
-      letter-spacing: -0.14px;
-      line-height: 160%;
-    }
-
-    .perhatian {
-      font-size: 15px;
-    }
-
-    .social-media {
-      h3 {
-        font-size: 18px;
-        line-height: 120%;
-        letter-spacing: -0.24px;
-      }
-      .sosmed-akun {
-        border: 1px solid black;
-        width: fit-content;
-        height: fit-content;
-
-        img {
-          min-width: 15px;
-          min-height: 15px;
-        }
-      }
-    }
-  }
-
-  .agenda-lainnya {
-    padding: 60px;
-    .page-indicator {
-      border-bottom: 1px solid #c3c3c3;
-      h3 {
-        font-size: 20px;
-        line-height: 120%;
-        letter-spacing: -0.24px;
-      }
-
-      i {
-        font-size: 20px;
-        opacity: 0.5;
-        cursor: pointer;
+  
         &:hover {
           opacity: 1;
         }
       }
     }
-
-    .agenda-list {
-      img {
-        min-height: 250px;
-        max-height: 250px;
-        object-fit: cover;
-      }
-
-      h5 {
-        font-size: 17px;
-        color: #861fc1;
-        line-height: 110%;
-        letter-spacing: -0.24px;
-      }
-
-      h3 {
-        font-size: 22px;
-        color: #272727;
-        line-height: 120%;
-        letter-spacing: -0.24px;
-      }
-
-      p {
-        font-size: 15px;
-        color: #272727;
-        line-height: 160%;
-        letter-spacing: -0.24px;
-      }
-
-      .ket {
-        p {
-          font-size: 12px;
-          color: #272727;
-          line-height: 18px;
+  
+    .headline {
+      padding: 0 20px 60px 20px;
+  
+      .agendaa {
+        h5 {
+          color: #861fc1;
+          font-size: 18px;
+          line-height: 110%;
           letter-spacing: -0.24px;
+        }
+  
+        h3 {
+          font-size: 35px;
+          line-height: 140%;
+          letter-spacing: -0.24px;
+        }
+  
+        .desc-bawah {
+          .ket {
+            p {
+              font-size: 18px;
+              color: #272727;
+              line-height: 18px;
+              letter-spacing: -0.24px;
+            }
+  
+            .circle {
+              width: 4px;
+              height: 4px;
+              background: black;
+              margin-top: 8px;
+            }
+          }
+        }
+  
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  
+    .content {
+      padding: 20px;
+  
+      p,
+      li {
+        font-size: 18px;
+        letter-spacing: -0.14px;
+        line-height: 160%;
+      }
+  
+      .perhatian {
+        font-size: 15px;
+      }
+  
+      .social-media {
+        h3 {
+          font-size: 18px;
+          line-height: 120%;
+          letter-spacing: -0.24px;
+        }
+        .sosmed-akun {
+          border: 1px solid black;
+          width: fit-content;
+          height: fit-content;
+  
+          img {
+            min-width: 15px;
+            min-height: 15px;
+          }
+        }
+      }
+    }
+  
+    .agenda-lainnya {
+      padding: 20px;
+      .page-indicator {
+        border-bottom: 1px solid #c3c3c3;
+        h3 {
+          font-size: 20px;
+          line-height: 120%;
+          letter-spacing: -0.24px;
+        }
+  
+        i {
+          font-size: 20px;
+          opacity: 0.5;
+          cursor: pointer;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+  
+      .agenda-list {
+        img {
+          min-height: 250px;
+          max-height: 250px;
+          object-fit: cover;
+        }
+  
+        h5 {
+          font-size: 17px;
+          color: #861fc1;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+        }
+  
+        h3 {
+          font-size: 22px;
+          color: #272727;
+          line-height: 120%;
+          letter-spacing: -0.24px;
+        }
+  
+        p {
+          font-size: 15px;
+          color: #272727;
+          line-height: 160%;
+          letter-spacing: -0.24px;
+        }
+  
+        .ket {
+          p {
+            font-size: 12px;
+            color: #272727;
+            line-height: 18px;
+            letter-spacing: -0.24px;
+          }
         }
       }
     }
   }
+}
+
+/* TABLET  */
+@media (min-width: 426px) {
+  .agenda-detail {
+    /* padding: 80px 60px; */
+    .back {
+      padding: 60px 40px 50px 40px;
+      a {
+        color: black;
+        opacity: 0.7;
+        line-height: 36px;
+        letter-spacig: -0.24px;
+        font-size: 18px;
+  
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  
+    .headline {
+      padding: 0 40px 60px 40px;
+  
+      .agendaa {
+        h5 {
+          color: #861fc1;
+          font-size: 15px;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+        }
+  
+        h3 {
+          font-size: 25px;
+          line-height: 140%;
+          letter-spacing: -0.24px;
+        }
+  
+        .desc-bawah {
+          .ket {
+            p {
+              font-size: 15px;
+              color: #272727;
+              line-height: 18px;
+              letter-spacing: -0.24px;
+            }
+  
+            .circle {
+              width: 4px;
+              height: 4px;
+              background: black;
+              margin-top: 8px;
+            }
+          }
+        }
+  
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  
+    .content {
+      padding: 40px;
+  
+      p,
+      li {
+        font-size: 18px;
+        letter-spacing: -0.14px;
+        line-height: 160%;
+      }
+  
+      .perhatian {
+        font-size: 15px;
+      }
+  
+      .social-media {
+        h3 {
+          font-size: 18px;
+          line-height: 120%;
+          letter-spacing: -0.24px;
+        }
+        .sosmed-akun {
+          border: 1px solid black;
+          width: fit-content;
+          height: fit-content;
+  
+          img {
+            min-width: 15px;
+            min-height: 15px;
+          }
+        }
+      }
+    }
+  
+    .agenda-lainnya {
+      padding: 60px;
+      .page-indicator {
+        border-bottom: 1px solid #c3c3c3;
+        h3 {
+          font-size: 20px;
+          line-height: 120%;
+          letter-spacing: -0.24px;
+        }
+  
+        i {
+          font-size: 20px;
+          opacity: 0.5;
+          cursor: pointer;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+  
+      .agenda-list {
+        img {
+          min-height: 250px;
+          max-height: 250px;
+          object-fit: cover;
+        }
+  
+        h5 {
+          font-size: 17px;
+          color: #861fc1;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+        }
+  
+        h3 {
+          font-size: 22px;
+          color: #272727;
+          line-height: 120%;
+          letter-spacing: -0.24px;
+        }
+  
+        p {
+          font-size: 15px;
+          color: #272727;
+          line-height: 160%;
+          letter-spacing: -0.24px;
+        }
+  
+        .ket {
+          p {
+            font-size: 12px;
+            color: #272727;
+            line-height: 18px;
+            letter-spacing: -0.24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* LAPTOP  */
+@media (min-width: 769px) {
+  .agenda-detail {
+    /* padding: 80px 60px; */
+    .back {
+      padding: 80px 60px 50px 60px;
+      a {
+        color: black;
+        opacity: 0.7;
+        line-height: 36px;
+        letter-spacig: -0.24px;
+        font-size: 18px;
+  
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  
+    .headline {
+      padding: 0 60px 60px 60px;
+  
+      .agendaa {
+        h5 {
+          color: #861fc1;
+          font-size: 18px;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+        }
+  
+        h3 {
+          font-size: 35px;
+          line-height: 140%;
+          letter-spacing: -0.24px;
+        }
+  
+        .desc-bawah {
+          .ket {
+            p {
+              font-size: 18px;
+              color: #272727;
+              line-height: 18px;
+              letter-spacing: -0.24px;
+            }
+  
+            .circle {
+              width: 4px;
+              height: 4px;
+              background: black;
+              margin-top: 8px;
+            }
+          }
+        }
+  
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  
+    .content {
+      padding: 60px;
+  
+      p,
+      li {
+        font-size: 18px;
+        letter-spacing: -0.14px;
+        line-height: 160%;
+      }
+  
+      .perhatian {
+        font-size: 15px;
+      }
+  
+      .social-media {
+        h3 {
+          font-size: 18px;
+          line-height: 120%;
+          letter-spacing: -0.24px;
+        }
+        .sosmed-akun {
+          border: 1px solid black;
+          width: fit-content;
+          height: fit-content;
+  
+          img {
+            min-width: 15px;
+            min-height: 15px;
+          }
+        }
+      }
+    }
+  
+    .agenda-lainnya {
+      padding: 60px;
+      .page-indicator {
+        border-bottom: 1px solid #c3c3c3;
+        h3 {
+          font-size: 20px;
+          line-height: 120%;
+          letter-spacing: -0.24px;
+        }
+  
+        i {
+          font-size: 20px;
+          opacity: 0.5;
+          cursor: pointer;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+  
+      .agenda-list {
+        img {
+          min-height: 250px;
+          max-height: 250px;
+          object-fit: cover;
+        }
+  
+        h5 {
+          font-size: 17px;
+          color: #861fc1;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+        }
+  
+        h3 {
+          font-size: 22px;
+          color: #272727;
+          line-height: 120%;
+          letter-spacing: -0.24px;
+        }
+  
+        p {
+          font-size: 15px;
+          color: #272727;
+          line-height: 160%;
+          letter-spacing: -0.24px;
+        }
+  
+        .ket {
+          p {
+            font-size: 12px;
+            color: #272727;
+            line-height: 18px;
+            letter-spacing: -0.24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* LAPTOP L  */
+@media (min-width: 1025px) {
 }

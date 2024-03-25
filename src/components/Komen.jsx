@@ -27,7 +27,7 @@ const Komen = () => {
 
   return (
     <>
-      <div className="komen w-100" id="testi">
+      <div className="komen w-100 bg-warning" id="testi">
         <div className="nav d-flex justify-content-between align-items-center mb-4 mb-md-5 w-100">
           <h3 className="p-0 m-0 fw-semibold">Cerita mereka tentang SMA Lab UM</h3>
           <div className="nav-slider gap-3 d-none d-md-flex">

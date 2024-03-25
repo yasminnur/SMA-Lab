@@ -6,8 +6,7 @@ const Footer = ({ linkUrl, thumbnailSrc }) => {
   return (
     <>
       <div className="footer w-100">
-        {/* <div className="footer-atas "> */}
-          <Row className="d-flex">
+          <Row className="d-flex m-0 flex-md-column flex-lg-row">
             <Col xs={12} md={4} className="kiri p-0">
               <div className="logo d-flex align-items-center gap-3">
                 <img
@@ -29,7 +28,7 @@ const Footer = ({ linkUrl, thumbnailSrc }) => {
               <p className="infor m-0 p-0 mt-1">E: smalabum@yahoo.com</p>
             </Col>
             <Col className="tengah d-flex p-0">
-              <Col className="kiri w-100">
+              <Col className="kiri w-100 d-flex justify-content-between">
                 <div className="atas d-flex">
                   <Col>
                     <p className="m-0 p-0">Profil Sekolah</p>
@@ -40,9 +39,9 @@ const Footer = ({ linkUrl, thumbnailSrc }) => {
                     <p className="m-0 p-0">Link Terkait</p>
                   </Col>
                 </div>
-                <div className="bawah mt-5 mt-md-0 text-center text-md-start">
+                <div className="bawah mt-5 text-start">
                   <p>OFFICIAL SOCIAL MEDIA</p>
-                  <div className="d-flex gap-3 justify-content-center justify-content-md-start">
+                  <div className="d-flex gap-3 justify-content-start">
                     <a
                       href="https://www.facebook.com/smalabum?mibextid=ZbWKwL"
                       target="blank"
@@ -94,29 +93,11 @@ const Footer = ({ linkUrl, thumbnailSrc }) => {
 
             <Col className="kanan p-0">
             <a href={linkUrl} target="blank">
-              <img className="rounded-4" src={thumbnailSrc} alt="img" />
+              <img className="rounded-4 w-100" src={thumbnailSrc} alt=" img" />
             </a>
-                {/* <a
-                  href="https://youtu.be/AsnN3t7JPHU?si=Q1pYgUwhXAv0xLWY"
-                  target="blank"
-                >
-                  <img
-                    className="rounded-4"
-                    src="./assets/footer/thumbnail.svg"
-                    alt=""
-                  />
-                </a> */}
               </Col>
             </Col>
           </Row>
-        {/* </div> */}
-
-        {/* <Copyright /> */}
-        {/* <div className="footer-bawah w-100 p-4 bg-dark">
-          <p className="text-center text-light m-0">
-            Copyright © 2024 | SMA Laboratorium UM
-          </p>
-        </div> */}
       </div>
     </>
   );

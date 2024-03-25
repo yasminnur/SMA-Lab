@@ -1,10 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Col, Row, Button } from "react-bootstrap";
 import "./agendaDetail.css";
 import Footer from "../Footer";
+import data from "../../data/agenda.json"
+import Calendar from "./Calendar"
 
 const agendaDetail = () => {
+
+  const { id } = useParams();
+
+  const agenda = data[id];
   return (
     <>
       <div className="agenda-detail">
@@ -22,23 +28,40 @@ const agendaDetail = () => {
             <div className="agendaa h-100 gap-2 mb-4 d-flex flex-column justify-content-between">
               <div>
                 <h5 className="fw-bold mb-2">AGENDA</h5>
-                <h3 className="fw-bold mb-2">From The River To The Liberty</h3>
+                <h3 className="fw-bold mb-2">
+                  {agenda.program} {agenda.title}
+                  {/* From The River To The Liberty */}
+                </h3>
               </div>
               <div className="desc-bawah">
                 <div className="ket mb-1 p-0 d-flex gap-2 fw-semibold">
-                  <p className="p-0 m-0">Selasa</p>
+                  <p className="p-0 m-0">
+                    {agenda.day}
+                    {/* Selasa */}
+                  </p>
                   <div className="p-0 circle rounded-circle bg-dark"></div>
-                  <p className="p-0 m-0">05 Maret, 2024</p>
+                  <p className="p-0 m-0">
+                    {agenda.date}
+                    {/* 05 Maret, 2024 */}
+                  </p>
                 </div>
-                <p className="fw-semibold mb-3">Pukul 16:00 - 20:00 WIB</p>
-                <p className="fw-normal m-0">Aula SMA Laboratorium UM</p>
+                <p className="fw-semibold mb-3">Pukul {""}
+                  {agenda.time} - {agenda.timeOut}
+                  {/* 16:00 - 20:00 */}
+                  WIB
+                </p>
+                <p className="fw-normal m-0">
+                  {agenda.place}
+                  {/* Aula SMA Laboratorium UM */}
+                </p>
               </div>
             </div>
           </Col>
           <Col>
             <img
               className="w-100 h-100 rounded-3"
-              src="./assets/agenda/event3.svg"
+              src={agenda.image}
+              // src="./assets/agenda/event3.svg"
               alt=""
             />
           </Col>
@@ -167,12 +190,12 @@ const agendaDetail = () => {
             <h3 className="fw-bold p-0 m-0">Baca berita lainnya</h3>
             <div className="d-flex gap-3 align-items-center">
               <i className="bi bi-arrow-left"></i>
-              <i class="bi bi-arrow-right"></i>
+              <i className="bi bi-arrow-right"></i>
             </div>
           </div>
 
           <div className="agenda-list px-0 pt-4 pb-5">
-            <div className="d-flex gap-3">
+            <div className="d-flex gap-3 flex-column flex-md-row">
               <Col md={6}>
                 <img
                   src="./assets/agenda/event1.svg"
@@ -221,6 +244,8 @@ const agendaDetail = () => {
               </Col>
             </div>
           </div>
+{/* hai bro
+          <Calendar /> */}
         </Row>
         <Footer />
       </div>

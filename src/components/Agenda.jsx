@@ -2,7 +2,8 @@ import "./css/agenda.css";
 import { Row, Col, Button } from "react-bootstrap";
 import React, { useState, useEffect } from "react";
 import data from "../data/agenda.json";
-import Content from "./carouselContent";
+// import Content from "./carouselContent";
+import { Link } from "react-router-dom";
 
 const Agenda = () => {
   const [jsonData, setJsonData] = useState([]);
@@ -21,9 +22,9 @@ const Agenda = () => {
     return () => clearTimeout(timeoutId);
   }, [activeIndex, jsonData]);
 
-  const handleNavClick = (index) => {
-    setActiveIndex(index);
-  };
+  // const handleNavClick = (index) => {
+  //   setActiveIndex(index);
+  // };
 
   useEffect(() => {
     const initSlider = () => {
@@ -102,39 +103,38 @@ const Agenda = () => {
 
             <div className="slider-wrapper-image">
               <div className="image-list gap-4 position-relative">
-                <div className="overlay w-100 h-100 d-flex align-items-center">
-                  <Button
-                    className="d-flex align-items-center rounded-2 text-nowrap mx-auto gap-2 gap-lg-3 fw-semibold border-0"
-                    style={
-                      {
-                        // padding: '12px 15px',
-                        // height: 'fit-content',
-                        // background: '#ECE9EA',
-                        // color: '#2E2E2E',
-                        // lineHeight: '140%'
-                      }
-                    }
-                  >
-                    <img
-                      className="m-0 p-0"
-                      src="./assets/agenda/eye.svg"
-                      alt=""
-                    />
-                    Lihat detail
-                  </Button>
-                </div>
                 {jsonData.map((item, index) => (
-                  <img
-                    key={index}
-                    id={`img-${index + 1}`}
-                    className={`image-item rounded-4 ${
-                      index === activeIndex ? "active" : "visually-hidden"
-                    }`}
-                    // className={`image-item ${index === activeIndex ? "active" : ""}`}
-                    src={item.image}
-                    alt={`Image ${index + 1}`}
-                  />
-                ))}
+                    <div key={index}>
+                      <div className="overlay w-100 h-100 d-flex align-items-center">
+                      
+                        <Button className="d-flex align-items-center rounded-2 text-nowrap mx-auto gap-2 gap-lg-3 fw-semibold border-0">
+                        
+                          <Link
+                            to={`/agendaDetailPage/${index}`}
+                            className="agenda-link"
+                            onClick={() => console.log("Index yang diklik:", index)}
+                          >
+                            <img
+                              className="m-0 p-0"
+                              src="./assets/agenda/eye.svg"
+                              alt=""
+                            />
+                            Lihat detail
+                          </Link>
+                        </Button>
+                      </div>
+
+                      <img
+                        id={`img-${index + 1}`}
+                        className={`image-item rounded-4 bg-danger ${index === activeIndex ? "active" : "visually-hidden"
+                          }`}
+                        src={item.image}
+                        alt={`Image ${index + 1}`}
+                      />
+                    </div>
+                  
+                )
+                )}
               </div>
 
               <div className="indicator-nav">

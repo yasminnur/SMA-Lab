@@ -1,6 +1,9 @@
 /* PHONE  */
 @media (max-width: 425px) {
   .index {
+    a {
+      text-decoration: none;
+    }
     .wrap {
       /* gap: 70px; */
       .kategory {
@@ -110,17 +113,17 @@
 
           .ket {
             p {
-              font-size: 10px;
+              font-size: 7px;
               color: #272727;
               line-height: 18px;
               letter-spacing: -0.24px;
             }
 
             .circle {
-              width: 3px;
-              height: 3px;
+              width: 2px;
+              height: 2px;
               background: black;
-              margin-top: 9px;
+              margin-top: 8px;
             }
           }
 
@@ -135,30 +138,24 @@
             border: none;
             color: black;
             opacity: 0.5;
-            font-size: 13px;
-
+  
             &:focus {
+              background: transparent;
               outline: none;
-              background: transparent;
             }
-
+  
             &:hover {
-              opacity: 1;
               background: transparent;
+              opacity: 1;
             }
           }
-
-          .page-number {
-            width: 25px;
-            height: 25px;
-            font-size: 13px;
-            color: #3f3f46;
-            background: transparent;
-
-            &:hover {
-              color: white;
+  
+          .active-number {
+            width: 30px;
+            height: 30px;
+            font-size: 15px;color: white;
               background: black;
-            }
+            
           }
         }
       }
@@ -169,6 +166,9 @@
 /* TABLET  */
 @media (min-width: 426px) {
   .index {
+    a {
+      text-decoration: none;
+    }
     .wrap {
       gap: 64px;
       .kategory {
@@ -302,29 +302,24 @@
             border: none;
             color: black;
             opacity: 0.5;
-
+  
             &:focus {
+              background: transparent;
               outline: none;
-              background: transparent;
             }
-
+  
             &:hover {
-              opacity: 1;
               background: transparent;
+              opacity: 1;
             }
           }
-
-          .page-number {
+  
+          .active-number {
             width: 30px;
             height: 30px;
-            font-size: 15px;
-            color: #3f3f46;
-            background: transparent;
-
-            &:hover {
-              color: white;
+            font-size: 15px;color: white;
               background: black;
-            }
+            
           }
         }
       }
@@ -335,6 +330,10 @@
 /* LAPTOP  */
 @media (min-width: 769px) {
   .index {
+    a {
+      text-decoration: none;
+    }
+    
     .wrap {
       gap: 21px;
       .kategory {
@@ -468,29 +467,24 @@
             border: none;
             color: black;
             opacity: 0.5;
-
+  
             &:focus {
+              background: transparent;
               outline: none;
-              background: transparent;
             }
-
+  
             &:hover {
-              opacity: 1;
               background: transparent;
+              opacity: 1;
             }
           }
-
-          .page-number {
+  
+          .active-number {
             width: 30px;
             height: 30px;
-            font-size: 15px;
-            color: #3f3f46;
-            background: transparent;
-
-            &:hover {
-              color: white;
+            font-size: 15px;color: white;
               background: black;
-            }
+            
           }
         }
       }

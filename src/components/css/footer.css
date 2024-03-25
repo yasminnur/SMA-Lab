@@ -37,7 +37,7 @@
       }
 
       .tengah {
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         .kiri {
           display: flex;
@@ -229,8 +229,8 @@
         }
 
         .kanan {
+          max-width: 400px;
           img {
-            max-width: 500px;
             object-fit: cover;
           }
         }

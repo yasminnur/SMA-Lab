@@ -1,7 +1,27 @@
 import "./index.css";
 import { Row, Col, Button } from "react-bootstrap";
+import data from "../../data/agenda.json";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const index = () => {
+  const [jsonData, setJsonData] = useState([]);
+  // const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    setJsonData(data);
+  }, []);
+
+  //Page Indicator
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const handleNextClick = () => {
+    setCurrentPage((prevPage) => prevPage + 1);
+  };
+
+  const handlePrevClick = () => {
+    setCurrentPage((prevPage) => prevPage - 1);
+  };
   return (
     <>
       <div className="index">
@@ -58,29 +78,51 @@ const index = () => {
             </div>
           </Col>
           <Col md={6} lg={8} className="m-0 p-0 list-berita-lainnya">
-            <h3 className="m-0 fw-bold mb-4 mb-lg-5 text-center text-md-start">Acara Mendatang</h3>
-            
-            <div className="agendaa gap-lg-2 d-flex pb-4 mb-4">
-              <Col xs={6} lg={8}>
-                <h5 className="fw-bold mb-lg-3">Hari Ini</h5>
-                <h3 className="fw-bold mb-3">
-                  Standup Comedy Routine: BOTOLAN (Bocah Tampan Reguler)
-                </h3>
-                <div className="ket mb-lg-3 p-0 d-flex gap-2 fw-medium">
-                  <p className="p-0 m-0">Admin</p>
-                  <div className="p-0 circle rounded-circle bg-dark"></div>
-                  <p className="p-0 mb-2">05 Mar, 2024</p>
+            <h3 className="m-0 fw-bold mb-4 mb-lg-5 text-center text-md-start">
+              Acara Mendatang
+            </h3>
+
+            {jsonData.map((item, index) => (
+              <Link
+                to={`/agendaDetailPage/${index}`}
+                key={index}
+                className="agenda-link"
+              >
+                <div className="agendaa gap-lg-2 d-flex pb-4 mb-4">
+                  <Col xs={6} lg={8}>
+                    <h5 className="fw-bold mb-lg-3">
+                      {item.date}
+                      {/* Hari Ini */}
+                    </h5>
+                    <h3 className="fw-bold mb-3 text-dark">
+                      {item.program} {item.title}
+                      {/* Standup Comedy Routine: BOTOLAN (Bocah Tampan Reguler) */}
+                    </h3>
+                    <div className="ket mb-lg-3 p-0 d-flex gap-2 fw-medium">
+                      <p className="p-0 m-0">
+                        {item.day}, {item.time} WIB
+                        {/* Admin */}
+                      </p>
+                      <div className="p-0 circle rounded-circle bg-dark"></div>
+                      <p className="p-0 mb-2">
+                        {item.place}
+                        {/* 05 Mar, 2024 */}
+                      </p>
+                    </div>
+                  </Col>
+                  <Col>
+                    <img
+                      className="w-100 h-100 rounded-3"
+                      src={item.image}
+                      // src="./assets/agenda/event1.svg"
+                      alt=""
+                    />
+                  </Col>
                 </div>
-              </Col>
-              <Col>
-                <img
-                  className="w-100 h-100 rounded-3"
-                  src="./assets/agenda/event1.svg"
-                  alt=""
-                />
-              </Col>
-            </div>
-            <div className="agendaa gap-2 d-flex pb-4 mb-4">
+              </Link>
+            ))}
+
+            {/* <div className="agendaa gap-2 d-flex pb-4 mb-4">
               <Col xs={6} lg={8}>
                 <h5 className="fw-bold mb-lg-3">15 Maret 2024</h5>
                 <h3 className="fw-bold mb-3">
@@ -88,8 +130,6 @@ const index = () => {
                 </h3>
                 <div className="ket mb-3 p-0 d-flex gap-2 fw-medium">
                   <p className="p-0 m-0">Jum’at, 14:00 WIB</p>
-                  {/* <div className="p-0 circle rounded-circle bg-dark"></div>
-                  <p className="p-0 mb-2">05 Mar, 2024</p> */}
                 </div>
               </Col>
               <Col>
@@ -108,8 +148,6 @@ const index = () => {
                 </h3>
                 <div className="ket mb-3 p-0 d-flex gap-2 fw-medium">
                   <p className="p-0 m-0">Jum’at, 16:00 WIB</p>
-                  {/* <div className="p-0 circle rounded-circle bg-dark"></div>
-                  <p className="p-0 mb-2">05 Mar, 2024</p> */}
                 </div>
               </Col>
               <Col>
@@ -119,21 +157,32 @@ const index = () => {
                   alt=""
                 />
               </Col>
-            </div>
-
+            </div> */}
 
             <div className="page-indicator d-flex align-items-center justify-content-end gap-2 mt-3">
               <div className="prev d-flex align-items-center gap-2">
-                <Button className="fw-medium">Previous</Button>
-                <div className="page-number rounded-circle d-flex align-items-center justify-content-center">
+                <Button className="fw-medium" onClick={handlePrevClick}>
+                  Previous
+                </Button>
+                <div
+                  className={`page-number rounded-circle d-flex align-items-center justify-content-center ${
+                    currentPage === 1 && "active-number"
+                  }`}
+                >
                   <p className="fw-medium p-0 m-0">1</p>
                 </div>
               </div>
               <div className="next d-flex align-items-center gap-2">
-                <div className="page-number rounded-circle d-flex align-items-center justify-content-center">
+                <div
+                  className={`page-number rounded-circle d-flex align-items-center justify-content-center ${
+                    currentPage === 2 && "active-number"
+                  }`}
+                >
                   <p className="fw-medium p-0 m-0">2</p>
                 </div>
-                <Button className="fw-medium">Next</Button>
+                <Button className="fw-medium" onClick={handleNextClick}>
+                  Next
+                </Button>
               </div>
             </div>
 
@@ -142,7 +191,6 @@ const index = () => {
               <img src="./assets/agenda/calendar-ungu.svg" alt="" />
               <p>Data tidak ditemukan!</p>
             </div>
-
           </Col>
         </Row>
       </div>

@@ -1,115 +1,438 @@
-.pengumumanPage {
-  
-.pakai-padding {
-    padding: 80px 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 110%;
-    letter-spacing: -4px;
-  }
-  h2 {
-    font-size: 30px;
-    line-height: auto;
-    letter-spacing: -0.24px;
-  }
-
-  .navMenu {
-    margin-top: 80px;
-    border-bottom: 1px solid #c3c3c3;
-
-    .kategori {
-      h3 {
-        font-size: 20px;
-        line-height: 120%;
-        letter-spacing: -0.24px;
+/* PHONE  */
+@media (max-width: 425px) {
+  .pengumumanPage {
+    padding: 110px 20px 80px 20px;
+    .pakai-padding {
+      h1 {
+        font-size: 45px;
+        line-height: 110%;
+        letter-spacing: -4px;
       }
-      button {
-        padding: 8px 12px;
-        background: transparent;
-        color: #4f4f4f;
-        border: 1px solid #c3c3c3;
-        cursor: pointer;
-
-        &:hover {
-          color: #4f4f4f;
-          background: transparent;
-          border: 1px solid #c3c3c3;
-        }
-      }
-    }
-
-    .search-container {
-      padding: 10px 12px;
-      color: #727272;
-      font-size: 15px;
-      line-height: 110%;
-      letter-spacing: -0.24px;
-      width: fit-content;
-
-      input {
-        /* width: fit-content; */
-        border: none;
-        background: transparent;
-        &:focus {
-          outline: none;
-        }
-      }
-    }
-  }
-
-  .agenda-jadwal {
-    .ket {
-      p {
-        font-size: 15px;
-        color: #272727;
-        line-height: 18px;
-        letter-spacing: -0.24px;
-      }
-
-      .circle {
-        width: 5px;
-        height: 5px;
-        margin-top: 8px;
-      }
-    }
-    h2 {
+      h2 {
         font-size: 18px;
-        line-height: 140%;
+        line-height: auto;
         letter-spacing: -0.24px;
-        color: #272727;
-    }
-  }
-
-  .page-indicator {
-    button {
-      background: transparent;
-      border: none;
-      color: black;
-      opacity: 0.5;
-
-      &:focus {
-        background: transparent;
-        outline: none;
       }
 
-      &:hover {
-        background: transparent;
-        opacity: 1;
+      .navMenu {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #c3c3c3;
+        width: 100%;
+
+        .kategori {
+          h3 {
+            font-size: 20px;
+            line-height: 120%;
+            letter-spacing: -0.24px;
+          }
+          button {
+            padding: 8px 12px;
+            background: transparent;
+            color: #4f4f4f;
+            border: 1px solid #c3c3c3;
+            cursor: pointer;
+
+            &:hover {
+              color: #4f4f4f;
+              background: transparent;
+              border: 1px solid #c3c3c3;
+            }
+          }
+        }
+
+        .search-container {
+          padding: 10px 12px;
+          color: #727272;
+          font-size: 13px;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+          width: 100%;
+          margin-top: 15px;
+          img {
+            width: 20px;
+          }
+          input {
+            border: none;
+            background: transparent;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
       }
-    }
 
-    .page-number {
-      width: 30px;
-      height: 30px;
-      font-size: 15px;
-      color: #3f3f46;
-      background: transparent;
+      .agenda-jadwal {
+        .ket {
+          p {
+            font-size: 15px;
+            color: #272727;
+            line-height: 18px;
+            letter-spacing: -0.24px;
+          }
 
-      &:hover {
-        color: white;
-        background: black;
+          .circle {
+            width: 4px;
+            height: 4px;
+            margin-top: 8px;
+          }
+        }
+        h2 {
+          font-size: 18px;
+          line-height: 140%;
+          letter-spacing: -0.24px;
+          color: #272727;
+        }
+        .download {
+          color: #284d30;
+          font-size: 12px;
+          background: #e5fcf2;
+          padding: 10px 8px;
+          border: none;
+          white-space: nowrap;
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            filter: brightness(0.9);
+          }
+
+          img {
+            width: 20px;
+          }
+        }
+
+        .share {
+          background: transparent;
+          padding: 5px 8px;
+          border: 1px solid #09A677;
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            filter: brightness(0.97);
+          }
+
+          img {
+            width: 20px;
+          }
+        }
+      }
+
+      .page-indicator {
+        button {
+          background: transparent;
+          border: none;
+          color: black;
+          opacity: 0.5;
+
+          &:focus {
+            background: transparent;
+            outline: none;
+          }
+
+          &:hover {
+            background: transparent;
+            opacity: 1;
+          }
+        }
+
+        .active-number {
+          width: 30px;
+          height: 30px;
+          font-size: 15px;color: white;
+            background: black;
+          
+        }
       }
     }
   }
 }
+
+/* TABLET  */
+@media (min-width: 426px) {
+  .pengumumanPage {
+    padding: 150px 40px 80px 40px;
+    .pakai-padding {
+      h1 {
+        font-size: 50px;
+        line-height: 110%;
+        letter-spacing: -4px;
+      }
+      h2 {
+        font-size: 20px;
+        line-height: auto;
+        letter-spacing: -0.24px;
+      }
+
+      .navMenu {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #c3c3c3;
+
+        .kategori {
+          h3 {
+            font-size: 20px;
+            line-height: 120%;
+            letter-spacing: -0.24px;
+          }
+          button {
+            padding: 8px 12px;
+            background: transparent;
+            color: #4f4f4f;
+            border: 1px solid #c3c3c3;
+            cursor: pointer;
+
+            &:hover {
+              color: #4f4f4f;
+              background: transparent;
+              border: 1px solid #c3c3c3;
+            }
+          }
+        }
+
+        .search-container {
+          padding: 10px 12px;
+          color: #727272;
+          font-size: 15px;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+          width: 40%;
+
+          input {
+            border: none;
+            background: transparent;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+
+      .agenda-jadwal {
+        .ket {
+          p {
+            font-size: 12px;
+            color: #272727;
+            line-height: 18px;
+            letter-spacing: -0.24px;
+          }
+
+          .circle {
+            width: 3px;
+            height: 3px;
+            margin-top: 8px;
+          }
+        }
+
+        h2 {
+          font-size: 15px;
+          line-height: 140%;
+          letter-spacing: -0.24px;
+          color: #272727;
+        }
+
+        .download {
+          color: #284d30;
+          font-size: 12px;
+          background: #e5fcf2;
+          padding: 10px 8px;
+          border: none;
+          white-space: nowrap;
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            filter: brightness(0.97);
+          }
+
+          img {
+            width: 20px;
+          }
+        }
+
+        .share {
+          background: transparent;
+          padding: 5px 8px;
+          border: 1px solid #09A677;
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            filter: brightness(0.97);
+          }
+
+          img {
+            width: 20px;
+          }
+        }
+      }
+
+      .page-indicator {
+        button {
+          background: transparent;
+          border: none;
+          color: black;
+          opacity: 0.5;
+
+          &:focus {
+            background: transparent;
+            outline: none;
+          }
+
+          &:hover {
+            background: transparent;
+            opacity: 1;
+          }
+        }
+
+        .active-number {
+          width: 30px;
+          height: 30px;
+          font-size: 15px;color: white;
+            background: black;
+          
+        }
+      }
+    }
+  }
+}
+
+/* LAPTOP  */
+@media (min-width: 769px) {
+  .pengumumanPage {
+    padding: 150px 60px 80px 60px;
+    .pakai-padding {
+      h1 {
+        font-size: 60px;
+        line-height: 110%;
+        letter-spacing: -4px;
+      }
+      h2 {
+        font-size: 30px;
+        line-height: auto;
+        letter-spacing: -0.24px;
+      }
+
+      .navMenu {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #c3c3c3;
+
+        .kategori {
+          h3 {
+            font-size: 20px;
+            line-height: 120%;
+            letter-spacing: -0.24px;
+          }
+          button {
+            padding: 8px 12px;
+            background: transparent;
+            color: #4f4f4f;
+            border: 1px solid #c3c3c3;
+            cursor: pointer;
+
+            &:hover {
+              color: #4f4f4f;
+              background: transparent;
+              border: 1px solid #c3c3c3;
+            }
+          }
+        }
+
+        .search-container {
+          padding: 10px 12px;
+          color: #727272;
+          font-size: 15px;
+          line-height: 110%;
+          letter-spacing: -0.24px;
+          width: 30%;
+
+          input {
+            border: none;
+            background: transparent;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+
+      .agenda-jadwal {
+        .ket {
+          p {
+            font-size: 15px;
+            color: #272727;
+            line-height: 18px;
+            letter-spacing: -0.24px;
+          }
+
+          .circle {
+            width: 5px;
+            height: 5px;
+            margin-top: 8px;
+          }
+        }
+        h2 {
+          font-size: 18px;
+          line-height: 140%;
+          letter-spacing: -0.24px;
+          color: #272727;
+        }
+        .download {
+          color: #284d30;
+          font-size: 15px;
+          background: #e5fcf2;
+          padding: 10px 12px;
+          border: none;
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            filter: brightness(0.97);
+          }
+        }
+
+        .share {
+          background: white;
+          padding: 10px 12px;
+          border: 1px solid #09A677;
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            filter: brightness(0.97);
+          }
+        }
+      }
+
+      .page-indicator {
+        button {
+          background: transparent;
+          border: none;
+          color: black;
+          opacity: 0.5;
+
+          &:focus {
+            background: transparent;
+            outline: none;
+          }
+
+          &:hover {
+            background: transparent;
+            opacity: 1;
+          }
+        }
+
+        .active-number {
+          width: 30px;
+          height: 30px;
+          font-size: 15px;color: white;
+            background: black;
+          
+        }
+      }
+    }
+  }
+}
+
+/* LAPTOP L  */
+@media (min-width: 1025px) {
 }

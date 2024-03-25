@@ -29,7 +29,7 @@ const beritaPage = () => {
   return (
     <>
       <div className="beritaPage">
-        <div className="navMenu mb-4 mb-md-3 d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <div className="navMenu mb-4 mb-md-3 d-flex flex-column-reverse flex-md-row align-items-center justify-content-between">
           <ul className=" list-unstyled d-flex flex-wrap gap-2 m-0">
           <li
               className={selectedItem === "Semua" ? "fw-semibold active" : ""}

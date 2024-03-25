@@ -25,7 +25,7 @@ const agendaPage = () => {
           Kegiatan/<span className="fst-italic">event</span> di SMA Laboratorium
           UM
         </h2>
-        <div className="navMenu mt-4 mb-5 d-flex align-items-md-center align-items-start justify-content-start justify-content-md-between">
+        <div className="navMenu mt-4 mb-5 d-flex flex-column-reverse flex-md-row align-items-md-center align-items-start justify-content-start justify-content-md-between">
           <ul className=" list-unstyled d-flex gap-2 m-0">
             <li
               className={

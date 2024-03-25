@@ -1,19 +1,33 @@
 [
     {
-        "program": "Standup Comedy Routine",
+        "program": "Standup Comedy Routine:",
         "title": "BOTOLAN",
-        "date": "20 Februari",
-        "time": "09:00 WIB",
+        "date": "Hari Ini",
+        "day": "Rabu",
+        "time": "16:00",
+        "timeOut": "20:00",
         "place": "Aula Sekolah",
         "image": "./assets/agenda/event1.svg"
     }
     ,
     {
-        "program": "Festival Pemilu",
+        "program": "Festival Pemilu:",
         "title": "Kepoin Parpol, Adu Ide, Main Bareng",
-        "date": "20 Februari",
-        "time": "09:00 WIB",
+        "date": "15 Maret 2024",
+        "day": "Jum’at",
+        "time": "14:00 WIB",
+        "timeOut": "20:00",
         "place": "Aula Sekolah",
         "image": "./assets/agenda/event2.svg"
+    },
+    {
+        "program": "From The River To The Liberty",
+        "title": "",
+        "date": "15 Maret 2024",
+        "day": "Jum’at",
+        "time": "16:00",
+        "timeOut": "20:00",
+        "place": "Aula Sekolah",
+        "image": "./assets/agenda/event3.svg"
     }
 ]

@@ -8,7 +8,7 @@ const Navbar = ({background}) => {
   const [showMenu, setShowMenu] = useState(false);
   const [logoSrc, setLogoSrc] = useState("./assets/navbar/logoColor.svg");
   const [navbarStyle, setNavbarStyle] = useState({
-    backgroundColor: "rgba(0, 0, 0, 0.15)",
+    // backgroundColor: "rgba(0, 0, 0, 0.15)",
     backgroundColor: background || "rgba(0, 0, 0, 0.15)",
     backdropFilter: "blur(25px)",
     // width: '100%'

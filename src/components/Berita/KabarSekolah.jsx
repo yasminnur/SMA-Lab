@@ -1,20 +1,34 @@
 import "./kabarSekolah.css";
 import { Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 
 const KabarSekolah = () => {
+  //Page Indicator
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const handleNextClick = () => {
+    setCurrentPage((prevPage) => prevPage + 1);
+  };
+
+  const handlePrevClick = () => {
+    setCurrentPage((prevPage) => prevPage - 1);
+  };
   return (
     <>
       <div className="kabarSekolah">
         <div className="headline mb-3 mb-md-4 d-flex justify-content-between align-items-end">
           <h1 className="m-0 p-0 fw-bolder">Kabar Sekolah</h1>
-          <p className="d-flex p-0 m-0 fw-semibold ">
-              SMA Laboratorium UM
-            </p>
+          <p className="d-flex p-0 m-0 fw-semibold ">SMA Laboratorium UM</p>
         </div>
 
         <Row className="content m-0 p-0 gap-5 gap-lg-3">
-          <Col xs={12} md={6} lg={8} className="kabar-container p-0 d-flex flex-column gap-4">
+          <Col
+            xs={12}
+            md={6}
+            lg={8}
+            className="kabar-container p-0 d-flex flex-column gap-4"
+          >
             <div className="card-kabar m-0 p-0">
               <Row className="m-0 p-0 gap-4 flex-column flex-lg-row">
                 <Col className="img-container m-0 p-0">
@@ -90,19 +104,31 @@ const KabarSekolah = () => {
                 </Col>
               </Row>
             </div>
-            
-            <div className="page-indicator justify-content-between justify-content-md-start d-flex align-items-center gap-0 gap-md-2 mt-3">
-              <div className="prev d-flex align-items-center  gap-md-2">
-                <Button className="fw-medium">Previous</Button>
-                <div className="page-number rounded-circle d-flex align-items-center justify-content-center">
+
+            <div className="page-indicator d-flex align-items-center justify-content-end gap-2 mt-3">
+              <div className="prev d-flex align-items-center gap-2">
+                <Button className="fw-medium" onClick={handlePrevClick}>
+                  Previous
+                </Button>
+                <div
+                  className={`page-number rounded-circle d-flex align-items-center justify-content-center ${
+                    currentPage === 1 && "active-number"
+                  }`}
+                >
                   <p className="fw-medium p-0 m-0">1</p>
                 </div>
               </div>
               <div className="next d-flex align-items-center gap-2">
-                <div className="page-number rounded-circle d-flex align-items-center justify-content-center">
+                <div
+                  className={`page-number rounded-circle d-flex align-items-center justify-content-center ${
+                    currentPage === 2 && "active-number"
+                  }`}
+                >
                   <p className="fw-medium p-0 m-0">2</p>
                 </div>
-                <Button className="fw-medium">Next</Button>
+                <Button className="fw-medium" onClick={handleNextClick}>
+                  Next
+                </Button>
               </div>
             </div>
           </Col>
