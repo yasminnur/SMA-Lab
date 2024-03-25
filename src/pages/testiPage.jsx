@@ -1,22 +1,43 @@
 import "./css/testi.css";
 import Footer from "../components/Footer";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
+import data from "../data/komen.json";
+import React, { useEffect, useState } from "react";
+// import { useParams } from "react-router-dom";
 
 const testiPage = () => {
   const thumbnailSrc = "./assets/footer/thumbnail.svg";
   const linkUrl = "https://youtu.be/AsnN3t7JPHU?si=Q1pYgUwhXAv0xLWY";
-    // const location = useLocation();
-    // const testi = location.state ? location.state.testi : null;
-    
-    // if (!testi) {
+  // if (!testi) {
     //   return <p>Tidak ada komentar yang tersedia.</p>;
     // }
+  
+    const { id } = useParams();
+    const [testi, setTesti] = useState(null);
+  
+    useEffect(() => {
+      // Mengambil data dari komen.json berdasarkan ID
+      const fetchData = async () => {
+        try {
+          const testData = data[parseInt(id)];
+          setTesti(testData);
+        } catch (error) {
+          console.error("Error fetching testi data:", error);
+        }
+      };
+  
+      fetchData();
+    }, [id]);
+  
+    if (!testi) {
+      return <p>Loading...</p>; // Menampilkan pesan loading saat data sedang dimuat
+    }
   return (
     <>
       <div className="testiPage">
         <div className="header position-relative">
           <img
-            src="./assets/hero/bg-3.svg"
+            src="/assets/hero/bg-3.svg"
             alt=""
             className="position-relative"
           />
@@ -62,12 +83,13 @@ const testiPage = () => {
               <div className="sender d-flex align-items-center gap-3 mt-4 mt-md-5">
                 <img
                   className="rounded-circle"
-                  src="./assets/komen/person1.svg"
+                  src="/assets/komen/person1.svg"
                   alt=""
                 />
                 <div className="nameContainer">
                   <p className="name w-100 m-0 p-0 fw-semibold">
-                    Tanto Witjaksono
+                    {/* Tanto Witjaksono */}
+                    {testi.sender.name}
                   </p>
                   <p className="prof w-100 m-0 p-0">
                     Wali dari Shabrina Witjaksono / XII MIPA-3

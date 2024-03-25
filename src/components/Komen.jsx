@@ -29,7 +29,9 @@ const Komen = () => {
     <>
       <div className="komen w-100" id="testi">
         <div className="nav d-flex justify-content-between align-items-center mb-4 mb-md-5 w-100">
-          <h3 className="p-0 m-0 fw-semibold">Cerita mereka tentang SMA Lab UM</h3>
+          <h3 className="p-0 m-0 fw-semibold">
+            Cerita mereka tentang SMA Lab UM
+          </h3>
           <div className="nav-slider gap-3 d-none d-md-flex">
             <div
               className="arrow p-2 d-flex rounded-circle"
@@ -67,9 +69,11 @@ const Komen = () => {
                 <p className="p-0 m-0 mb-2 mb-md-3 fw-semibold">
                   {item.comment.substring(0, 248)}...
                 </p>
-                <Link className="text-dark" to={{ pathname: "/testiPage", state: { testi: item } }}>
+                <Link to={`/testiPage/${index}`}>Lihat selengkapnya</Link>
+
+                {/* <Link className="text-dark" to={{ pathname: "/testiPage", state: { testi: item } }}>
                   Lihat selengkapnya
-                </Link>
+                </Link> */}
 
                 {/* <a href="/testiPage" className="text-dark p-0 m-0">
                   Lihat selengkapnya
@@ -85,10 +89,9 @@ const Komen = () => {
                       {item.sender.name}
                     </p>
                     <p className="wali m-0">
-                      wali dari {" "}
-                      <span className="fw-semibold">
-                        {item.sender.wali}
-                      </span> / {item.sender.kelas}
+                      wali dari{" "}
+                      <span className="fw-semibold">{item.sender.wali}</span> /{" "}
+                      {item.sender.kelas}
                     </p>
                   </div>
                 </div>

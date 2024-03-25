@@ -69,7 +69,7 @@ function App() {
         {shouldShowNavbar() && <Navbar background={navbarBackground} />}
         <Routes>
           <Route path="/" Component={Index} />
-          <Route path="/testiPage" Component={TestiPage} />
+          <Route path="/testiPage/:id" Component={TestiPage} />
           <Route path="/beritaPage" Component={BeritaPage} />
           <Route path="/agendaPage" Component={AgendaPage} />
           <Route path="/agendaDetailPage" Component={AgendaDetail} />
