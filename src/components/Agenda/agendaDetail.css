@@ -113,20 +113,20 @@
   
       .agenda-list {
         img {
-          min-height: 250px;
-          max-height: 250px;
+          min-height: 120px;
+          max-height: 120px;
           object-fit: cover;
         }
   
         h5 {
-          font-size: 17px;
+          font-size: 14px;
           color: #861fc1;
           line-height: 110%;
           letter-spacing: -0.24px;
         }
   
         h3 {
-          font-size: 22px;
+          font-size: 15px;
           color: #272727;
           line-height: 120%;
           letter-spacing: -0.24px;
@@ -140,11 +140,18 @@
         }
   
         .ket {
+          flex-wrap: wrap;
           p {
             font-size: 12px;
             color: #272727;
             line-height: 18px;
             letter-spacing: -0.24px;
+          }
+
+          .circle {
+            width: 4px;
+            height: 4px;
+            margin-top: 8px;
           }
         }
       }
@@ -295,10 +302,15 @@
   
         .ket {
           p {
-            font-size: 12px;
+            font-size: 14px;
             color: #272727;
             line-height: 18px;
             letter-spacing: -0.24px;
+          }
+          .circle {
+            width: 5px;
+            height:5px;
+            margin-top: 8px;
           }
         }
       }
@@ -449,10 +461,15 @@
   
         .ket {
           p {
-            font-size: 12px;
+            font-size: 15px;
             color: #272727;
             line-height: 18px;
             letter-spacing: -0.24px;
+          }
+          .circle {
+            width: 4px;
+            height: 4px;
+            margin-top: 8px;
           }
         }
       }

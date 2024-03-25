@@ -1,31 +1,289 @@
-.testiPage {
+/* PHONE  */
+@media (max-width: 425px) {
+  .testiPage {
     width: 100vw;
-/* height: 100vh; */
+    /* height: 100vh; */
     .header {
-        max-height: 240px;
-        height: 240px;
+      max-height: 100px;
+      height: 100px;
 
-        img {
-            width: 100%;
-            height: 240px;
-            object-fit: cover;
+      img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+      }
+
+      .overlay {
+        background: linear-gradient(
+          to top right,
+          rgba(0, 0, 0, 0.65),
+          rgba(75, 1, 82, 0.4)
+        );
+      }
+
+      h1 {
+        font-size: 40px;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .containerTesti {
+      padding: 40px 20px;
+
+      .back {
+        a {
+          color: black;
+          opacity: 0.7;
+          line-height: 36px;
+          letter-spacig: -0.24px;
+          font-size: 15px;
+          text-decoration: none;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      .pageNum {
+        p {
+          font-size: 13px;
+        }
+        .num {
+          font-size: 13px;
+        }
+      }
+
+      .testi {
+        p {
+          font-size: 15px;
+          text-align: justify;
         }
 
-        .overlay {
-            background: linear-gradient(
-              to top right,
-              rgba(0, 0, 0, 0.65),
-              rgba(75, 1, 82, 0.4)
-            );
+        .sender {
+          img {
+            width: 50px;
+            height: 50px;
           }
 
-          h1 {
-            font-size: 130px;
-            line-height: 120%;
-            letter-spacing: -0.24px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+          .name {
+            font-size: 15px;
           }
+
+          .prof {
+            font-size: 12px;
+          }
+        }
+
+        .nextPage {
+          p {
+            font-size: 13px;
+          }
+          img {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
     }
+  }
+}
+
+/* TABLET  */
+@media (min-width: 426px) {
+  .testiPage {
+    width: 100vw;
+    /* height: 100vh; */
+    .header {
+      max-height: 240px;
+      height: 240px;
+
+      img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+      }
+
+      .overlay {
+        background: linear-gradient(
+          to top right,
+          rgba(0, 0, 0, 0.65),
+          rgba(75, 1, 82, 0.4)
+        );
+      }
+
+      h1 {
+        font-size: 100px;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .containerTesti {
+      padding: 40px 40px;
+
+      .back {
+        a {
+          color: black;
+          opacity: 0.7;
+          line-height: 36px;
+          letter-spacig: -0.24px;
+          font-size: 15px;
+          text-decoration: none;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      .pageNum {
+        p {
+          font-size: 15px;
+        }
+        .num {
+          font-size: 15px;
+        }
+      }
+
+      .testi {
+        p {
+          font-size: 18px;
+          text-align: justify;
+        }
+
+        .sender {
+          img {
+            width: 50px;
+            height: 50px;
+          }
+
+          .name {
+            font-size: 15px;
+          }
+
+          .prof {
+            font-size: 13px;
+          }
+        }
+
+        .nextPage {
+          p {
+            font-size: 15px;
+          }
+          img {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* LAPTOP  */
+@media (min-width: 769px) {
+  .testiPage {
+    width: 100vw;
+    /* height: 100vh; */
+    .header {
+      max-height: 240px;
+      height: 240px;
+
+      img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+      }
+
+      .overlay {
+        background: linear-gradient(
+          to top right,
+          rgba(0, 0, 0, 0.65),
+          rgba(75, 1, 82, 0.4)
+        );
+      }
+
+      h1 {
+        font-size: 130px;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .containerTesti {
+      padding: 40px 60px;
+
+      .back {
+        a {
+          color: black;
+          opacity: 0.7;
+          line-height: 36px;
+          letter-spacig: -0.24px;
+          font-size: 18px;
+          text-decoration: none;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      .pageNum {
+        p {
+          font-size: 18px;
+        }
+        .num {
+          font-size: 18px;
+        }
+      }
+
+      .testi {
+        p {
+          font-size: 22px;
+          text-align: justify;
+        }
+
+        .sender {
+          img {
+            width: 70px;
+            height: 70px;
+          }
+
+          .name {
+            font-size: 20px;
+          }
+
+          .prof {
+            font-size: 18px;
+          }
+        }
+
+        .nextPage {
+          p {
+            font-size: 18px;
+          }
+          img {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* LAPTOP L  */
+@media (min-width: 1025px) {
 }

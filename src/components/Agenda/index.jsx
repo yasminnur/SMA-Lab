@@ -84,7 +84,8 @@ const index = () => {
 
             {jsonData.map((item, index) => (
               <Link
-                to={`/agendaDetailPage/${index}`}
+                // to={`/agendaDetailPage/${index}`}
+                to="/agendaDetailPage"
                 key={index}
                 className="agenda-link "
               >

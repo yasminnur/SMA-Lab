@@ -72,7 +72,7 @@ function App() {
           <Route path="/testiPage" Component={TestiPage} />
           <Route path="/beritaPage" Component={BeritaPage} />
           <Route path="/agendaPage" Component={AgendaPage} />
-          <Route path="/agendaDetailPage/:id" Component={AgendaDetail} />
+          <Route path="/agendaDetailPage" Component={AgendaDetail} />
           <Route path="/sambutanPage" Component={SambutanPage} />
           <Route path="/tentangPage" Component={TentangPage} />
           <Route path="/pengumumanPage" Component={PengumumanPage} />

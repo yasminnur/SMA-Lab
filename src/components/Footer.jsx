@@ -30,11 +30,11 @@ const Footer = ({ linkUrl, thumbnailSrc }) => {
             <Col className="tengah d-flex p-0">
               <Col className="kiri w-100 d-flex justify-content-between">
                 <div className="atas d-flex">
-                  <Col>
+                  <Col className="">
                     <p className="m-0 p-0">Profil Sekolah</p>
                     <p className="m-0 p-0">Informasi</p>
                   </Col>
-                  <Col>
+                  <Col className="">
                     <p className="m-0 p-0">PPDB 2024</p>
                     <p className="m-0 p-0">Link Terkait</p>
                   </Col>

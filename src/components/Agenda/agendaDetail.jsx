@@ -29,29 +29,28 @@ const agendaDetail = () => {
               <div>
                 <h5 className="fw-bold mb-2">AGENDA</h5>
                 <h3 className="fw-bold mb-2">
-                  {agenda.program} {agenda.title}
-                  {/* From The River To The Liberty */}
+                  {/* {agenda.program} {agenda.title} */}
                 </h3>
               </div>
               <div className="desc-bawah">
                 <div className="ket mb-1 p-0 d-flex gap-2 fw-semibold">
                   <p className="p-0 m-0">
-                    {agenda.day}
+                    {/* {agenda.day} */}
                     {/* Selasa */}
                   </p>
                   <div className="p-0 circle rounded-circle bg-dark"></div>
                   <p className="p-0 m-0">
-                    {agenda.date}
+                    {/* {agenda.date} */}
                     {/* 05 Maret, 2024 */}
                   </p>
                 </div>
                 <p className="fw-semibold mb-3">Pukul {""}
-                  {agenda.time} - {agenda.timeOut}
+                  {/* {agenda.time} - {agenda.timeOut} */}
                   {/* 16:00 - 20:00 */}
                   WIB
                 </p>
                 <p className="fw-normal m-0">
-                  {agenda.place}
+                  {/* {agenda.place} */}
                   {/* Aula SMA Laboratorium UM */}
                 </p>
               </div>
@@ -60,7 +59,7 @@ const agendaDetail = () => {
           <Col>
             <img
               className="w-100 h-100 rounded-3"
-              src={agenda.image}
+              // src={agenda.image}
               // src="./assets/agenda/event3.svg"
               alt=""
             />
@@ -195,51 +194,43 @@ const agendaDetail = () => {
           </div>
 
           <div className="agenda-list px-0 pt-4 pb-5">
-            <div className="d-flex gap-3 flex-column flex-md-row">
-              <Col md={6}>
+            <div className="d-flex gap-md-3 ">
+              <Col xs={6} className="m-0 p-2 p-md-0">
                 <img
                   src="./assets/agenda/event1.svg"
                   alt=""
-                  className="w-100 rounded-3 mb-3"
+                  className="w-100 rounded-3 mb-2 mb-md-3"
                 />
-                <h5 className="w-100 d-inline-block mb-3 fw-bold">Hari Ini</h5>
-                <h3 className="fw-bold title-kanan mb-3">
+                <h5 className="w-100 d-inline-block mb-2 mb-md-3 fw-bold">Hari Ini</h5>
+                <h3 className="fw-bold title-kanan mb-1 mb-md-3">
                 Standup Comedy Routine: BOTOLAN (Bocah Tampan Reguler)
                 </h3>
-                <div className="ket d-flex gap-1 fw-medium">
+                <div className="ket d-flex gap-2 fw-medium">
                   <p className="p-0 m-0">Rabu, 16:00 WIB</p>
                   <div
                     className="circle rounded-circle bg-dark"
-                    style={{
-                      width: "4px",
-                      height: "4px",
-                      marginTop: "8px",
-                    }}
+                    // style={{
+                    //   width: "4px",
+                    //   height: "4px",
+                    //   marginTop: "8px",
+                    // }}
                   ></div>
                   <p className="p-0 m-0">Auditorium SMA Laboratorium UM</p>
                 </div>
               </Col>
-              <Col md={6}>
+              <Col xs={6} className="m-0 p-2 p-md-0">
                 <img
                   src="./assets/agenda/event2.svg"
                   alt=""
-                  className="w-100 rounded-3 mb-3"
+                  className="w-100 rounded-3 mb-2 mb-md-3"
                 />
-                <h5 className="w-100 d-inline-block mb-3 fw-bold">15 Maret 2024</h5>
+                <h5 className="w-100 d-inline-block mb-2 mb-md-3 fw-bold">15 Maret 2024</h5>
                 <h3 className="fw-bold title-kanan mb-3">
                 Festival Pemilu : Kepoin Parpol, Adu Ide, Main Bareng
                 </h3>
                 <div className="ket d-flex gap-1 fw-medium">
                   <p className="p-0 m-0">Jum’at, 14:00 WIB</p>
-                  {/* <div
-                    className="circle rounded-circle bg-dark"
-                    style={{
-                      width: "4px",
-                      height: "4px",
-                      marginTop: "8px",
-                    }}
-                  ></div>
-                  <p className="p-0 m-0">Auditorium SMA Laboratorium UM</p> */}
+                  
                 </div>
               </Col>
             </div>

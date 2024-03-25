@@ -24,15 +24,15 @@ const testiPage = () => {
           <h1 className="position-absolute fw-bolder text-light">TESTIMONI</h1>
         </div>
 
-        <div className="container mt-4">
+        <div className="containerTesti">
           <div className="navTesti">
-            <div className="back d-inline-block w-100">
-              <a href="/" className="m-0">
-                👈 Kembali ke beranda
+            <div className="back d-inline-block mb-2 w-100">
+              <a href="/" className="m-0 ">
+                👈  Kembali ke beranda
               </a>
             </div>
 
-            <div className="pageNum mb-5 align-items-center d-flex justify-content-between">
+            <div className="pageNum mb-4 mb-md-5 align-items-center d-flex justify-content-between">
               <p className="w-100 m-0">Cerita mereka tentang SMA Lab UM</p>
               <div className="num d-flex gap-1 m-0">
                 <p className="m-0 p-0">01</p>
@@ -43,7 +43,7 @@ const testiPage = () => {
 
             <div className="testi">
                 {/* <p>{testi.comment}</p> */}
-              <p>
+              <p style={{ color: '#161616' }}>
                 Kami memilih menyekolahkan anak kami Shabrina Witjaksono di SMA
                 Laboratorium UM Malang setelah mendapat referensi dari kakak
                 kami yang anaknya juga alumni sekolah ini. Selama anak kami
@@ -80,7 +80,7 @@ const testiPage = () => {
                 <img
                   src="./assets/kabar/arrow-biru.svg"
                   alt=""
-                  style={{ width: "25px" }}
+                  // style={{ width: "25px" }}
                 />
               </div>
             </div>
